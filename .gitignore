@@ -6,7 +6,6 @@
 config.codekit
 config.codekit3
 /min
-/dist
 
 ### CodeKit Patch ###
 */codekit-config.json
