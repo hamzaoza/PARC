@@ -4,6 +4,7 @@
         "node_modules/": true,
         ".vscode/": true,
         "config.codekit3" : true,
-        "package-lock.json" : true
+        "package-lock.json" : true,
+        "package.json" : true,
     }
 }

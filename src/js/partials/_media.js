@@ -17,8 +17,7 @@ PAD.Media = (function(mesh){
 			break;
 	}
 
-	if (data.floor != null)
-		PAD.Texture(data.floor);
+	PAD.Texture(data.floor);
 
 	function showVideo(){
 

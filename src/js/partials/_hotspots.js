@@ -34,7 +34,6 @@ PAD.Hotspots = function(clinic, hotspots) {
 
 		var t = 0;
 		var increment = 0.01 + (counter * 0.005);
-
 		var source = new THREE.PointLight(color, 0, hotspot.position[1] * 2, 1);
 
 		var material = new THREE.MeshLambertMaterial({ 
