@@ -1,20 +1,19 @@
 PAD.Data.Pavilion = {
 	"models" : [
 		{
-			"name": "beds",
-			"path": "assets/models/pavilion/pavilion-beds.json"
-		},
-		{
-			"name": "chimney",
-			"path": "assets/models/pavilion/pavilion-chimney.json"
-		},
-		{
 			"name": "floor",
-			"path": "assets/models/pavilion/pavilion-floor.json"
+			"path": "assets/models/pavilion/pavilion-floor.json",
+			"scale" : [0.7, 0.7, 0.7]
+		},
+		{
+			"name": "beds",
+			"path": "assets/models/pavilion/pavilion-beds.json",
+			"scale" : [0.7, 0.7, 0.7]
 		},
 		{
 			"name": "layout",
-			"path": "assets/models/pavilion/pavilion-major.json"
+			"path": "assets/models/pavilion/pavilion-layout.json",
+			"scale" : [0.7, 0.7, 0.7]
 		}
 	],
 	hotspots : [

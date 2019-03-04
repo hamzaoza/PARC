@@ -15,7 +15,7 @@ PAD.Clinics = (function(){
 		if (data.geometry)
 			PAD.Helpers.loadGeometry(clinic, data.geometry);
 
-		if (data.geometry)
+		if (data.sceneLights)
 			PAD.SceneLights(clinic, data.sceneLights);
 		
 		if (data.hotspots)

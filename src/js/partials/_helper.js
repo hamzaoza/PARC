@@ -21,9 +21,12 @@ PAD.Helpers = {
 					});
 
 					mesh.material = model.material || baseMaterial;
-					mesh.name = name + model.name;
+					mesh.name = model.name;
 					mesh.castShadow = true;
 					mesh.receiveShadow = object.receiveShadow || false;
+					
+					if (model.scale)
+						mesh.scale.set(model.scale[0], model.scale[1], model.scale[2])
 
 					group.add(mesh);
 
