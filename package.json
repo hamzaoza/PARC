@@ -4,7 +4,7 @@
   "description": "A virtual exhibition to raise awareness about the interconnectedness of building design and infection, and to create a space for dialogue between designers, architects, clinicians, patients, healthcare managers etc.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "upload": "git push origin master && git subtree push --prefix=dist origin gh-pages"
   },
   "repository": {
     "type": "git",
