@@ -1,0 +1,12 @@
+// @codekit-append "/partials/_pad.js";
+// @codekit-append "/clinics/_data.js";
+// @codekit-append "/partials/_helper.js";
+// @codekit-append "/partials/_events.js";
+// @codekit-append "/partials/_canvas.js";
+// @codekit-append "/partials/_sceneLights.js";
+// @codekit-append "/partials/_hotspots.js";
+// @codekit-append "/partials/_raycaster.js";
+// @codekit-append "/partials/_floor.js";
+// @codekit-append "/partials/_media.js";
+// @codekit-append "/partials/_clinics.js";
+// @codekit-append "/partials/_controller.js";
