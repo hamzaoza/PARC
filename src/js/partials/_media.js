@@ -1,23 +1,6 @@
 PAD.Media = (function(mesh){
 
 	var data = mesh.userData;
-	
-
-	switch (data.type) {
-		case "video" :
-			showVideo();
-			break;
-		case "image" :
-			showImage();
-			break;
-		case "text" :
-			showText();
-			break;
-		default:
-			break;
-	}
-
-	PAD.Texture(data.floor);
 
 	function showVideo(){
 
@@ -72,5 +55,21 @@ PAD.Media = (function(mesh){
 		}, 2000);
 		
 	}
+
+	switch (data.type) {
+		case "video" :
+			showVideo();
+			break;
+		case "image" :
+			showImage();
+			break;
+		case "text" :
+			showText();
+			break;
+		default:
+			break;
+	}
+
+	PAD.Texture(data.floor);
 
 });
