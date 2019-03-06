@@ -1,26 +1,13 @@
 PAD.Comments = function(commentID) {
 
-	// var thread = document.getElementById("disqus_thread");
+	var url = window.location.origin + "/#!" + commentID;
 
-	// function loadDisqus(){
-
-		var url = window.location.origin + "/#!" + commentID;
-
-		DISQUS.reset({
-			reload: true,
-			config: function () {  
-				this.page.identifier = commentID,
-				this.page.url = url
-			}
-		});
-	// };
-
-	// if (thread) {
-	// 	loadDisqus();
-	// } else {
-
-	// }
-
-	
+	DISQUS.reset({
+		reload: true,
+		config: function () {  
+			this.page.identifier = "prod" + commentID,
+			this.page.url = url
+		}
+	});
 
 };

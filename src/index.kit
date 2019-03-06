@@ -64,15 +64,16 @@
 
 	<video id="texture" muted autoplay loop crossOrigin="anonymous" webkit-playsinline style="display: none;"></video>
 
+	<script src="js/vendors/modernizr-custom.js"></script>
+	<script src="js/vendors/three.min.js"></script>
+	<script src="js/vendors/OrbitControls.js"></script>
+	<script src="js/main.js"></script>
+
 	<script>
-		/**
-		 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-		 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-		 */
 		
 		var disqus_config = function () {
 			this.page.url = window.location.origin + "/#!";  // Replace PAGE_URL with your page's canonical URL variable
-			this.page.identifier = "home"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			this.page.identifier = "prodhome"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 		};
 		
 		(function() {  // DON'T EDIT BELOW THIS LINE
@@ -84,11 +85,6 @@
 			(d.head || d.body).appendChild(s);
 		})();
 	</script>
-
-	<script src="js/vendors/modernizr-custom.js"></script>
-	<script src="js/vendors/three.min.js"></script>
-	<script src="js/vendors/OrbitControls.js"></script>
-	<script src="js/main.js"></script>
 
 	<!-- Google Analytics Code -->
 	<script src="https://www.google-analytics.com/analytics.js" async defer></script>
