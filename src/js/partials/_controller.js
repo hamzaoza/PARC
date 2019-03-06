@@ -34,4 +34,36 @@
 
 	buttons[0].click();
 
+	var gFormBTN = document.getElementById("gf-feedback");
+
+	gFormBTN.addEventListener("click", function(event){
+
+		var gForm = document.getElementById("surveyStage");
+		var close = gForm.querySelector(".close");
+
+		gForm.classList.remove("hidden");
+
+		close.addEventListener("click", function(event){
+			gForm.classList.add("hidden");
+			event.preventDefault();
+		});
+
+		event.preventDefault();
+
+	});
+
+	// Add Disqus
+
+	var disqus_config = function () {
+		this.page.url = window.location.origin + "/#!";
+		this.page.identifier = "prodhome";
+	};
+	
+	var s = document.createElement("script");
+	
+	s.src = "https://pad-1.disqus.com/embed.js";
+	s.setAttribute("data-timestamp", +new Date());
+
+	document.body.appendChild(s);
+
 })();

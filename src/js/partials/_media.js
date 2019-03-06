@@ -1,6 +1,8 @@
 PAD.Media = (function(mesh){
 
 	var data = mesh.userData;
+	var content = document.querySelector(".content");
+	var contentCache = content.innerHTML;
 
 	function showVideo(){
 
@@ -19,6 +21,8 @@ PAD.Media = (function(mesh){
 			PAD.Canvas.renderer.domElement.click();
 
 		});
+
+		resetText();
 
 	}
 
@@ -43,12 +47,24 @@ PAD.Media = (function(mesh){
 
 		});
 
+		resetText();
+
 	}
 
+	function resetText() {
+		content.innerHTML = contentCache;
+	}
+ 
 	function showText() {
 
-		var player = document.querySelector(".content");
-		player.innerHTML = "<h1>" + data.title + "</h1>" + data.description + "<div id='disqus_thread'></div>";
+		content.innerHTML = "<h1>" + data.title + "</h1>" + data.description;
+
+		if (data.comments) {
+
+			content.innerHTML += "<div id='disqus_thread'></div>";
+			PAD.Comments(data.commentID);
+
+		}
 
 		setTimeout(function(){
 			PAD.Canvas.renderer.domElement.click();
@@ -72,6 +88,5 @@ PAD.Media = (function(mesh){
 
 	PAD.Texture(data.floor);
 	
-	if (data.comments)
-		PAD.Comments(data.commentID);
+	
 });

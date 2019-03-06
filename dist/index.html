@@ -10,10 +10,10 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-	<link rel="manifest" href="site.webmanifest?ckcachebust=22f5c4e0d63a2bdf6ef77f527208bcd7">
-	<link rel="icon" href="images/icons/favicon.ico?ckcachebust=0c02f72ca925ce622e57ead75eb5db9c" />
-	<link rel="apple-touch-icon" href="images/icons/apple-touch-icon-180x180.png?ckcachebust=f37ba89a372cd8bada67c4d4d40b03ff">
-	<link rel="stylesheet" href="css/style.css?ckcachebust=7e8662365b00b6c7eb653f260d6c1d8c">
+	<link rel="manifest" href="site.webmanifest?ckcachebust=36af1d970307a3b5c579e3e7f5c3266b">
+	<link rel="icon" href="images/icons/favicon.ico?ckcachebust=29b613360a3864d0a88f51146d52f38e" />
+	<link rel="apple-touch-icon" href="images/icons/apple-touch-icon-180x180.png?ckcachebust=c8bc846d98695507a5bc3ad1e3eac0ca">
+	<link rel="stylesheet" href="css/style.css?ckcachebust=740f4cf84604285d2ec8128fa5c5efea">
 
 </head>
 <body>
@@ -24,13 +24,17 @@
 
 	<header>
 		<h1><a href="index.html">Pathways, Practices and Architectures</a></h1>
-		<nav>
-			<ul>
-				<li><a href="">About</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="">Terms</a></li>
-			</ul>
-		</nav>
+		
+		<div>
+			<nav>
+				<ul>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Terms</a></li>
+				</ul>
+			</nav>
+			<button id="gf-feedback">Feedback</button>
+		</div>
 	</header>
 
 	<div id="stage">
@@ -45,7 +49,9 @@
 	<div class="content">
 		<h1>Pathways, Practices and Architectures</h1>
 		<p>The PARC Project is exploring antimicrobial resistance and how cross infection is managed in cystic fibrosis clinics, using qualitative methods, including creative visual approaches. It is a multidisciplinary project involving sociologists of medicine and science, an academic architect, micro-biologists and a graphic artist. The research compares the way three outpatient lung infection clinics attempt to control AMR and cross-infection through the design, practices and architectural layout of their built environments. For further information contact Nik Brown (nik.brown@york.ac.uk) or Chrissy Buse (christina.buse@york.ac.uk).</p>
-		<!-- <div id="disqus_thread"></div> -->
+
+		<div id="HCB_comment_box"></div>
+
 	</div>
 
 	<!-- Templates for video, image and textures -->
@@ -62,32 +68,20 @@
 		<button class="close">X</button>
 	</div>
 
+	<div id="surveyStage" class="hidden fullStage">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdmNJDigJlHExUGossstnu9-wWLwgPRC4gFANX753yPppmAqw/viewform?embedded=true" ></iframe>
+		<button class="close">X</button>
+	</div>
+
 	<video id="texture" muted autoplay loop crossOrigin="anonymous" webkit-playsinline style="display: none;"></video>
 
-	<script src="js/vendors/modernizr-custom.js?ckcachebust=ab54b6ff7577c5a176f6b7eb566edb86"></script>
-	<script src="js/vendors/three.min.js?ckcachebust=0d76f3f26cfb4088b63d9a8092351a2f"></script>
-	<script src="js/vendors/OrbitControls.js?ckcachebust=fa1d5af588ddeb1ab004f1126d8ad5be"></script>
-	<script src="js/main.js?ckcachebust=8b00a24752a9f452a0365a5e678dcc64"></script>
-
-	<script>
-		
-		var disqus_config = function () {
-			this.page.url = window.location.origin + "/#!";  // Replace PAGE_URL with your page's canonical URL variable
-			this.page.identifier = "prodhome"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-		};
-		
-		(function() {  // DON'T EDIT BELOW THIS LINE
-			var d = document, s = d.createElement('script');
-			
-			s.src = 'https://pad-1.disqus.com/embed.js';
-			
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
-	</script>
+	<script src="js/vendors/modernizr-custom.js?ckcachebust=92a5b21eda378d289f234184d358a882"></script>
+	<script src="js/vendors/three.min.js?ckcachebust=201dbbaaad7a875a82b8cdc67d8238ca"></script>
+	<script src="js/vendors/OrbitControls.js?ckcachebust=9ba37badaefb2a3d73893b67633c097d"></script>
+	<script src="js/main.js?ckcachebust=77b6213305c85e28fd970e24a488a328"></script>
 
 	<!-- Google Analytics Code -->
-	<script src="https://www.google-analytics.com/analytics.js?ckcachebust=573564581" async defer></script>
+	<script src="https://www.google-analytics.com/analytics.js?ckcachebust=573582136" async defer></script>
 	<script>
 		window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
 		ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview');
