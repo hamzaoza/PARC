@@ -2,7 +2,7 @@ PAD.Data.Global = {
 	"geometry" : [
 		{
 			"name": "WorldFloor",
-			"geometry": new THREE.PlaneGeometry(256, 256, 1, 1),
+			"geometry": new THREE.PlaneBufferGeometry(256, 256, 1, 1),
 			"position" : [0, 0, 0],
 			"rotation" : [-90, 0, 0]
 		}

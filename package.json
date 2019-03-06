@@ -18,5 +18,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "three": "^0.102.1"
   }
 }

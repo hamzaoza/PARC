@@ -74,6 +74,11 @@ PAD.Hotspots = function(clinic, hotspots) {
 		source.userData = hotspot.data;
 		source.userData.clicked = false;
 
+		if (hotspot.comments) {
+			source.userData.comments = true;
+			source.userData.commentID = (clinic.name + "-" + hotspot.name).toLowerCase();
+		}
+
 		PAD.Events.on("sceneUpdate", function(){
 			t += increment;
 			shape.position.y = Math.sin(t);

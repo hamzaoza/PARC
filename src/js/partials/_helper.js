@@ -55,6 +55,7 @@ PAD.Helpers = {
 				PAD.Helpers.degRad(object.rotation[1]), 
 				PAD.Helpers.degRad(object.rotation[2])
 			);
+
 			mesh.name = object.name;
 			mesh.receiveShadow = object.receiveShadow || true;
 			mesh.castShadow = object.castShadow || false;
