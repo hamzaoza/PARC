@@ -1,6 +1,6 @@
 PAD.Comments = function(commentID) {
 
-	var url = window.location.origin + "/#!" + commentID;
+	var url = window.location.origin + "/#!prod" + commentID;
 
 	DISQUS.reset({
 		reload: true,
