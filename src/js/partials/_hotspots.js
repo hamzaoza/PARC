@@ -39,13 +39,13 @@ PAD.Hotspots = function(clinic, hotspots) {
 	}
 
 	var _prevItem = function(mesh){
-		mesh.scale.set(0.3, 0.3, 0.3);
+		mesh.scale.set(0.4, 0.4, 0.4);
 		mesh.intensity = mesh.intensity / 6;
 		checkCounter(mesh.userData);
 	}
 
 	var _noItem = function(mesh) {
-		mesh.scale.set(0.3, 0.3, 0.3);
+		mesh.scale.set(0.4, 0.4, 0.4);
 		mesh.intensity = mesh.intensity / 6;
 		PAD.Events.on("sceneUpdate", rotate);
 		checkCounter(mesh.userData);

@@ -2,7 +2,7 @@ PAD.Media = (function(mesh){
 
 	var data = mesh.userData;
 	var content = document.querySelector(".content");
-	var contentCache = content.innerHTML;
+	
 
 	function showVideo(){
 
@@ -52,6 +52,9 @@ PAD.Media = (function(mesh){
 	}
 
 	function resetText() {
+
+		var contentCache = '<h1>Pathways, Practices and Architectures</h1><p>The PARC Project is exploring antimicrobial resistance and how cross infection is managed in cystic fibrosis clinics, using qualitative methods, including creative visual approaches. It is a multidisciplinary project involving sociologists of medicine and science, an academic architect, micro-biologists and a graphic artist. The research compares the way three outpatient lung infection clinics attempt to control AMR and cross-infection through the design, practices and architectural layout of their built environments. For further information contact Nik Brown (nik.brown@york.ac.uk) or Chrissy Buse (christina.buse@york.ac.uk).</p>';
+
 		content.innerHTML = contentCache;
 	}
  

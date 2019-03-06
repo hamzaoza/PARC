@@ -62,7 +62,7 @@ PAD.Canvas = (function(){
 	window.addEventListener("resize", onWindowResize, false);
 	GameLoop();
 
-	// window.scene = scene;
+	window.scene = scene;
 
 	function toggleFullScreen() {
 

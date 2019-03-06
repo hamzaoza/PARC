@@ -3,23 +3,23 @@ PAD.Data.Pavilion = {
 		{
 			"name": "floor",
 			"path": "assets/models/pavilion/pavilion-floor.json",
-			"scale" : [0.7, 0.7, 0.7]
+			"scale" : [0.65, 0.65, 0.65]
 		},
 		{
 			"name": "beds",
 			"path": "assets/models/pavilion/pavilion-beds.json",
-			"scale" : [0.7, 0.7, 0.7]
+			"scale" : [0.65, 0.65, 0.65]
 		},
 		{
 			"name": "layout",
 			"path": "assets/models/pavilion/pavilion-layout.json",
-			"scale" : [0.7, 0.7, 0.7]
+			"scale" : [0.65, 0.65, 0.65]
 		}
 	],
 	"hotspots" : [
 		{
 			"name" : "ward",
-			"position" : [1.76, 5, 5.2],
+			"position" : [-0.1, 7, 4.36],
 			"data" : {
 				"type" : "image",
 				"url" : "https://placekitten.com/1920/1080",
@@ -28,7 +28,7 @@ PAD.Data.Pavilion = {
 		},
 		{
 			"name" : "vestible",
-			"position" : [1.76, 5, -4.66],
+			"position" : [-0.1, 5, -8.44],
 			"comments" : true,
 			"data" : {
 				"type" : "text",
@@ -38,7 +38,7 @@ PAD.Data.Pavilion = {
 		},
 		{
 			"name" : "surgery",
-			"position" : [-9.14, 2.52, -9.42],
+			"position" : [-14.5, 5, -13.8],
 			"data" : {
 				"type" : "video",
 				"url" : "https://www.youtube.com/embed/MbDzrNM5qYg"
@@ -46,7 +46,7 @@ PAD.Data.Pavilion = {
 		},
 		{
 			"name" : "kitchen",
-			"position" : [5.6, 2.18, -10],
+			"position" : [5.14, 5, -15.06],
 			"data" : {
 				"type" : "image",
 				"url" : "https://placekitten.com/1280/960/",
@@ -55,7 +55,7 @@ PAD.Data.Pavilion = {
 		},
 		{
 			"name" : "baths",
-			"position" : [14.28, 5, -6.80],
+			"position" : [16.16, 6.28, -11.06],
 			"comments" : true,
 			"data" : {
 				"type" : "text",
@@ -65,7 +65,7 @@ PAD.Data.Pavilion = {
 		},
 		{
 			"name" : "porch",
-			"position" : [1.76, 3, 15.2],
+			"position" : [-0.1, 7.48, 17.06],
 			"data" : {
 				"type" : "video",
 				"url" : "https://player.vimeo.com/video/87651855"
@@ -73,7 +73,7 @@ PAD.Data.Pavilion = {
 		},
 		{
 			"name" : "surgery2",
-			"position" : [-10.3, 3, -6.92],
+			"position" : [-12.4, 3.44, -11.32],
 			"data" : {
 				"type" : "video",
 				"url" : "https://www.youtube.com/embed/MbDzrNM5qYg"

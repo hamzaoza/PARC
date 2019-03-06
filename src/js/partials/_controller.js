@@ -44,8 +44,11 @@
 		gForm.classList.remove("hidden");
 
 		close.addEventListener("click", function(event){
+
 			gForm.classList.add("hidden");
+			PAD.Canvas.renderer.domElement.click();
 			event.preventDefault();
+			
 		});
 
 		event.preventDefault();
