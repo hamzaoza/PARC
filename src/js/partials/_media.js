@@ -48,7 +48,7 @@ PAD.Media = (function(mesh){
 	function showText() {
 
 		var player = document.querySelector(".content");
-		player.innerHTML = "<h1>" + data.title + "</h1>" + data.description;
+		player.innerHTML = "<h1>" + data.title + "</h1>" + data.description + "<div id='disqus_thread'></div>";
 
 		setTimeout(function(){
 			PAD.Canvas.renderer.domElement.click();
@@ -71,5 +71,7 @@ PAD.Media = (function(mesh){
 	}
 
 	PAD.Texture(data.floor);
-
+	
+	if (data.comments)
+		PAD.Comments(data.commentID);
 });

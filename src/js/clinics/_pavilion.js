@@ -32,7 +32,6 @@ PAD.Data.Pavilion = {
 			"comments" : true,
 			"data" : {
 				"type" : "text",
-				"url" : "https://www.youtube.com/embed/MbDzrNM5qYg",
 				"title" : "Vestibles",
 				"description" : "<p>Everyone was infested with head and body lice. But never fear, they had an amazing cure for this: mercury! 18th century Europe had a love affair with mercury. They ate it, they rubbed it on their skin, and then they went batshit crazy and died. On the positive side – at least it killed the lice first!</p><p>Everyone was infested with head and body lice. But never fear, they had an amazing cure for this: mercury! 18th century Europe had a love affair with mercury. They ate it, they rubbed it on their skin, and then they went batshit crazy and died. On the positive side – at least it killed the lice first!</p>"
 			}

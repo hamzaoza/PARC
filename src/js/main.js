@@ -6,6 +6,7 @@
 // @codekit-append "/partials/_sceneLights.js";
 // @codekit-append "/partials/_hotspots.js";
 // @codekit-append "/partials/_raycaster.js";
+// @codekit-append "/partials/_comments.js";
 // @codekit-append "/partials/_floor.js";
 // @codekit-append "/partials/_media.js";
 // @codekit-append "/partials/_clinics.js";
