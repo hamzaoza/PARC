@@ -37,20 +37,20 @@ PAD.Raycaster = function(group, emitter){
 			var current = intersects[0].object;
 
 			if (CLICK_INTERSECTED == current) {
-				PAD.Events.emit(emitter + "_currentItem", current.parent);
+				PAD.Events.emit(emitter + "_currentItem", current);
 			} else if (CLICK_INTERSECTED != current) {
 				
 				if (CLICK_INTERSECTED)
-					PAD.Events.emit(emitter + "_prevItem", CLICK_INTERSECTED.parent);
+					PAD.Events.emit(emitter + "_prevItem", CLICK_INTERSECTED);
 
 				CLICK_INTERSECTED = current;
-				PAD.Events.emit(emitter + "_newItem", current.parent);
+				PAD.Events.emit(emitter + "_newItem", current);
 			} 
 
 		} else {
 
 			if (CLICK_INTERSECTED) {
-				PAD.Events.emit(emitter + "_noItem", CLICK_INTERSECTED.parent);
+				PAD.Events.emit(emitter + "_noItem", CLICK_INTERSECTED);
 			}
 
 			CLICK_INTERSECTED = null;
