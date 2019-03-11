@@ -3,7 +3,7 @@
 A virtual exhibition to raise awareness about the interconnectedness of building design and infection control to create a space for dialogue between designers, architects, clinicians, patients, healthcare managers etc.
 
 ## Prerequisites
-Ensure you have [npm](https://www.npmjs.com/) and at least [CodeKit 3.6](https://codekitapp.com/) installed on your system.
+Ensure you have [npm](https://www.npmjs.com/) and at least [CodeKit 3.8](https://codekitapp.com/) installed on your system.
 
 ## Installation
 
