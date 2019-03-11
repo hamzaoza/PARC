@@ -59,27 +59,10 @@ PAD.Canvas = (function(){
 	renderer.shadowMapSoft = true;
 
 	stage.appendChild(renderer.domElement);
-	window.addEventListener("resize", onWindowResize, false);
+	window.addEventListener("resize", onWindowResize);
 	GameLoop();
 
 	window.scene = scene;
-
-	function toggleFullScreen() {
-
-		if (!document.fullscreenElement) {
-			
-			document.documentElement.requestFullscreen();
-
-		} else {
-			
-			if (document.exitFullscreen)
-				document.exitFullscreen(); 
-		}
-
-	}
-
-	var full = document.getElementById("fullscreen");
-	full.addEventListener("click", toggleFullScreen);
 
 	return {
 		scene: scene,

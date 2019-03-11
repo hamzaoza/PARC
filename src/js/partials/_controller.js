@@ -59,6 +59,25 @@
 
 	});
 
+	// Fullscreen toggle.
+
+	function toggleFullScreen() {
+
+		if (!document.fullscreenElement) {
+			
+			document.documentElement.requestFullscreen();
+
+		} else {
+			
+			if (document.exitFullscreen)
+				document.exitFullscreen(); 
+		}
+
+	}
+
+	var full = document.getElementById("fullscreen");
+	full.addEventListener("click", toggleFullScreen);
+
 	// Add Disqus
 
 	var disqus_config = function () {
