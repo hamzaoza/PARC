@@ -20,7 +20,17 @@ PAD.Texture = function(source){
 	video.src = source;
 	video.play();
 
-	floor.material.map = texture;
-	floor.material.needsUpdate = true;
+	function checkLoad() {
+
+        if (video.readyState === 4) {
+			floor.material.map = texture;
+			floor.material.needsUpdate = true;
+        } else {
+            setTimeout(checkLoad, 100);
+		}
+		
+    }
+
+	checkLoad();
 
 };

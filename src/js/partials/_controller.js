@@ -20,8 +20,12 @@
 			if (current == clinic)
 				return;
 
-			if (current)
+			if (current) {
+
 				scene.remove(current);
+				PAD.Clean(current);
+				
+			}
 			
 			if (clinic)
 				scene.add(clinic);

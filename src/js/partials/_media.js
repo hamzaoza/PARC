@@ -2,7 +2,6 @@ PAD.Media = (function(mesh){
 
 	var data = mesh.userData;
 	var content = document.querySelector(".content");
-	
 
 	function showVideo(){
 

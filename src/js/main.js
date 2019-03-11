@@ -1,13 +1,14 @@
-// @codekit-append "/partials/_pad.js";
-// @codekit-append "/clinics/_data.js";
-// @codekit-append "/partials/_helper.js";
-// @codekit-append "/partials/_events.js";
-// @codekit-append "/partials/_canvas.js";
-// @codekit-append "/partials/_sceneLights.js";
-// @codekit-append "/partials/_hotspots.js";
-// @codekit-append "/partials/_raycaster.js";
-// @codekit-append "/partials/_comments.js";
-// @codekit-append "/partials/_floor.js";
-// @codekit-append "/partials/_media.js";
-// @codekit-append "/partials/_clinics.js";
-// @codekit-append "/partials/_controller.js";
+import "./partials/_pad"
+import "./clinics/_data"
+import "./partials/_helper"
+import "./partials/_events"
+import "./partials/_canvas"
+import "./partials/_sceneLights"
+import "./partials/_hotspots"
+import "./partials/_raycaster"
+import "./partials/_comments"
+import "./partials/_floor"
+import "./partials/_media"
+import "./partials/_clinics"
+import "./partials/_clean"
+import "./partials/_controller"
