@@ -23,7 +23,8 @@ PAD.Data.Pavilion = {
 			"data" : {
 				"type" : "image",
 				"url" : "https://placekitten.com/1920/1080",
-				"caption": "Hello World!"
+				"title" : "Main Ward",
+				"description": "The main ward."
 			}
 		},
 		{

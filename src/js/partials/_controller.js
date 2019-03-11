@@ -60,7 +60,6 @@
 	});
 
 	// Fullscreen toggle.
-
 	function toggleFullScreen() {
 
 		if (!document.fullscreenElement) {
@@ -79,7 +78,6 @@
 	full.addEventListener("click", toggleFullScreen);
 
 	// Add Disqus
-
 	var disqus_config = function () {
 		this.page.url = window.location.origin + "/#!";
 		this.page.identifier = "prodhome";

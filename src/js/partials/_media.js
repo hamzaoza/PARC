@@ -9,7 +9,8 @@ PAD.Media = (function(mesh){
 		var iframe = player.querySelector("iframe");
 		var close = player.querySelector(".close");
 
-		iframe.src = data.url + "?autoplay=1&portrait=0&controls=0&showinfo=0&rel=1&modestbranding=1";
+		// iframe.src = data.url + "?autoplay=1&portrait=0&controls=0&showinfo=0&rel=1&modestbranding=1";
+		iframe.src = `https://player.vimeo.com/video/117770305?autoplay=1&title=0&byline=0&portrait=0`;
 		player.classList.remove("hidden");
 
 		close.addEventListener("click", function(event){
@@ -28,25 +29,21 @@ PAD.Media = (function(mesh){
 	function showImage() {
 
 		var player = document.getElementById("imageStage");
-		var figure = player.querySelector("figure img");
-		var caption = player.querySelector("figure figcaption");
 		var close = player.querySelector(".close");
 
-		figure.src = data.url;
-		caption.innerHTML= data.caption;
+		player.style.backgroundImage = `url( ${ data.url } )`;
 		player.classList.remove("hidden");
+
+		showText();
 
 		close.addEventListener("click", function(event){
 			
 			event.preventDefault();
-			figure.src = "";
-			caption.innerHTML = "";
 			player.classList.add("hidden");
 			PAD.Canvas.renderer.domElement.click();
+			resetText();
 
 		});
-
-		resetText();
 
 	}
 
@@ -59,13 +56,11 @@ PAD.Media = (function(mesh){
  
 	function showText() {
 
-		content.innerHTML = "<h1>" + data.title + "</h1>" + data.description;
+		content.innerHTML = `<h1>${data.title}</h1> ${data.description}`;
 
 		if (data.comments) {
-
 			content.innerHTML += "<div id='disqus_thread'></div>";
 			PAD.Comments(data.commentID);
-
 		}
 
 		setTimeout(function(){

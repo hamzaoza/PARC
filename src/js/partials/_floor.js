@@ -3,11 +3,9 @@ PAD.Texture = function(source){
 	var floor = PAD.Canvas.scene.getObjectByName("floor");
 
 	if (source == null || source == "") {
-		
 		floor.material.map = null;
 		floor.material.needsUpdate = true;
 		return;
-
 	}
 
 	var video = document.getElementById("texture");
@@ -21,15 +19,13 @@ PAD.Texture = function(source){
 	video.play();
 
 	function checkLoad() {
-
-        if (video.readyState === 4) {
+		if (video.readyState === 4) {
 			floor.material.map = texture;
 			floor.material.needsUpdate = true;
-        } else {
-            setTimeout(checkLoad, 100);
+		} else {
+			setTimeout(checkLoad, 100);
 		}
-		
-    }
+	}
 
 	checkLoad();
 
