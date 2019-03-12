@@ -11,9 +11,14 @@ PAD.Media = (function(mesh){
 		
 		video[0].setAttribute("data-plyr-embed-id", data.id);
 		
-		var plyr = Plyr.setup(video);
+		var plyr = Plyr.setup(video, {
+			title: 'Example Title',
+			autoplay: true
+		});
 
 		player.classList.remove("hidden");
+
+		showText();
 
 		close.addEventListener("click", function(event){
 			
@@ -21,10 +26,9 @@ PAD.Media = (function(mesh){
 			player.classList.add("hidden");
 			PAD.Canvas.renderer.domElement.click();
 			plyr[0].destroy();
+			resetText();
 
 		});
-
-		resetText();
 
 	}
 

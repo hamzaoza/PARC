@@ -42,7 +42,9 @@ PAD.Data.Pavilion = {
 			"position" : [-14.5, 5, -13.8],
 			"data" : {
 				"type" : "video",
-				"id" : "108018156"
+				"id" : "108018156",
+				"title" : "Surgery",
+				"description" : "<p>Another description</p>"
 			}
 		},
 		{
