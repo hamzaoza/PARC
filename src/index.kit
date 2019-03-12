@@ -55,12 +55,12 @@
 	</div>
 
 	<!-- Templates for video, image and textures -->
-	<div id="videoStage" class="hidden fullStage">
+	<div id="videoStage" class="fullStage">
 		<div id="player" data-plyr-provider="vimeo" data-plyr-embed-id=""></div>
 		<button class="close">X</button>
 	</div>
 
-	<div id="imageStage" class="hidden fullStage">
+	<div id="imageStage" class="fullStage">
 		<figure>
 			<img src="" alt="">
 			<figcaption></figcaption>
@@ -68,12 +68,13 @@
 		<button class="close">X</button>
 	</div>
 
-	<div id="surveyStage" class="hidden fullStage">
+	<div id="surveyStage" class="fullStage">
 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdmNJDigJlHExUGossstnu9-wWLwgPRC4gFANX753yPppmAqw/viewform?embedded=true" ></iframe>
 		<button class="close">X</button>
 	</div>
 
 	<video id="texture" muted autoplay loop crossOrigin="anonymous" webkit-playsinline style="display: none;"></video>
+	
 	<script src="https://cdn.plyr.io/3.5.2/plyr.js"></script>
 	<script src="js/vendor.js"></script>
 	<script src="js/main.js"></script>

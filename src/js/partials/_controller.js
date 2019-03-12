@@ -20,12 +20,8 @@
 			if (current == clinic)
 				return;
 
-			if (current) {
-
+			if (current)
 				scene.remove(current);
-				PAD.Clean(current);
-				
-			}
 			
 			if (clinic)
 				scene.add(clinic);
@@ -45,11 +41,11 @@
 		var gForm = document.getElementById("surveyStage");
 		var close = gForm.querySelector(".close");
 
-		gForm.classList.remove("hidden");
+		gForm.classList.add("open");
 
 		close.addEventListener("click", function(event){
 
-			gForm.classList.add("hidden");
+			gForm.classList.remove("open");
 			PAD.Canvas.renderer.domElement.click();
 			event.preventDefault();
 			
@@ -63,11 +59,8 @@
 	function toggleFullScreen() {
 
 		if (!document.fullscreenElement) {
-			
 			document.documentElement.requestFullscreen();
-
 		} else {
-			
 			if (document.exitFullscreen)
 				document.exitFullscreen(); 
 		}

@@ -10,7 +10,7 @@ PAD.Media = (function(mesh){
 		close.addEventListener("click", function(event){
 
 			event.preventDefault();
-			this.parentElement.classList.add("hidden");
+			this.parentElement.classList.remove("open");
 			PAD.Canvas.renderer.domElement.click();
 			resetText();
 
@@ -33,7 +33,7 @@ PAD.Media = (function(mesh){
 			autoplay: true
 		});
 
-		player.classList.remove("hidden");
+		player.classList.add("open");
 
 		showText();
 
@@ -44,7 +44,7 @@ PAD.Media = (function(mesh){
 		var player = document.getElementById("imageStage");
 
 		player.style.backgroundImage = `url( ${ data.url } )`;
-		player.classList.remove("hidden");
+		player.classList.add("open");
 
 		showText();
 
@@ -66,9 +66,9 @@ PAD.Media = (function(mesh){
 			PAD.Comments(data.commentID);
 		}
 
-		// setTimeout(function(){
-		// 	PAD.Canvas.renderer.domElement.click();
-		// }, 2000);
+		setTimeout(function(){
+			PAD.Canvas.renderer.domElement.click();
+		}, 2000);
 		
 	}
 
