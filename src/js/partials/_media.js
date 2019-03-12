@@ -2,16 +2,33 @@ PAD.Media = (function(mesh){
 
 	var data = mesh.userData;
 	var content = document.querySelector(".content");
+	var closeBTNS = document.querySelectorAll(".close");
+	var plyr;
+
+	closeBTNS.forEach(function(close){
+
+		close.addEventListener("click", function(event){
+
+			event.preventDefault();
+			this.parentElement.classList.add("hidden");
+			PAD.Canvas.renderer.domElement.click();
+			resetText();
+
+			if (plyr)
+				plyr[0].destroy();
+
+		});
+
+	});
 
 	function showVideo(){
 
 		var player = document.getElementById("videoStage");
-		var close = player.querySelector(".close");
 		var video = document.querySelectorAll("#player");
 		
 		video[0].setAttribute("data-plyr-embed-id", data.id);
 		
-		var plyr = Plyr.setup(video, {
+		plyr = Plyr.setup(video, {
 			title: 'Example Title',
 			autoplay: true
 		});
@@ -20,36 +37,16 @@ PAD.Media = (function(mesh){
 
 		showText();
 
-		close.addEventListener("click", function(event){
-			
-			event.preventDefault();
-			player.classList.add("hidden");
-			PAD.Canvas.renderer.domElement.click();
-			plyr[0].destroy();
-			resetText();
-
-		});
-
 	}
 
 	function showImage() {
 
 		var player = document.getElementById("imageStage");
-		var close = player.querySelector(".close");
 
 		player.style.backgroundImage = `url( ${ data.url } )`;
 		player.classList.remove("hidden");
 
 		showText();
-
-		close.addEventListener("click", function(event){
-			
-			event.preventDefault();
-			player.classList.add("hidden");
-			PAD.Canvas.renderer.domElement.click();
-			resetText();
-
-		});
 
 	}
 
@@ -69,9 +66,9 @@ PAD.Media = (function(mesh){
 			PAD.Comments(data.commentID);
 		}
 
-		setTimeout(function(){
-			PAD.Canvas.renderer.domElement.click();
-		}, 2000);
+		// setTimeout(function(){
+		// 	PAD.Canvas.renderer.domElement.click();
+		// }, 2000);
 		
 	}
 
