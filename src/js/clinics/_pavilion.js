@@ -34,7 +34,7 @@ PAD.Data.Pavilion = {
 			"data" : {
 				"type" : "text",
 				"title" : "Vestibles",
-				"description" : "<p>Everyone was infested with head and body lice. But never fear, they had an amazing cure for this: mercury! 18th century Europe had a love affair with mercury. They ate it, they rubbed it on their skin, and then they went batshit crazy and died. On the positive side – at least it killed the lice first!</p><p>Everyone was infested with head and body lice. But never fear, they had an amazing cure for this: mercury! 18th century Europe had a love affair with mercury. They ate it, they rubbed it on their skin, and then they went batshit crazy and died. On the positive side – at least it killed the lice first!</p>"
+				"description" : "<p>Everyone was infested with head and body lice. But never fear, they had an amazing cure for this: mercury! 18th century Europe had a love affair with mercury. They ate it, they rubbed it on their skin, and then they went batshit crazy and died. On the positive side – at least it killed the lice first!</p>"
 			}
 		},
 		{
@@ -53,7 +53,8 @@ PAD.Data.Pavilion = {
 			"data" : {
 				"type" : "image",
 				"url" : "https://placekitten.com/1280/960/",
-				"caption": "The PARC Project is exploring antimicrobial resistance and how cross infection is managed in cystic fibrosis clinics, using qualitative methods, including creative visual approaches. It is a multidisciplinary project involving sociologists of medicine and science, an academic architect, micro-biologists and a graphic artist. The research compares the way three outpatient lung infection clinics attempt to control AMR and cross-infection through the design, practices and architectural layout of their built environments. For further information contact Nik Brown (nik.brown@york.ac.uk) or Chrissy Buse (christina.buse@york.ac.uk)."
+				"title": "Kitchens",
+				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
 			}
 		},
 		{
@@ -71,7 +72,9 @@ PAD.Data.Pavilion = {
 			"position" : [-0.1, 7.48, 17.06],
 			"data" : {
 				"type" : "video",
-				"id" : "87651855"
+				"id" : "87651855",
+				"title": "Southern Porch",
+				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
 			}
 		},
 		{
@@ -79,7 +82,9 @@ PAD.Data.Pavilion = {
 			"position" : [-12.4, 3.44, -11.32],
 			"data" : {
 				"type" : "video",
-				"url" : "https://www.youtube.com/embed/MbDzrNM5qYg"
+				"id" : "87651855",
+				"title": "Surgery (Corner)",
+				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
 			}
 		}
 	]

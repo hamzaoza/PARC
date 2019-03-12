@@ -32,7 +32,7 @@
 
 	});
 
-	buttons[0].click();
+	buttons[1].click();
 
 	var gFormBTN = document.getElementById("gf-feedback");
 

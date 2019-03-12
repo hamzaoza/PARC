@@ -15,8 +15,9 @@ PAD.Data.Site3 = {
 			"position" : [8.24, 3, 21.6],
 			"data" : {
 				"type" : "image",
-				"url" : "https://placekitten.com/1920/1080",
-				"caption": "Hello World!"
+				"url" : "images/site3/hand-wash.jpg",
+				"title": "Hand Washing",
+				"description" : "<p>All patients are encouraged to wash their hands as they enter into the clinic.</p>"
 			}
 		},
 		{
@@ -24,16 +25,19 @@ PAD.Data.Site3 = {
 			"position" : [6.5, 3, 14.34],
 			"data" : {
 				"type" : "video",
-				"url" : "https://player.vimeo.com/video/87651855"
+				"id" : "87651855",
+				"title": "Touch Screen",
+				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
 			}
 		},
 		{
-			"name" : "waiting-costa",
+			"name" : "waiting-cafe",
 			"position" : [13.92, 3, 13.74],
 			"data" : {
 				"type" : "image",
 				"url" : "https://placekitten.com/1920/1080",
-				"caption": "Hello World!"
+				"title": "Waiting Area (Cafe)",
+				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
 			}
 		},
 		{
@@ -42,16 +46,18 @@ PAD.Data.Site3 = {
 			"data" : {
 				"type" : "image",
 				"url" : "https://placekitten.com/1920/1080",
-				"caption": "Hello World!"
+				"title": "Wating Area (Benches)",
+				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
 			}
 		},
 		{
 			"name" : "waiting-corner",
 			"position" : [9.78, 3, 1.24],
 			"data" : {
-				"type" : "image",
-				"url" : "https://placekitten.com/1920/1080",
-				"caption": "Hello World!"
+				"type" : "video",
+				"id" : "87651855",
+				"title": "Waiting Area (Corner)",
+				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
 			}
 		},
 		{
@@ -59,7 +65,10 @@ PAD.Data.Site3 = {
 			"position" : [22.38, 6, 3.18],
 			"data" : {
 				"type" : "video",
-				"url" : "https://www.youtube.com/embed/MbDzrNM5qYg"
+				"id" : "87651855",
+				"comments" : true,
+				"title": "Toilets",
+				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
 			}
 		},
 		{
@@ -78,7 +87,7 @@ PAD.Data.Site3 = {
 				"type" : "text",
 				"title": "Monday Clinic",
 				"description" : "Different days of the week and different spaces for different bacterial ‘cohorts’",
-				"floor" : "assets/textures/site3/site3-floor.mp4" 
+				"floor" : "assets/textures/site3/site3-floor.mp4"
 			}
 		}
 	]
