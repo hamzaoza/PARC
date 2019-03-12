@@ -13,6 +13,7 @@
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="icon" href="images/icons/favicon.ico" />
 	<link rel="apple-touch-icon" href="images/icons/apple-touch-icon-180x180.png">
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.2/plyr.css" />
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -55,7 +56,7 @@
 
 	<!-- Templates for video, image and textures -->
 	<div id="videoStage" class="hidden fullStage">
-		<iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		<div id="player" data-plyr-provider="vimeo" data-plyr-embed-id=""></div>
 		<button class="close">X</button>
 	</div>
 
@@ -73,7 +74,7 @@
 	</div>
 
 	<video id="texture" muted autoplay loop crossOrigin="anonymous" webkit-playsinline style="display: none;"></video>
-
+	<script src="https://cdn.plyr.io/3.5.2/plyr.js"></script>
 	<script src="js/vendor.js"></script>
 	<script src="js/main.js"></script>
 

@@ -42,7 +42,7 @@ PAD.Data.Pavilion = {
 			"position" : [-14.5, 5, -13.8],
 			"data" : {
 				"type" : "video",
-				"url" : "https://www.youtube.com/embed/MbDzrNM5qYg"
+				"id" : "108018156"
 			}
 		},
 		{
@@ -69,7 +69,7 @@ PAD.Data.Pavilion = {
 			"position" : [-0.1, 7.48, 17.06],
 			"data" : {
 				"type" : "video",
-				"url" : "https://player.vimeo.com/video/87651855"
+				"id" : "87651855"
 			}
 		},
 		{

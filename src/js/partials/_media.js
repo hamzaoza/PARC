@@ -6,19 +6,21 @@ PAD.Media = (function(mesh){
 	function showVideo(){
 
 		var player = document.getElementById("videoStage");
-		var iframe = player.querySelector("iframe");
 		var close = player.querySelector(".close");
+		var video = document.querySelectorAll("#player");
+		
+		video[0].setAttribute("data-plyr-embed-id", data.id);
+		
+		var plyr = Plyr.setup(video);
 
-		// iframe.src = data.url + "?autoplay=1&portrait=0&controls=0&showinfo=0&rel=1&modestbranding=1";
-		iframe.src = `https://player.vimeo.com/video/117770305?autoplay=1&title=0&byline=0&portrait=0`;
 		player.classList.remove("hidden");
 
 		close.addEventListener("click", function(event){
 			
 			event.preventDefault();
-			iframe.src = "";
 			player.classList.add("hidden");
 			PAD.Canvas.renderer.domElement.click();
+			plyr[0].destroy();
 
 		});
 

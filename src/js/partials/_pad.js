@@ -1,4 +1,4 @@
-export default window.PAD = {};
+window.PAD = {};
 
 PAD.Data = {};
 

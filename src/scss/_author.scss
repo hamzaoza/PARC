@@ -166,6 +166,25 @@ nav li {
     }
 }
 
+#videoStage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .plyr {
+        width: 100%;
+        position: relative;
+    }
+
+    .plyr__video-wrapper {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+}
+
 .content {
     width: 28%;
     height: calc(100vh - 120px);
