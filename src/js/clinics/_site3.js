@@ -2,7 +2,8 @@ PAD.Data.Site3 = {
 	"models" : [
 		{
 			"name": "floor",
-			"path": "assets/models/site3/site3-floor.json"
+			"path": "assets/models/site3/site3-floor.json",
+			"castShadow" : false
 		},
 		{
 			"name": "layout",

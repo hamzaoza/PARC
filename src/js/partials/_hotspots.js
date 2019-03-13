@@ -32,59 +32,23 @@ PAD.Hotspots = function(clinic, hotspots) {
 	};
 
 	var _newItem = function(mesh){
-		// mesh.scale.set(1.5, 1.5, 1.5);
+		
 		PAD.Media(mesh);
 		PAD.Events.off("sceneUpdate", rotate);
-		mesh.material.emissive.setHex(null);
 		mesh.material.emissiveIntensity = 0;
+
 	}
 
 	var _prevItem = function(mesh){
-		// mesh.scale.set(1, 1, 1);
 		checkCounter(mesh.userData);
 	}
 
 	var _noItem = function(mesh) {
 		PAD.Events.on("sceneUpdate", rotate);
-		// mesh.scale.set(1, 1, 1);
 		checkCounter(mesh.userData);
 	}
 
 	hotspots.forEach(function(hotspot){
-
-		// var t = 0;
-		// var increment = 0.01 + (counter * 0.005);
-		// var source = new THREE.PointLight(color, 0, hotspot.position[1] * 2, 1);
-
-		// var material = new THREE.MeshLambertMaterial({ 
-		// 	color: color,
-		// 	emissive: color,
-		// 	emissiveIntensity: 0.6
-		// });
-
-		// var shape = new THREE.Mesh(geometry, material);
-		// shape.rotation.x = PAD.Helpers.degRad(180);
-		
-		// source.position.set(hotspot.position[0], hotspot.position[1], hotspot.position[2]);
-		// source.add(shape);
-		// source.castShadow = true;
-		// source.name = "hotspot-" + hotspot.name;
-
-		// source.userData = hotspot.data;
-		// source.userData.clicked = false;
-
-		// if (hotspot.comments) {
-		// 	source.userData.comments = true;
-		// 	source.userData.commentID = (clinic.name + "-" + hotspot.name).toLowerCase();
-		// }
-
-		// PAD.Events.on("sceneUpdate", function(){
-		// 	t += increment;
-		// 	shape.position.y = Math.sin(t);
-		// });
-
-		// points.add(source);
-		// counter++;
 
 		var t = 0;
 		var increment = 0.01 + (counter * 0.005);
@@ -99,7 +63,6 @@ PAD.Hotspots = function(clinic, hotspots) {
 		
 		shape.rotation.x = PAD.Helpers.degRad(180);
 		shape.position.set(hotspot.position[0], hotspot.position[1], hotspot.position[2]);
-		shape.castShadow = false;
 		shape.name = "hotspot-" + hotspot.name;
 		shape.userData = hotspot.data;
 		shape.userData.clicked = false;

@@ -17,7 +17,7 @@
 			var clinic = PAD.Clinics[name];
 			var current = scene.getObjectByName(active);
 
-			if (current == clinic)
+			if (current === clinic)
 				return;
 
 			if (current)
