@@ -11,3 +11,13 @@ import "./partials/_floor"
 import "./partials/_media"
 import "./partials/_clinics"
 import "./partials/_controller"
+
+var g = document.createElement("script");
+g.src = "https://www.googletagmanager.com/gtag/js?id=UA-138062674-1";
+document.body.appendChild(g);
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){ dataLayer.push(arguments); }
+
+gtag('js', new Date());
+gtag('config','UA-138062674-1', {'site_speed_sample_rate':100} );
