@@ -17,11 +17,10 @@
   "homepage": "https://github.com/hamzaoza/parc#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "orbit-controls-es6": "^2.0.0",
-    "socket.io": "^2.2.0",
-    "three-orbitcontrols": "^2.102.1"
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {
+    "plyr": "^3.5.4",
     "three": "^0.102.1"
   }
 }
