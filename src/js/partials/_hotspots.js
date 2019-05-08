@@ -39,7 +39,7 @@ export const hotspots = function(clinic, hotspots){
 	}
 
 	function _newItem(mesh){
-		console.log(mesh);
+		// console.log(mesh);
 		// PAD.Media(mesh);
 		events.off("sceneUpdate", rotate);
 		gtag.event("Hotspot", "click", mesh.name);

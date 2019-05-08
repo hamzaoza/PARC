@@ -1,5 +1,3 @@
-
-
 PAD.Media = (function(mesh){
 
 	var data = mesh.userData;

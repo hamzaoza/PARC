@@ -1,4 +1,4 @@
-import { ObjectLoader, MeshPhongMaterial, Mesh } from "three"
+import * as THREE from "three"
 
 export class Helpers {
 	
@@ -8,7 +8,7 @@ export class Helpers {
 
 	loadModels(group, models){
 
-		var loader = new ObjectLoader();
+		var loader = new THREE.ObjectLoader();
 
 		models.forEach(function(model){
 
@@ -16,7 +16,7 @@ export class Helpers {
 
 				object.children.forEach(function(mesh) {
 
-					var baseMaterial = new MeshPhongMaterial({ 
+					var baseMaterial = new THREE.MeshPhongMaterial({ 
 						color: 0xffffff,
 						flatShading: true,
 						side: THREE.DoubleSide
@@ -46,13 +46,13 @@ export class Helpers {
 
 		objects.forEach(function(object) {
 
-			var baseMaterial = new MeshPhongMaterial({ 
+			var baseMaterial = new THREE.MeshPhongMaterial({ 
 				color: 0xffffff,
 				flatShading: true,
 				side: THREE.DoubleSide
 			});
 
-			var mesh = new Mesh(object.geometry, object.material || baseMaterial);
+			var mesh = new THREE.Mesh(object.geometry, object.material || baseMaterial);
 			mesh.position.set(object.position[0], object.position[1], object.position[2]);
 			mesh.rotation.set(
 				$this.degRad(object.rotation[0]), 

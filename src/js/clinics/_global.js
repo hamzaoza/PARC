@@ -1,3 +1,4 @@
+import * as THREE from "three"
 import { Options } from "./../partials/_pad"
 
 export const Global = {

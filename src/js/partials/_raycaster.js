@@ -1,3 +1,4 @@
+import * as THREE from "three"
 import { canvas } from "./_canvas";
 import { events } from "./_events"
 

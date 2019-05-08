@@ -30,4 +30,4 @@ class Events {
 
 }
 
-export const events = window.events =  new Events();
+export const events = new Events();
