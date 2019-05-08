@@ -1,12 +1,14 @@
-PAD.Helpers = {
+import { ObjectLoader, MeshPhongMaterial, Mesh } from "three"
+
+export class Helpers {
 	
-	degRad : function(deg) {
+	degRad(deg) {
 		return deg * Math.PI / 180;
-	},
+	}
 
-	loadModels : function(group, models){
+	loadModels(group, models){
 
-		var loader = new THREE.ObjectLoader();
+		var loader = new ObjectLoader();
 
 		models.forEach(function(model){
 
@@ -14,7 +16,7 @@ PAD.Helpers = {
 
 				object.children.forEach(function(mesh) {
 
-					var baseMaterial = new THREE.MeshPhongMaterial({ 
+					var baseMaterial = new MeshPhongMaterial({ 
 						color: 0xffffff,
 						flatShading: true,
 						side: THREE.DoubleSide
@@ -36,24 +38,26 @@ PAD.Helpers = {
 
 		});
 
-	},
+	}
 
-	loadGeometry : function(group, objects) {
+	loadGeometry(group, objects) {
+
+		const $this = this;
 
 		objects.forEach(function(object) {
 
-			var baseMaterial = new THREE.MeshPhongMaterial({ 
+			var baseMaterial = new MeshPhongMaterial({ 
 				color: 0xffffff,
 				flatShading: true,
 				side: THREE.DoubleSide
 			});
 
-			var mesh = new THREE.Mesh(object.geometry, object.material || baseMaterial);
+			var mesh = new Mesh(object.geometry, object.material || baseMaterial);
 			mesh.position.set(object.position[0], object.position[1], object.position[2]);
 			mesh.rotation.set(
-				PAD.Helpers.degRad(object.rotation[0]), 
-				PAD.Helpers.degRad(object.rotation[1]), 
-				PAD.Helpers.degRad(object.rotation[2])
+				$this.degRad(object.rotation[0]), 
+				$this.degRad(object.rotation[1]), 
+				$this.degRad(object.rotation[2])
 			);
 
 			mesh.name = object.name;
@@ -66,4 +70,6 @@ PAD.Helpers = {
 
 	}
 
-};
+}
+
+export const helpers = new Helpers();

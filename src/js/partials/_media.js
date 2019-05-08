@@ -1,3 +1,5 @@
+
+
 PAD.Media = (function(mesh){
 
 	var data = mesh.userData;
@@ -87,6 +89,5 @@ PAD.Media = (function(mesh){
 	}
 
 	PAD.Texture(data.floor);
-	
 	
 });

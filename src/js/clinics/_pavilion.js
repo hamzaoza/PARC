@@ -1,4 +1,4 @@
-PAD.Data.Pavilion = {
+export const Pavilion = {
 	"models" : [
 		{
 			"name": "floor",

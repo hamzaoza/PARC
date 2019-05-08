@@ -1,31 +1,35 @@
-PAD.Clinics = (function(){
+import * as THREE from "three"
+import { Data } from "./../clinics/_data"
+import { helpers } from "./_helper";
+import { SceneLights } from "./_sceneLights";
+import { hotspots } from "./_hotspots";
+
+export const Clinics = (function(){
 
 	var clinics = {};
 
-	for (var name in PAD.Data){
+	for (var name in Data){
 
-		var data = PAD.Data[name];
+		var data = Data[name];
 		var clinic = new THREE.Group();
 
 		clinic.name = name;
 
 		if (data.models)
-			PAD.Helpers.loadModels(clinic, data.models);
+			helpers.loadModels(clinic, data.models);
 
 		if (data.geometry)
-			PAD.Helpers.loadGeometry(clinic, data.geometry);
+			helpers.loadGeometry(clinic, data.geometry);
 
 		if (data.sceneLights)
-			PAD.SceneLights(clinic, data.sceneLights);
+			new SceneLights(clinic, data.sceneLights);
 		
 		if (data.hotspots)
-			PAD.Hotspots(clinic, data.hotspots);
+			hotspots(clinic, data.hotspots);
 
 		clinics[name] = clinic;
 
 	}
-
-	delete PAD.Data;
 
 	return clinics;
 
