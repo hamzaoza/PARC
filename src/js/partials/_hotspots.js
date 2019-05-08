@@ -3,111 +3,7 @@ import { Options } from "./_pad";
 import { events } from "./_events";
 import { helpers } from "./_helper";
 import { Raycaster } from "./_raycaster";
-
-// export class Hotspots {
-
-// 	constructor(clinic, hotspots){
-
-// 		this.clinic = clinic;
-
-// 		const color = Options.hotspotColor;
-// 		const geometry = new THREE.ConeBufferGeometry(0.4, 1.2, 16);
-// 		const points = new THREE.Group();
-// 		let counter = 0;
-
-// 		hotspots.forEach(function(hotspot){
-
-// 			let t = 0;
-// 			let increment = 0.01 + (counter * 0.005);
-	
-// 			const material = new THREE.MeshLambertMaterial({ 
-// 				color: color,
-// 				emissive: color,
-// 				emissiveIntensity: 0.6
-// 			});
-	
-// 			const shape = new THREE.Mesh(geometry, material);
-			
-// 			shape.rotation.x = helpers.degRad(180);
-// 			shape.position.set(hotspot.position[0], hotspot.position[1], hotspot.position[2]);
-// 			shape.name = "hotspot-" + hotspot.name;
-// 			shape.userData = hotspot.data;
-// 			shape.userData.clicked = false;
-	
-// 			if (hotspot.comments) {
-// 				shape.userData.comments = true;
-// 				shape.userData.commentID = (clinic.name + "-" + hotspot.name).toLowerCase();
-// 			}
-	
-// 			events.on("sceneUpdate", function(){
-// 				t += increment;
-// 				shape.position.y = hotspot.position[1] + Math.sin(t);
-// 			});
-	
-// 			points.add(shape);
-// 			counter++;
-	
-// 		});
-
-// 		points.name = "hotspots";
-// 		this.incCounter(counter);
-// 		clinic.add(points);
-
-// 		new Raycaster(points, clinic.name);
-// 		events.on("sceneUpdate", this.rotate.bind(this));
-// 		events.on(clinic.name + "_prevItem", this._prevItem.bind(this));
-// 		events.on(clinic.name + "_newItem", this._newItem.bind(this));
-// 		events.on(clinic.name + "_noItem", this._noItem.bind(this));
-
-// 	}
-
-// 	updateCounter(amount){
-// 		const counterDiv = document.querySelector(".counter span");
-// 		counterDiv.innerHTML = parseInt(counterDiv.innerHTML) + amount;
-// 	}
-
-// 	incCounter(amount) {
-// 		this.updateCounter(amount);
-// 	}
-
-// 	decCounter(amount) {
-// 		this.updateCounter(-amount);
-// 	}
-
-// 	checkCounter(data){
-
-// 		if (data.clicked == false) {
-// 			this.decCounter(1);
-// 			data.clicked = true;
-// 		}
-
-// 	}
-
-// 	rotate(){
-// 		this.clinic.rotation.y += helpers.degRad(0.07);
-// 	}
-
-// 	_newItem(mesh){
-		
-// 		console.log("new");
-
-// 		// PAD.Media(mesh);
-// 		events.off("sceneUpdate", this.rotate.bind(this));
-// 		mesh.material.emissiveIntensity = 0;
-
-
-// 	}
-
-// 	_prevItem(mesh){
-// 		this.checkCounter(mesh.userData);
-// 	}
-
-// 	_noItem(mesh) {
-// 		events.on("sceneUpdate", this.rotate.bind(this));
-// 		this.checkCounter(mesh.userData);
-// 	}
-
-// }
+import { gtag } from "./_google";
 
 export const hotspots = function(clinic, hotspots){
 
@@ -143,9 +39,10 @@ export const hotspots = function(clinic, hotspots){
 	}
 
 	function _newItem(mesh){
-		// console.log("new");
+		console.log(mesh);
 		// PAD.Media(mesh);
 		events.off("sceneUpdate", rotate);
+		gtag.event("Hotspot", "click", mesh.name);
 		mesh.material.emissiveIntensity = 0;
 	}
 
