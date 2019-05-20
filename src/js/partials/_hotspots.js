@@ -4,6 +4,7 @@ import { events } from "./_events";
 import { helpers } from "./_helper";
 import { Raycaster } from "./_raycaster";
 import { gtag } from "./_google";
+import { media } from "./_media";
 
 export const hotspots = function(clinic, hotspots){
 
@@ -40,7 +41,7 @@ export const hotspots = function(clinic, hotspots){
 
 	function _newItem(mesh){
 		// console.log(mesh);
-		// PAD.Media(mesh);
+		media(mesh);
 		events.off("sceneUpdate", rotate);
 		gtag.event("Hotspot", "click", mesh.name);
 		mesh.material.emissiveIntensity = 0;
