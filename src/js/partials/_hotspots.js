@@ -1,24 +1,32 @@
-PAD.Hotspots = function(clinic, hotspots) {
+import * as THREE from "three"
+import { Options } from "./_pad";
+import { events } from "./_events";
+import { helpers } from "./_helper";
+import { Raycaster } from "./_raycaster";
+import { gtag } from "./_google";
+import { media } from "./_media";
 
-	var color = PAD.Options.hotspotColor;
-	var geometry = new THREE.ConeBufferGeometry(0.4, 1.2, 16);
-	var points = new THREE.Group();
-	var counterDiv = document.querySelector(".counter span");
-	var counter = 0;
+export const hotspots = function(clinic, hotspots){
 
-	var updateCounter = function(amount){
+	const color = Options.hotspotColor;
+	const geometry = new THREE.ConeBufferGeometry(0.4, 1.2, 16);
+	const points = new THREE.Group();
+	let counter = 0;
+
+	function updateCounter(amount) {
+		const counterDiv = document.querySelector(".counter span");
 		counterDiv.innerHTML = parseInt(counterDiv.innerHTML) + amount;
-	};
+	}
 
-	var incCounter = function(amount) {
+	function incCounter(amount) {
 		updateCounter(amount);
-	};
+	}
 
-	var decCounter = function(amount) {
+	function decCounter(amount) {
 		updateCounter(-amount);
-	};
+	}
 
-	var checkCounter = function(data){
+	function checkCounter(data){
 
 		if (data.clicked == false) {
 			decCounter(1);
@@ -27,41 +35,41 @@ PAD.Hotspots = function(clinic, hotspots) {
 
 	}
 
-	var rotate = function(){
-		clinic.rotation.y += PAD.Helpers.degRad(0.07);
-	};
-
-	var _newItem = function(mesh){
-		
-		PAD.Media(mesh);
-		PAD.Events.off("sceneUpdate", rotate);
-		mesh.material.emissiveIntensity = 0;
-
+	function rotate(){
+		clinic.rotation.y += helpers.degRad(0.07);
 	}
 
-	var _prevItem = function(mesh){
+	function _newItem(mesh){
+		// console.log(mesh);
+		media(mesh);
+		events.off("sceneUpdate", rotate);
+		gtag.event("Hotspot", "click", mesh.name);
+		mesh.material.emissiveIntensity = 0;
+	}
+
+	function _prevItem(mesh){
 		checkCounter(mesh.userData);
 	}
 
-	var _noItem = function(mesh) {
-		PAD.Events.on("sceneUpdate", rotate);
+	function _noItem(mesh) {
+		events.on("sceneUpdate", rotate);
 		checkCounter(mesh.userData);
 	}
 
 	hotspots.forEach(function(hotspot){
 
-		var t = 0;
-		var increment = 0.01 + (counter * 0.005);
+		let t = 0;
+		let increment = 0.01 + (counter * 0.005);
 
-		var material = new THREE.MeshLambertMaterial({ 
+		const material = new THREE.MeshLambertMaterial({ 
 			color: color,
 			emissive: color,
 			emissiveIntensity: 0.6
 		});
 
-		var shape = new THREE.Mesh(geometry, material);
+		const shape = new THREE.Mesh(geometry, material);
 		
-		shape.rotation.x = PAD.Helpers.degRad(180);
+		shape.rotation.x = helpers.degRad(180);
 		shape.position.set(hotspot.position[0], hotspot.position[1], hotspot.position[2]);
 		shape.name = "hotspot-" + hotspot.name;
 		shape.userData = hotspot.data;
@@ -72,7 +80,7 @@ PAD.Hotspots = function(clinic, hotspots) {
 			shape.userData.commentID = (clinic.name + "-" + hotspot.name).toLowerCase();
 		}
 
-		PAD.Events.on("sceneUpdate", function(){
+		events.on("sceneUpdate", function(){
 			t += increment;
 			shape.position.y = hotspot.position[1] + Math.sin(t);
 		});
@@ -86,10 +94,11 @@ PAD.Hotspots = function(clinic, hotspots) {
 	incCounter(counter);
 	clinic.add(points);
 
-	PAD.Raycaster(points, clinic.name);
-	PAD.Events.on("sceneUpdate", rotate);
-	PAD.Events.on(clinic.name + "_prevItem", _prevItem);
-	PAD.Events.on(clinic.name + "_newItem", _newItem);
-	PAD.Events.on(clinic.name + "_noItem", _noItem);
+	new Raycaster(points, clinic.name);
 
-};
+	events.on("sceneUpdate", rotate);
+	events.on(clinic.name + "_prevItem", _prevItem);
+	events.on(clinic.name + "_newItem", _newItem);
+	events.on(clinic.name + "_noItem", _noItem);
+
+}

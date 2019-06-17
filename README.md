@@ -25,7 +25,7 @@ npm install
 
 ## About
 
-Developed in partnership between the University of York and Helen Hamlyn Centre for Design.
+Developed in partnership between the [University of York](http://parcproject.org.uk/) and [Helen Hamlyn Centre for Design](https://www.rca.ac.uk/research-innovation/helen-hamlyn-centre/).
 
 - [Prof Nik Brown](https://www.york.ac.uk/sociology/our-staff/academic/nik-brown/)
 - [Dr Christina Buse](https://www.york.ac.uk/sociology/our-staff/academic/chrissy-buse/)
@@ -37,4 +37,4 @@ Developed in partnership between the University of York and Helen Hamlyn Centre 
 - [Hamza Oza](https://hamzaoza.com)
 
 ## License
-All rights reserved 2019.
+All rights reserved 2018 - 2019.

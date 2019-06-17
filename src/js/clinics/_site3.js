@@ -1,4 +1,4 @@
-PAD.Data.Site3 = {
+export const Site3 = {
 	"models" : [
 		{
 			"name": "floor",

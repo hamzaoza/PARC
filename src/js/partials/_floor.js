@@ -1,6 +1,9 @@
-PAD.Texture = function(source){
+import * as THREE from "three"
+import { canvas } from "./_canvas";
 
-	var floor = PAD.Canvas.scene.getObjectByName("floor");
+export const Texture = function(source){
+
+	var floor = canvas.scene.getObjectByName("floor");
 
 	if (source == null || source == "") {
 		floor.material.map = null;
@@ -29,4 +32,4 @@ PAD.Texture = function(source){
 
 	checkLoad();
 
-};
+}

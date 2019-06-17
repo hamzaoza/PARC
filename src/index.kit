@@ -13,7 +13,6 @@
 	<link rel="manifest" href="site.webmanifest">
 	<link rel="icon" href="images/icons/favicon.ico" />
 	<link rel="apple-touch-icon" href="images/icons/apple-touch-icon-180x180.png">
-	<link rel="stylesheet" href="https://cdn.plyr.io/3.5.2/plyr.css" />
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -41,7 +40,10 @@
 		<button id="fullscreen">F</button>
 		<div class="selection">
 			<button class="clinic" data-clinic="Pavilion">Pavilion</button>
+			<button class="clinic" data-clinic="Site1">Site 1</button>
+			<button class="clinic" data-clinic="Site2">Site 2</button>
 			<button class="clinic" data-clinic="Site3">Site 3</button>
+			<button class="clinic" data-clinic="Skane">Skane</button>
 		</div>
 		<div class="counter"><span>0</span>hotspots</div>
 	</div>
@@ -59,7 +61,7 @@
 		<p>This is an interactive exhibition about design and the built environment - we would love to hear your views and your experiences. You can share your ideas by clicking the feedback button.</p>
 
 
-		<div id="HCB_comment_box"></div>
+		<!-- <div id="HCB_comment_box"></div> -->
 
 	</div>
 
@@ -83,17 +85,21 @@
 	</div>
 
 	<video id="texture" muted autoplay loop crossOrigin="anonymous" webkit-playsinline style="display: none;"></video>
-	
-	<script src="https://cdn.plyr.io/3.5.2/plyr.js"></script>
-	<script src="js/vendor.js"></script>
-	<script src="js/main.js"></script>
 
-	<!-- Google Analytics Code
-	<script src="https://www.google-analytics.com/analytics.js" async defer></script>
-	<script>
-		window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-		ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview');
-	</script> -->
+	<div id="resetContent" style="display: none;">
+		<h1>Pathways, Practices and Architectures</h1>
+		
+		<h3>What is the exhibition about?</h3>
+		<p>Researchers at the University of York are exploring connections between the day-to-day practices of preventing cross infection in cystic fibrosis clinics, and the design of the built environment.</p>
+
+		<h3>Why are we doing this?</h3>
+		<p>Practices of segregation and infection prevention vary across clinics, as do the buildings people work in. We aim to create dialogue around current design and practice, and explore potential for change, drawing on inspiration from past, present and future examples.</p>
+
+		<h3>How can you be involved?</h3>
+		<p>This is an interactive exhibition about design and the built environment - we would love to hear your views and your experiences. You can share your ideas by clicking the feedback button.</p>
+	</div>
+	
+	<script src="js/main.js"></script>
 
 </body>
 </html>

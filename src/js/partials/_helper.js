@@ -1,10 +1,12 @@
-PAD.Helpers = {
-	
-	degRad : function(deg) {
-		return deg * Math.PI / 180;
-	},
+import * as THREE from "three"
 
-	loadModels : function(group, models){
+export class Helpers {
+	
+	degRad(deg) {
+		return deg * Math.PI / 180;
+	}
+
+	loadModels(group, models){
 
 		var loader = new THREE.ObjectLoader();
 
@@ -36,9 +38,11 @@ PAD.Helpers = {
 
 		});
 
-	},
+	}
 
-	loadGeometry : function(group, objects) {
+	loadGeometry(group, objects) {
+
+		const $this = this;
 
 		objects.forEach(function(object) {
 
@@ -51,9 +55,9 @@ PAD.Helpers = {
 			var mesh = new THREE.Mesh(object.geometry, object.material || baseMaterial);
 			mesh.position.set(object.position[0], object.position[1], object.position[2]);
 			mesh.rotation.set(
-				PAD.Helpers.degRad(object.rotation[0]), 
-				PAD.Helpers.degRad(object.rotation[1]), 
-				PAD.Helpers.degRad(object.rotation[2])
+				$this.degRad(object.rotation[0]), 
+				$this.degRad(object.rotation[1]), 
+				$this.degRad(object.rotation[2])
 			);
 
 			mesh.name = object.name;
@@ -66,4 +70,6 @@ PAD.Helpers = {
 
 	}
 
-};
+}
+
+export const helpers = new Helpers();

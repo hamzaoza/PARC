@@ -1,11 +1,14 @@
+import { canvas } from "./_canvas"
+import { Clinics } from "./_clinics"
+
 (function(){
 
 	var buttons = document.querySelectorAll(".clinic");
-	var scene = PAD.Canvas.scene;
+	var scene = canvas.scene;
 	var active;
 
-	if (PAD.Clinics.Global)
-		scene.add(PAD.Clinics.Global);
+	if (Clinics.Global)
+		scene.add(Clinics.Global);
 
 	buttons.forEach(function(button){
 
@@ -14,7 +17,7 @@
 			event.preventDefault();
 
 			var name = button.dataset.clinic;
-			var clinic = PAD.Clinics[name];
+			var clinic = Clinics[name];
 			var current = scene.getObjectByName(active);
 
 			if (current === clinic)
@@ -46,7 +49,7 @@
 		close.addEventListener("click", function(event){
 
 			gForm.classList.remove("open");
-			PAD.Canvas.renderer.domElement.click();
+			canvas.renderer.domElement.click();
 			event.preventDefault();
 			
 		});

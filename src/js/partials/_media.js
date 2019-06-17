@@ -1,9 +1,14 @@
-PAD.Media = (function(mesh){
+import Plyr from "../../../node_modules/plyr/dist/plyr.polyfilled";
+import { canvas } from "./_canvas";
+import { comments } from "./_comments";
+import { Texture } from "./_floor";
 
-	var data = mesh.userData;
-	var content = document.querySelector(".content");
-	var closeBTNS = document.querySelectorAll(".close");
-	var plyr;
+export const media = function(mesh){
+
+	const data = mesh.userData;
+	const content = document.querySelector(".content");
+	const closeBTNS = document.querySelectorAll(".close");
+	let player;
 
 	closeBTNS.forEach(function(close){
 
@@ -14,8 +19,8 @@ PAD.Media = (function(mesh){
 			PAD.Canvas.renderer.domElement.click();
 			resetText();
 
-			if (plyr)
-				plyr[0].destroy();
+			if (Plyr)
+				Plyr[0].destroy();
 
 		});
 
@@ -23,17 +28,14 @@ PAD.Media = (function(mesh){
 
 	function showVideo(){
 
-		var player = document.getElementById("videoStage");
-		var video = document.querySelectorAll("#player");
-		
-		video[0].setAttribute("data-plyr-embed-id", data.id);
-		
-		plyr = Plyr.setup(video, {
-			title: 'Example Title',
-			autoplay: true
-		});
+		const stage = document.getElementById("videoStage");
+		const video = document.querySelectorAll("#player");
 
-		player.classList.add("open");
+		video[0].setAttribute("data-plyr-embed-id", data.id);
+
+		player = Plyr.setup(video, { autoplay: true });
+
+		stage.classList.add("open");
 
 		showText();
 
@@ -41,35 +43,33 @@ PAD.Media = (function(mesh){
 
 	function showImage() {
 
-		var player = document.getElementById("imageStage");
+		player = document.getElementById("imageStage");
 
-		player.style.backgroundImage = `url( ${ data.url } )`;
+		player.style.backgroundImage = `url(${ data.url })`;
 		player.classList.add("open");
 
 		showText();
 
 	}
 
-	function resetText() {
-
-		var contentCache = '<h1>Pathways, Practices and Architectures</h1><p>The PARC Project is exploring antimicrobial resistance and how cross infection is managed in cystic fibrosis clinics, using qualitative methods, including creative visual approaches. It is a multidisciplinary project involving sociologists of medicine and science, an academic architect, micro-biologists and a graphic artist. The research compares the way three outpatient lung infection clinics attempt to control AMR and cross-infection through the design, practices and architectural layout of their built environments. For further information contact Nik Brown (nik.brown@york.ac.uk) or Chrissy Buse (christina.buse@york.ac.uk).</p>';
-
-		content.innerHTML = contentCache;
-	}
- 
 	function showText() {
 
 		content.innerHTML = `<h1>${data.title}</h1> ${data.description}`;
 
 		if (data.comments) {
 			content.innerHTML += "<div id='disqus_thread'></div>";
-			PAD.Comments(data.commentID);
+			comments(data.commentID);
 		}
 
 		setTimeout(function(){
-			PAD.Canvas.renderer.domElement.click();
+			canvas.renderer.domElement.click();
 		}, 2000);
-		
+
+	}
+
+	function resetText() {
+		var contentCache = document.getElementById("resetContent").innerHTML;
+		content.innerHTML = contentCache;
 	}
 
 	switch (data.type) {
@@ -86,7 +86,6 @@ PAD.Media = (function(mesh){
 			break;
 	}
 
-	PAD.Texture(data.floor);
-	
-	
-});
+	Texture(data.floor);
+
+}

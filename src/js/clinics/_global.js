@@ -1,4 +1,7 @@
-PAD.Data.Global = {
+import * as THREE from "three"
+import { Options } from "./../partials/_pad"
+
+export const Global = {
 	"geometry" : [
 		{
 			"name": "WorldFloor",
@@ -14,8 +17,8 @@ PAD.Data.Global = {
 		},
 		{
 			"type": "Hemisphere",
-			"sky": PAD.Options.skyColor,
-			"ground" : PAD.Options.bgColor,
+			"sky": Options.skyColor,
+			"ground" : Options.bgColor,
 			"intensity" : 0.5
 		},
 		{
