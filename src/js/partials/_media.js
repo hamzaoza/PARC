@@ -16,11 +16,11 @@ export const media = function(mesh){
 
 			event.preventDefault();
 			this.parentElement.classList.remove("open");
-			PAD.Canvas.renderer.domElement.click();
+			canvas.renderer.domElement.click();
 			resetText();
 
-			if (Plyr)
-				Plyr[0].destroy();
+			if (player)
+				player[0].destroy();
 
 		});
 

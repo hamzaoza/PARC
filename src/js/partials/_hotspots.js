@@ -2,7 +2,7 @@ import * as THREE from "three"
 import { Options } from "./_pad";
 import { events } from "./_events";
 import { helpers } from "./_helper";
-import { Raycaster } from "./_raycaster";
+import { raycaster } from "./_raycaster";
 import { gtag } from "./_google";
 import { media } from "./_media";
 
@@ -94,7 +94,7 @@ export const hotspots = function(clinic, hotspots){
 	incCounter(counter);
 	clinic.add(points);
 
-	new Raycaster(points, clinic.name);
+	raycaster(points, clinic.name);
 
 	events.on("sceneUpdate", rotate);
 	events.on(clinic.name + "_prevItem", _prevItem);

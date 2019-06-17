@@ -2,64 +2,56 @@ import * as THREE from "three"
 import { canvas } from "./_canvas";
 import { events } from "./_events"
 
-export class Raycaster {
+export const raycaster = function(group, emitter){
 
-	constructor(group, emitter) {
+	let CLICK_INTERSECTED;
+	// const $this = this;
+	const renderer = canvas.renderer;
 
-		this.CLICK_INTERSECTED;
-		this.group = group;
-		this.emitter = emitter;
+	events.on("sceneRender", function(){
+		renderer.domElement.addEventListener("click", onClick);
+		renderer.domElement.addEventListener("touchend", onClick);
+	});
 
-		const $this = this;
-		const renderer = canvas.renderer;
-
-		events.on("sceneRender", function(){
-			renderer.domElement.addEventListener("click", $this.onClick.bind($this));
-			renderer.domElement.addEventListener("touchend", $this.onClick.bind($this));
-		});
-
-	}
-
-	onClick(event) {
+	function onClick(event) {
 
 		event.preventDefault();
 
-		const $this = this;
-		const intersects = this.rays(event, this);
+		const intersects = rays(event);
 
 		if (intersects.length > 0) {
 
 			var current = intersects[0].object;
 
-			if ($this.CLICK_INTERSECTED == current) {
+			if (CLICK_INTERSECTED == current) {
 
-				events.emit($this.emitter + "_currentItem", current);
+				events.emit(emitter + "_currentItem", current);
 
-			} else if ($this.CLICK_INTERSECTED != current) {
+			} else if (CLICK_INTERSECTED != current) {
 			
-				if ($this.CLICK_INTERSECTED)
-					events.emit($this.emitter + "_prevItem", $this.CLICK_INTERSECTED);
+				if (CLICK_INTERSECTED)
+					events.emit(emitter + "_prevItem", CLICK_INTERSECTED);
 
-				$this.CLICK_INTERSECTED = current;
+				CLICK_INTERSECTED = current;
 
-				events.emit($this.emitter + "_newItem", current);
+				events.emit(emitter + "_newItem", current);
 
 			} 
 
 		} else {
 
-			if ($this.CLICK_INTERSECTED) {
+			if (CLICK_INTERSECTED) {
 
-				events.emit($this.emitter + "_noItem", $this.CLICK_INTERSECTED);
+				events.emit(emitter + "_noItem", CLICK_INTERSECTED);
 
 			}
 
-			$this.CLICK_INTERSECTED = null;
+			CLICK_INTERSECTED = null;
 		}
 
 	}
 
-	rays(event, self) {
+	function rays(event) {
 
 		let raycaster = new THREE.Raycaster();
 		let mouse = {x: 0, y: 0};
@@ -76,9 +68,11 @@ export class Raycaster {
 		vector3D.set(mouse.x, mouse.y, 0.5);
 		vector3D.unproject(camera);
 
+		console.log(mouse);
+
 		raycaster.set(camera.position, vector3D.sub(camera.position).normalize());
 
-		return raycaster.intersectObjects(self.group.children, true);
+		return raycaster.intersectObjects(group.children, true);
 
 	}
 
