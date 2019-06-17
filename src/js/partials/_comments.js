@@ -1,4 +1,4 @@
-PAD.Comments = function(commentID) {
+export const comments = function(commentID) {
 
 	var url = window.location.origin + "/#!demo" + commentID;
 
@@ -10,4 +10,4 @@ PAD.Comments = function(commentID) {
 		}
 	});
 
-};
+}
