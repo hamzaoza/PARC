@@ -17,7 +17,6 @@ const mobileBTN = document.getElementById("mobile-nav");
 const cta = document.getElementById("cta");
 const header = document.getElementsByTagName("header")[0];
 const counter = document.getElementsByClassName("hotspots")[0];
-const dummy = document.getElementById("dummy");
 const slide = document.getElementsByClassName("slide")[0];
 const tag = document.getElementsByClassName("site-desc")[0];
 const close = document.getElementById("close");
@@ -208,21 +207,13 @@ header.addEventListener("click", function(event){
 
 });
 
-dummy.addEventListener("click", function(event){
-	event.preventDefault();
-	clearPages();
-	changeSlide();
-	pipEnter(false);
-});
 
 close.addEventListener("click", function(event) {
-
 	event.preventDefault();
 	hideMobileNav();
 	clearPages();
 	pipExit();
 	toggleClose();
-
 });
 
 stage.addEventListener(transitionEvent, function() {
