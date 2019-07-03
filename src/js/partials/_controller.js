@@ -128,6 +128,7 @@ function pipExit() {
 	main.classList.remove("pip");
 	stage.classList.remove("small");
 	counter.classList.remove("hidden");
+	// slide.classList.remove("dark");
 	stage.removeEventListener("click", onPip);
 }
 

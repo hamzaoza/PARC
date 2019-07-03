@@ -96,7 +96,7 @@ export const hotspots = function(clinic, hotspots){
 
 	raycaster(points, clinic.name);
 
-	events.on("sceneUpdate", rotate);
+	// events.on("sceneUpdate", rotate);
 	events.on(clinic.name + "_prevItem", _prevItem);
 	events.on(clinic.name + "_newItem", _newItem);
 	events.on(clinic.name + "_noItem", _noItem);

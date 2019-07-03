@@ -10,10 +10,24 @@ export const media = function(mesh){
 	
 	if (data.type != "video") {
 
-		let bg = `<div class="bg" style="background-image: url(${data.url}); background-color: ${data.colour};"></div>`;
-		let desc = `<div class="slide-desc ${data.position}"><h2>${data.title}</h2><p>${data.description}</p></div>`
+		const descpos = data.position || "top left";
+		const bgpos = data.position || "top left";
+		const content = data.description ? `<p>${data.description}</p>` : "";
+		const theme = data.theme ? "dark" : "";
 
-		slide.innerHTML = bg + desc;
+		let bg = `<div class="bg" style="background-image: url(${data.url});"></div>`;
+		let summary = `<div class="slide-desc ${descpos} ${theme}"><h2>${data.title}</h2> ${content} </div>`;
+		let quotes = "";
+
+		if (data.quotes) {
+			data.quotes.forEach(quote => {
+				quotes += `<blockquote class="rounded-small shadow ${quote.position} ${quote.colour}"><p>${quote.quote}</p><cite class="shadow">${quote.cite}</cite></blockquote>`
+			});
+		}
+
+		slide.innerHTML = bg + summary + quotes;
+		
+		
 
 	}
 

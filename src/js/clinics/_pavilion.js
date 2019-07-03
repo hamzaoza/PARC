@@ -19,73 +19,100 @@ export const Pavilion = {
 	"hotspots" : [
 		{
 			"name" : "ward",
-			"position" : [-0.1, 7, 4.36],
+			"position" : [0, 7, 10],
 			"data" : {
-				"type" : "image",
-				"url" : "https://placekitten.com/1920/1080",
+				"url" : "",
 				"title" : "Main Ward",
-				"description": "The main ward."
+				"position": "left middle",
+				"description": "The pavilion inverts internal and external space, detached from the main building, often amongst gardens, and having a tent-like cylindrical shape.",
+				"quotes" : [{
+					"quote" : "Its essential features are the separation of the ward from all others, the open window on each side of every bed, the relative lack of internal spatial divisions and the chimney flue in a central location.",
+					"cite" : "Lindsay Prior (1992)",
+					"colour" : "green",
+					"position" : "left bottom",
+				}]
 			}
 		},
 		{
-			"name" : "vestible",
-			"position" : [-0.1, 5, -8.44],
-			"comments" : true,
+			"name" : "chimney",
+			"position" : [0, 7, 4.5],
 			"data" : {
-				"type" : "text",
-				"title" : "Vestibles",
-				"description" : "<p>Everyone was infested with head and body lice. But never fear, they had an amazing cure for this: mercury! 18th century Europe had a love affair with mercury. They ate it, they rubbed it on their skin, and then they went batshit crazy and died. On the positive side – at least it killed the lice first!</p>"
+				"url" : "images/pavilion/chimney.jpg",
+				"title" : "Central Chimney",
+				"position": "left bottom",
+				"theme" : "dark",
+				"description": "The job of the central chimney was to keep air moving and circulating. The central stove drew air from surrounding windows, to evacuate air up and out through high vaulted ceilings."
 			}
 		},
 		{
-			"name" : "surgery",
-			"position" : [-14.5, 5, -13.8],
+			"name" : "windows-1",
+			"position" : [-10.68, 2.75, 7.58],
 			"data" : {
-				"type" : "video",
-				"id" : "108018156",
-				"title" : "Surgery",
-				"description" : "<p>Another description</p>"
+				"url" : "",
+				"title" : "Windows",
+				"position": "left middle",
+				"description": "Windows were situated either side of each bed with direct access to create an <em>“island of fresh air”</em>. They tended to be floor to ceiling height to maximise ventilation and natural daylight."
+			}
+		},
+		{
+			"name" : "windows-2",
+			"position" : [-10.44, 2.75, 1.26],
+			"data" : {
+				"url" : "",
+				"title" : "Windows",
+				"position": "left bottom",
+				"quotes" : [{
+					"quote" : "First rule of nursing, (is) to keep the air he breathes as pure as the external air, without chilling him.",
+					"cite" : "Florence Nightingale (1860)",
+					"colour" : "pink",
+					"position" : "center middle",
+				}]
+			}
+		},
+		{
+			"name" : "piazza",
+			"position" : [13.5, 4, 4],
+			"data" : {
+				"url" : "images/pavilion/piazza.jpg",
+				"title" : "Piazza",
+				"position": "left middle",
+				"quotes" : [{
+					"quote" : "Beds were wheeled outside onto surrounding balconies / porch / galleries during the daytime as part of the <em>“fresh air cure”</em> with easy access to outside spaces and gardens.",
+					"cite" : "Lindsay Prior (1992)",
+					"position" : "left bottom",
+					"colour" : "green"
+				}]
+			}
+		},
+		{
+			"name" : "toilets",
+			"position" : [16, 7, -16],
+			"data" : {
+				"url" : "images/pavilion/toilets.jpg",
+				"title" : "Toilets",
+				"position": "left middle",
+				"description": "Sanitary areas (toilets, baths) were situated to expel foul gasses away from the main <em>“fresh air”</em> ward.",
 			}
 		},
 		{
 			"name" : "kitchen",
-			"position" : [5.14, 5, -15.06],
+			"position" : [4.5, 7, -13.80],
 			"data" : {
-				"type" : "image",
-				"url" : "https://placekitten.com/1280/960/",
-				"title": "Kitchens",
-				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
+				"url" : "images/pavilion/kitchen.jpg",
+				"title" : "Kitchen",
+				"position": "left bottom",
+				"theme" : "dark",
 			}
 		},
 		{
-			"name" : "baths",
-			"position" : [16.16, 6.28, -11.06],
-			"comments" : true,
+			"name" : "surgery",
+			"position" : [-15, 7, -14],
 			"data" : {
-				"type" : "text",
-				"title" : "18th Century Bathrooms",
-				"description" : "<p>Everyone was infested with head and body lice. But never fear, they had an amazing cure for this: mercury! 18th century Europe had a love affair with mercury. They ate it, they rubbed it on their skin, and then they went batshit crazy and died. On the positive side – at least it killed the lice first!</p>"
+				"url" : "images/pavilion/surgery.jpg",
+				"title" : "Surgery",
+				"position": "left bottom",
+				"theme" : "dark",
 			}
 		},
-		{
-			"name" : "porch",
-			"position" : [-0.1, 7.48, 17.06],
-			"data" : {
-				"type" : "video",
-				"id" : "87651855",
-				"title": "Southern Porch",
-				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
-			}
-		},
-		{
-			"name" : "surgery2",
-			"position" : [-12.4, 3.44, -11.32],
-			"data" : {
-				"type" : "video",
-				"id" : "87651855",
-				"title": "Surgery (Corner)",
-				"description" : "<p>Etiam sodales sagittis risus. Mauris aliquet ultricies erat, id venenatis libero laoreet sit amet. Ut quis viverra enim, vitae molestie massa. Sed sed arcu nec magna vulputate accumsan. Donec tincidunt efficitur ex non tincidunt. Maecenas ac sapien augue. Praesent vulputate sem ac elit condimentum tincidunt. Suspendisse ultricies est nec varius fermentum. In hac habitasse platea dictumst.</p>"
-			}
-		}
 	]
 };
