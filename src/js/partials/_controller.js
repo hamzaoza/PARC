@@ -3,8 +3,6 @@ import { events } from "./_events";
 import { canvas } from "./_canvas"
 import { Clinics } from "./_clinics"
 
-	
-
 const change = document.getElementById("change");
 const switcher = document.getElementsByClassName("switcher")[0];
 const clinics = document.querySelectorAll(".controls button");
@@ -117,17 +115,21 @@ function pipEnter(small) {
 	if (small == true)
 		stage.classList.add("small");
 
-	stage.addEventListener("click", function(event) {
-		event.preventDefault();
-		pipExit();
-		clearPages();
-	});
+	stage.addEventListener("click", onPip);
+
+}
+
+function onPip(event) {
+	event.preventDefault();
+	pipExit();
+	clearPages();
 }
 
 function pipExit() {
 	main.classList.remove("pip");
 	stage.classList.remove("small");
 	counter.classList.remove("hidden");
+	stage.removeEventListener("click", onPip);
 }
 
 function showPage(self) {
@@ -138,7 +140,6 @@ function showPage(self) {
 }
 
 function clearPages() {
-
 	pages.forEach(function(page){
 		page.classList.remove("active");
 	});
@@ -147,14 +148,19 @@ function clearPages() {
 
 function changeSlide(){
 
-	// make changes to the content
-
 	stage.classList.remove("small");
 	slide.classList.add("active");
 
 	if (isMobile)
 		hideMobileNav();
 }
+
+function showSlide() {
+	changeSlide();
+	pipEnter(false);
+}
+
+events.on("changeSlide", showSlide);
 
 function showClose() {
 	close.classList.remove("hidden");
@@ -219,7 +225,7 @@ close.addEventListener("click", function(event) {
 
 });
 
-stage.addEventListener(transitionEvent, function(event) {
+stage.addEventListener(transitionEvent, function() {
 	events.emit("pip");
 })
 

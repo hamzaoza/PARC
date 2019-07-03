@@ -1,12 +1,23 @@
-import Plyr from "../../../node_modules/plyr/dist/plyr.polyfilled";
-import { canvas } from "./_canvas";
-import { Texture } from "./_floor";
+// import Plyr from "../../../node_modules/plyr/dist/plyr.polyfilled";
+// import { canvas } from "./_canvas";
+// import { Texture } from "./_floor";
+import { events } from "./_events";
 
 export const media = function(mesh){
 
 	const data = mesh.userData;
+	let slide = document.querySelector(".slide");
+	
+	if (data.type != "video") {
 
-	console.log(data);
+		let bg = `<div class="bg" style="background-image: url(${data.url}); background-color: ${data.colour};"></div>`;
+		let desc = `<div class="slide-desc bottom left"><h2>${data.title}</h2><p>${data.description}</p></div>`
+
+		slide.innerHTML = bg + desc;
+
+	}
+
+	events.emit("changeSlide");
 
 	// const content = document.querySelector(".content");
 	// const closeBTNS = document.querySelectorAll(".close");
@@ -88,6 +99,6 @@ export const media = function(mesh){
 	// 		break;
 	// }
 
-	Texture(data.floor);
+	// Texture(data.floor);
 
 }
