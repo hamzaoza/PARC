@@ -28,24 +28,23 @@ const isMobile = screen.width < 480 ? true : false;
 let consent = getCookie("consent") ? true : false;
 let active;
 
-function whichTransitionEvent(){
+// function whichTransitionEvent(){
 	
-	var t, el = document.createElement("fakeelement");
-	var transitions = {
-		"transition"      : "transitionend",
-		"OTransition"     : "oTransitionEnd",
-		"MozTransition"   : "transitionend",
-		"WebkitTransition": "webkitTransitionEnd"
-	}
+// 	var t, el = document.createElement("fakeelement");
+// 	var transitions = {
+// 		"transition"      : "transitionend",
+// 		"OTransition"     : "oTransitionEnd",
+// 		"MozTransition"   : "transitionend",
+// 		"WebkitTransition": "webkitTransitionEnd"
+// 	}
 
-	for (t in transitions){
-		if (el.style[t] !== undefined)
-			return transitions[t];
-	}
+// 	for (t in transitions){
+// 		if (el.style[t] !== undefined)
+// 			return transitions[t];
+// 	}
 
-}
-var transitionEvent = whichTransitionEvent();
-console.log(transitionEvent);
+// }
+// var transitionEvent = whichTransitionEvent();
 
 change.addEventListener("click", function(event){
 	toggleSwitch();
