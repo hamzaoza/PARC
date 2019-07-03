@@ -45,6 +45,7 @@ function whichTransitionEvent(){
 
 }
 var transitionEvent = whichTransitionEvent();
+console.log(transitionEvent);
 
 change.addEventListener("click", function(event){
 	toggleSwitch();
@@ -216,9 +217,9 @@ close.addEventListener("click", function(event) {
 	toggleClose();
 });
 
-stage.addEventListener(transitionEvent, function() {
-	events.emit("pip");
-})
+// stage.addEventListener("transitionEvent", function() {
+// 	// events.emit("pip");
+// })
 
 function getCookie(name) {
 	var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');

@@ -70,7 +70,7 @@ export const canvas = (function(){
 
 	// window.scene = scene;
 
-	events.on("pip", onResize);
+	// events.on("pip", onResize);
 
 	return {
 		scene: scene,

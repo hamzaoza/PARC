@@ -11,7 +11,7 @@ export const media = function(mesh){
 	if (data.type != "video") {
 
 		let bg = `<div class="bg" style="background-image: url(${data.url}); background-color: ${data.colour};"></div>`;
-		let desc = `<div class="slide-desc bottom left"><h2>${data.title}</h2><p>${data.description}</p></div>`
+		let desc = `<div class="slide-desc ${data.position}"><h2>${data.title}</h2><p>${data.description}</p></div>`
 
 		slide.innerHTML = bg + desc;
 
