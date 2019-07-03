@@ -14,7 +14,7 @@ export const hotspots = function(clinic, hotspots){
 	let counter = 0;
 
 	function updateCounter(amount) {
-		const counterDiv = document.querySelector(".counter span");
+		const counterDiv = document.querySelector(".hotspots span");
 		counterDiv.innerHTML = parseInt(counterDiv.innerHTML) + amount;
 	}
 

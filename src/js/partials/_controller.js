@@ -1,16 +1,17 @@
 import "./_poly"; // quiet
-// import { canvas } from "./_canvas"
-// import { Clinics } from "./_clinics"
+import { events } from "./_events";
+import { canvas } from "./_canvas"
+import { Clinics } from "./_clinics"
 
 
 // (function(){
 
 // 	var buttons = document.querySelectorAll(".clinic");
-// 	var scene = canvas.scene;
-// 	var active;
+	var scene = canvas.scene;
+	var active;
 
-// 	if (Clinics.Global)
-// 		scene.add(Clinics.Global);
+	if (Clinics.Global)
+		scene.add(Clinics.Global);
 
 // 	buttons.forEach(function(button){
 
@@ -39,55 +40,6 @@ import "./_poly"; // quiet
 
 // 	buttons[1].click();
 
-// 	var gFormBTN = document.getElementById("gf-feedback");
-
-// 	gFormBTN.addEventListener("click", function(event){
-
-// 		var gForm = document.getElementById("surveyStage");
-// 		var close = gForm.querySelector(".close");
-
-// 		gForm.classList.add("open");
-
-// 		close.addEventListener("click", function(event){
-
-// 			gForm.classList.remove("open");
-// 			canvas.renderer.domElement.click();
-// 			event.preventDefault();
-			
-// 		});
-
-// 		event.preventDefault();
-
-// 	});
-
-// 	// Fullscreen toggle.
-// 	function toggleFullScreen() {
-
-// 		if (!document.fullscreenElement) {
-// 			document.documentElement.requestFullscreen();
-// 		} else {
-// 			if (document.exitFullscreen)
-// 				document.exitFullscreen(); 
-// 		}
-
-// 	}
-
-// 	var full = document.getElementById("fullscreen");
-// 	full.addEventListener("click", toggleFullScreen);
-
-// 	// Add Disqus
-// 	var disqus_config = function () {
-// 		this.page.url = window.location.origin + "/#!";
-// 		this.page.identifier = "prodhome";
-// 	};
-	
-// 	var s = document.createElement("script");
-	
-// 	s.src = "https://pad-1.disqus.com/embed.js";
-// 	s.setAttribute("data-timestamp", +new Date());
-
-// 	document.body.appendChild(s);
-
 // })();
 
 const change = document.getElementById("change");
@@ -114,6 +66,8 @@ const consentDIV = document.getElementById("consent");
 let consent = getCookie("consent") ? true : false;
 const isMobile = screen.width < 480 ? true : false;
 
+
+
 change.addEventListener("click", function(event){
 	toggleSwitch();
 	event.preventDefault();
@@ -127,7 +81,19 @@ clinics.forEach(function(clinic) {
 
 		if (this.id != "present") {
 
-			// Change model
+			var site = Clinics[this.dataset.site];
+			var current = scene.getObjectByName(active);
+
+			if (current === site)
+				return;
+
+			if (current)
+				scene.remove(current);
+			
+			if (site)
+				scene.add(site);
+
+			active = this.dataset.site;
 
 			toggleSwitch();
 			
@@ -177,7 +143,10 @@ function pipEnter(small) {
 		event.preventDefault();
 		pipExit();
 		clearPages();
-	})
+	});
+
+	console.log("pipEnter");
+	events.emit("pipEnter");
 
 }
 
@@ -185,6 +154,8 @@ function pipExit() {
 	main.classList.remove("pip");
 	stage.classList.remove("small");
 	counter.classList.remove("hidden");
+	console.log("pipExit");
+	events.emit("pipExit");
 }
 
 function showPage(self) {
