@@ -68,7 +68,7 @@ export const canvas = (function(){
 	window.addEventListener("resize", onResize);
 	GameLoop();
 
-	// window.scene = scene;
+	window.scene = scene;
 
 	// events.on("pip", onResize);
 
