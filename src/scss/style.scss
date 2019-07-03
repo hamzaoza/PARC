@@ -1,13 +1,11 @@
 /* ==========================================================================
-   Import all the various Sass files in order.
-   ========================================================================== */
+Import all the various SCSS files in the appropriate order.
+========================================================================== */
 
-@import "variables";
-@import "normalize";
-// @import "toast";
-@import "./../../node_modules/plyr/src/sass/plyr";
-@import "base";
-@import "helper";
-@import "author";
-@import "media";
-@import "print";
+@import "./variables";
+@import "./normalize";
+@import "./media";
+@import "./base";
+@import "./typography";
+@import "./helper";
+@import "./layout";

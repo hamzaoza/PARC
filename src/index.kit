@@ -1,104 +1,52 @@
 <!doctype html>
-<html class="no-js" lang="en">
-
+<html class="no-js" lang="en-GB">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Pathways, Practices and Architectures</title>
-	<meta name="description" content="A virtual exhibition to raise awareness about the interconnectedness of building design and infection control to create a space for dialogue between designers, architects, clinicians, patients, healthcare managers etc.">
-
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
+	<title>Pathways, Practices and Architectures.</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#fafafa">
 	<link rel="manifest" href="site.webmanifest">
-	<link rel="icon" href="images/icons/favicon.ico" />
-	<link rel="apple-touch-icon" href="images/icons/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" href="icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:700,700i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-
 </head>
+
 <body>
-		
-	<!--[if lte IE 9]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-	<![endif]-->
-
-	<header>
-		<h1><a href="index.html">Pathways, Practices and Architectures</a></h1>
-		<div>
-			<nav>
-				<ul>
-					<li><a href="">About</a></li>
-					<li><a href="">Contact</a></li>
-					<li><a href="">Terms</a></li>
-				</ul>
-			</nav>
-			<button id="gf-feedback">Contribute</button>
-		</div>
-	</header>
-
-	<div id="stage">
-		<button id="fullscreen">F</button>
-		<div class="selection">
-			<button class="clinic" data-clinic="Pavilion">Pavilion</button>
-			<button class="clinic" data-clinic="Site1">Site 1</button>
-			<button class="clinic" data-clinic="Site2">Site 2</button>
-			<button class="clinic" data-clinic="Site3">Site 3</button>
-			<button class="clinic" data-clinic="Skane">Skane</button>
-		</div>
-		<div class="counter"><span>0</span>hotspots</div>
-	</div>
-
-	<div class="content">
-		<h1>Pathways, Practices and Architectures</h1>
-		
-		<h3>What is the exhibition about?</h3>
-		<p>Researchers at the University of York are exploring connections between the day-to-day practices of preventing cross infection in cystic fibrosis clinics, and the design of the built environment.</p>
-
-		<h3>Why are we doing this?</h3>
-		<p>Practices of segregation and infection prevention vary across clinics, as do the buildings people work in. We aim to create dialogue around current design and practice, and explore potential for change, drawing on inspiration from past, present and future examples.</p>
-
-		<h3>How can you be involved?</h3>
-		<p>This is an interactive exhibition about design and the built environment - we would love to hear your views and your experiences. You can share your ideas by clicking the feedback button.</p>
-
-
-		<!-- <div id="HCB_comment_box"></div> -->
-
-	</div>
-
-	<!-- Templates for video, image and textures -->
-	<div id="videoStage" class="fullStage">
-		<div id="player" data-plyr-provider="vimeo" data-plyr-embed-id=""></div>
-		<button class="close">X</button>
-	</div>
-
-	<div id="imageStage" class="fullStage">
-		<figure>
-			<img src="" alt="">
-			<figcaption></figcaption>
-		</figure>
-		<button class="close">X</button>
-	</div>
-
-	<div id="surveyStage" class="fullStage">
-		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc7hxo6BZ2V-LFFkQJNqV6iMwErOGmFBvVUqfn1IbtkLfBhOg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-		<button class="close">X</button>
-	</div>
-
-	<video id="texture" muted autoplay loop crossOrigin="anonymous" webkit-playsinline style="display: none;"></video>
-
-	<div id="resetContent" style="display: none;">
-		<h1>Pathways, Practices and Architectures</h1>
-		
-		<h3>What is the exhibition about?</h3>
-		<p>Researchers at the University of York are exploring connections between the day-to-day practices of preventing cross infection in cystic fibrosis clinics, and the design of the built environment.</p>
-
-		<h3>Why are we doing this?</h3>
-		<p>Practices of segregation and infection prevention vary across clinics, as do the buildings people work in. We aim to create dialogue around current design and practice, and explore potential for change, drawing on inspiration from past, present and future examples.</p>
-
-		<h3>How can you be involved?</h3>
-		<p>This is an interactive exhibition about design and the built environment - we would love to hear your views and your experiences. You can share your ideas by clicking the feedback button.</p>
-	</div>
 	
+	<div class="wrapper">
+
+		<header class="rounded shadow bounce" data-target="about">
+			<h1>Pathways, Practices <br />and Architectures</h1>
+		</header>
+
+		<main class="rounded shadow">
+
+			<!-- @import "./partials/stage.kit" -->
+			<!-- @import "./partials/slide.kit" -->
+			<!-- @import "./partials/about.kit" -->
+			<!-- @import "./partials/contact.kit" -->
+			<!-- @import "./partials/cookie.kit" -->
+			<!-- @import "./partials/gf.kit" -->
+			<!-- @import "./partials/helpers.kit" -->
+
+		</main>
+
+		<button class="rounded-small shadow yellow" id="cta" data-target="feedback">Participate</button>
+
+		<!-- @import "./partials/footer.kit" -->
+
+		<button id="dummy" class="rounded">Dummy hotspot</button>
+
+	</div>
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<!-- <script>
+	window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+	ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async></script> -->
+
 	<script src="js/main.js"></script>
 
 </body>
