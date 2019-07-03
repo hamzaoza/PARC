@@ -3,44 +3,7 @@ import { events } from "./_events";
 import { canvas } from "./_canvas"
 import { Clinics } from "./_clinics"
 
-
-// (function(){
-
-// 	var buttons = document.querySelectorAll(".clinic");
-	var scene = canvas.scene;
-	var active;
-
-	if (Clinics.Global)
-		scene.add(Clinics.Global);
-
-// 	buttons.forEach(function(button){
-
-// 		button.addEventListener("click", function(event){
-
-// 			event.preventDefault();
-
-// 			var name = button.dataset.clinic;
-// 			var clinic = Clinics[name];
-// 			var current = scene.getObjectByName(active);
-
-// 			if (current === clinic)
-// 				return;
-
-// 			if (current)
-// 				scene.remove(current);
-			
-// 			if (clinic)
-// 				scene.add(clinic);
-
-// 			active = name;
-
-// 		});
-
-// 	});
-
-// 	buttons[1].click();
-
-// })();
+	
 
 const change = document.getElementById("change");
 const switcher = document.getElementsByClassName("switcher")[0];
@@ -62,9 +25,11 @@ const tag = document.getElementsByClassName("site-desc")[0];
 const close = document.getElementById("close");
 const cookieBTN = document.getElementById("cookie");
 const consentDIV = document.getElementById("consent");
+const scene = canvas.scene;
+const isMobile = screen.width < 480 ? true : false;
 
 let consent = getCookie("consent") ? true : false;
-const isMobile = screen.width < 480 ? true : false;
+let active;
 
 function whichTransitionEvent(){
 	
@@ -81,6 +46,7 @@ function whichTransitionEvent(){
 			return transitions[t];
 	}
 
+}
 var transitionEvent = whichTransitionEvent();
 
 change.addEventListener("click", function(event){
@@ -299,3 +265,6 @@ cookieBTN.addEventListener("click", function(event) {
 	}
 
 });
+
+if (Clinics.Global)
+	scene.add(Clinics.Global);

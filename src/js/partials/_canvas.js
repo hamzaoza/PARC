@@ -73,6 +73,9 @@ export const canvas = (function(){
 	events.on("pip", onResize);
 	// events.on("pipExit", onResize);
 
+	console.log(stage);
+	console.log(renderer);
+
 	return {
 		scene: scene,
 		camera: camera,
@@ -80,5 +83,7 @@ export const canvas = (function(){
 		renderer : renderer,
 		stage : stage
 	}
+
+	
 
 })();

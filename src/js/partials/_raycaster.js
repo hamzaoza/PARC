@@ -5,12 +5,11 @@ import { events } from "./_events"
 export const raycaster = function(group, emitter){
 
 	let CLICK_INTERSECTED;
-	// const $this = this;
-	const renderer = canvas.renderer;
+	const stage = canvas.stage;
 
 	events.on("sceneRender", function(){
-		renderer.domElement.addEventListener("click", onClick);
-		renderer.domElement.addEventListener("touchend", onClick);
+		stage.addEventListener("click", onClick);
+		stage.addEventListener("touchend", onClick);
 	});
 
 	function onClick(event) {
@@ -36,15 +35,12 @@ export const raycaster = function(group, emitter){
 
 				events.emit(emitter + "_newItem", current);
 
-			} 
+			}
 
 		} else {
 
-			if (CLICK_INTERSECTED) {
-
+			if (CLICK_INTERSECTED)
 				events.emit(emitter + "_noItem", CLICK_INTERSECTED);
-
-			}
 
 			CLICK_INTERSECTED = null;
 		}
@@ -67,8 +63,6 @@ export const raycaster = function(group, emitter){
 		mouse.y = - (((event.clientY - top) / stage.offsetHeight ) * 2 - 1);
 		vector3D.set(mouse.x, mouse.y, 0.5);
 		vector3D.unproject(camera);
-
-		console.log(mouse);
 
 		raycaster.set(camera.position, vector3D.sub(camera.position).normalize());
 
