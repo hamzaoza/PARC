@@ -66,7 +66,22 @@ const consentDIV = document.getElementById("consent");
 let consent = getCookie("consent") ? true : false;
 const isMobile = screen.width < 480 ? true : false;
 
+function whichTransitionEvent(){
+	
+	var t, el = document.createElement("fakeelement");
+	var transitions = {
+		"transition"      : "transitionend",
+		"OTransition"     : "oTransitionEnd",
+		"MozTransition"   : "transitionend",
+		"WebkitTransition": "webkitTransitionEnd"
+	}
 
+	for (t in transitions){
+		if (el.style[t] !== undefined)
+			return transitions[t];
+	}
+
+var transitionEvent = whichTransitionEvent();
 
 change.addEventListener("click", function(event){
 	toggleSwitch();
@@ -83,9 +98,6 @@ clinics.forEach(function(clinic) {
 
 			var site = Clinics[this.dataset.site];
 			var current = scene.getObjectByName(active);
-
-			if (current === site)
-				return;
 
 			if (current)
 				scene.remove(current);
@@ -144,18 +156,12 @@ function pipEnter(small) {
 		pipExit();
 		clearPages();
 	});
-
-	console.log("pipEnter");
-	events.emit("pipEnter");
-
 }
 
 function pipExit() {
 	main.classList.remove("pip");
 	stage.classList.remove("small");
 	counter.classList.remove("hidden");
-	console.log("pipExit");
-	events.emit("pipExit");
 }
 
 function showPage(self) {
@@ -246,6 +252,10 @@ close.addEventListener("click", function(event) {
 	toggleClose();
 
 });
+
+stage.addEventListener(transitionEvent, function(event) {
+	events.emit("pip");
+})
 
 function getCookie(name) {
 	var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');

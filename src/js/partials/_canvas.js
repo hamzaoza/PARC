@@ -26,7 +26,6 @@ export const canvas = (function(){
 		camera.updateProjectionMatrix();
 		renderer.setSize(stageWidth, stageHeight);
 		events.emit("canvasResize");
-		console.log("changing size")
 	}
 
 	var update = function(){
@@ -71,8 +70,8 @@ export const canvas = (function(){
 
 	// window.scene = scene;
 
-	events.on("pipEnter", onResize);
-	events.on("pipExit", onResize);
+	events.on("pip", onResize);
+	// events.on("pipExit", onResize);
 
 	return {
 		scene: scene,
