@@ -14,7 +14,7 @@ export const hotspots = function(clinic, hotspots){
 	let counter = 0;
 
 	function updateCounter(amount) {
-		const counterDiv = document.querySelector(".counter span");
+		const counterDiv = document.querySelector(".hotspots span");
 		counterDiv.innerHTML = parseInt(counterDiv.innerHTML) + amount;
 	}
 
@@ -42,7 +42,7 @@ export const hotspots = function(clinic, hotspots){
 	function _newItem(mesh){
 		// console.log(mesh);
 		media(mesh);
-		events.off("sceneUpdate", rotate);
+		// events.off("sceneUpdate", rotate);
 		gtag.event("Hotspot", "click", mesh.name);
 		mesh.material.emissiveIntensity = 0;
 	}
@@ -52,7 +52,7 @@ export const hotspots = function(clinic, hotspots){
 	}
 
 	function _noItem(mesh) {
-		events.on("sceneUpdate", rotate);
+		// events.on("sceneUpdate", rotate);
 		checkCounter(mesh.userData);
 	}
 

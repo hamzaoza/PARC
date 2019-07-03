@@ -7,7 +7,7 @@ import { helpers } from "./_helper"
 export const canvas = (function(){
 
 	// variables
-	var stage = document.getElementById("stage");
+	var stage = document.getElementsByClassName("stage")[0];
 	var stageWidth = stage.offsetWidth;
 	var stageHeight = stage.offsetHeight;
 
@@ -19,13 +19,13 @@ export const canvas = (function(){
 	var controls = new OrbitControls(camera, stage);
 
 	// functions
-	var onWindowResize = function() {
+	var onResize = function() {
 		stageWidth = stage.offsetWidth;
 		stageHeight = stage.offsetHeight;
 		camera.aspect = stageWidth / stageHeight;
 		camera.updateProjectionMatrix();
 		renderer.setSize(stageWidth, stageHeight);
-		events.emit("windowResize");
+		events.emit("canvasResize");
 	}
 
 	var update = function(){
@@ -65,10 +65,12 @@ export const canvas = (function(){
 	renderer.shadowMapSoft = true;
 
 	stage.appendChild(renderer.domElement);
-	window.addEventListener("resize", onWindowResize);
+	window.addEventListener("resize", onResize);
 	GameLoop();
 
 	window.scene = scene;
+
+	// events.on("pip", onResize);
 
 	return {
 		scene: scene,

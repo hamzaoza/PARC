@@ -1,79 +1,120 @@
- /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+/* ==========================================================================
+Helper classes
+========================================================================== */
 
 /*
- * Hide visually and from screen readers
- */
+* Hide visually and from screen readers
+*/
 
- .hidden {
-    display: none !important;
-  }
-  
-  /*
-  * Hide only visually, but have it available for screen readers:
-  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-  *
-  * 1. For long content, line feeds are not interpreted as spaces and small width
-  *    causes content to wrap 1 word per line:
-  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-  */
-  
-  .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
-  }
-  
-  /*
-  * Extends the .visuallyhidden class to allow the element
-  * to be focusable when navigated to via the keyboard:
-  * https://www.drupal.org/node/897638
-  */
-  
-  .visuallyhidden.focusable:active,
-  .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
-  }
-  
-  /*
-  * Hide visually and from screen readers, but maintain layout
-  */
-  
-  .invisible {
-    visibility: hidden;
-  }
-  
-  /*
-  * Clearfix: contain floats
-  *
-  * For modern browsers
-  * 1. The space content is one way to avoid an Opera bug when the
-  *    `contenteditable` attribute is included anywhere else in the document.
-  *    Otherwise it causes space to appear at the top and bottom of elements
-  *    that receive the `clearfix` class.
-  * 2. The use of `table` rather than `block` is only necessary if using
-  *    `:before` to contain the top-margins of child elements.
-  */
-  
-  .clearfix:before,
-  .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-  }
-  
-  .clearfix:after {
-    clear: both;
-  }  
+.hidden { display: none !important; }
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	/* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	white-space: inherit;
+	width: auto;
+	}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.clearfix:after { clear: both; }
+
+.shadow { box-shadow: 0 0 30px rgba($black, 0.35); }
+
+.rounded {
+	border-radius: $radius;
+	padding: $padding;
+	@include respond-to(tablets) { padding: $padding-small; }
+	@include respond-to(phones) { border-radius: 0; padding: $padding-small;}
+}
+
+.rounded-small {
+	border-radius: $radius-small;
+	padding: $padding-small;
+	@include respond-to(phones) { padding: $padding / 3; }
+}
+
+nav.rounded-small { 
+	padding: $padding-small $padding;
+	@include respond-to(phones) { padding: 0 $padding-small; }
+}
+
+.scrollbar, iframe body {
+	
+	overflow-y: auto;
+	width: 100%;
+	-webkit-overflow-scrolling: touch;
+
+	&::-webkit-scrollbar-button { display: none;}
+    &::-webkit-scrollbar-thumb { background-color: $gray-dark; border-radius: 3px;}
+    &::-webkit-scrollbar-thumb:hover { background-color: $gray-dark; }
+    &::-webkit-scrollbar-track { background-color: transparent; width: 20px;}
+    &::-webkit-scrollbar { width: 6px;}
+
+    scrollbar-color: $gray-dark transparent;
+	scrollbar-width: thin;
+
+}
+
+.bounce:active, button:active {
+	transform: scale(0.8);
+	box-shadow: none;
+}
