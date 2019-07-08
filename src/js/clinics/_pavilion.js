@@ -100,6 +100,7 @@ export const Pavilion = {
 			"data" : {
 				"url" : "images/pavilion/kitchen.jpg",
 				"title" : "Kitchen",
+				"description": "Image courtesy of <a href='http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&'>Penn Libraries, University of Pennsylvania</a>.",
 				"position": "left bottom",
 				"theme" : "dark",
 			}

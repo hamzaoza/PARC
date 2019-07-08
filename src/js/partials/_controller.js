@@ -24,27 +24,34 @@ const cookieBTN = document.getElementById("cookie");
 const consentDIV = document.getElementById("consent");
 const scene = canvas.scene;
 const isMobile = screen.width < 480 ? true : false;
+const anchors = document.getElementsByTagName("a");
 
 let consent = getCookie("consent") ? true : false;
 let active;
 
-// function whichTransitionEvent(){
+function whichTransitionEvent(){
 	
-// 	var t, el = document.createElement("fakeelement");
-// 	var transitions = {
-// 		"transition"      : "transitionend",
-// 		"OTransition"     : "oTransitionEnd",
-// 		"MozTransition"   : "transitionend",
-// 		"WebkitTransition": "webkitTransitionEnd"
-// 	}
+	var t, el = document.createElement("fakeelement");
+	var transitions = {
+		"transition"      : "transitionend",
+		"OTransition"     : "oTransitionEnd",
+		"MozTransition"   : "transitionend",
+		"WebkitTransition": "webkitTransitionEnd"
+	}
 
-// 	for (t in transitions){
-// 		if (el.style[t] !== undefined)
-// 			return transitions[t];
-// 	}
+	for (t in transitions){
+		if (el.style[t] !== undefined)
+			return transitions[t];
+	}
 
-// }
-// var transitionEvent = whichTransitionEvent();
+}
+var transitionEvent = whichTransitionEvent();
+
+for (let anchor of anchors) {
+	const exp = new RegExp('/' + window.location.host + '/');
+	if (!exp.test(anchor.href))
+		anchor.setAttribute("target", "_blank");
+}
 
 change.addEventListener("click", function(event){
 	toggleSwitch();
@@ -60,7 +67,6 @@ clinics.forEach(function(clinic) {
 
 	clinic.addEventListener("click", switchModel);
 	clinic.addEventListener("touchend", switchModel);
-
 	clinic.addEventListener("mouseover", function(event){
 		event.preventDefault();
 		tag.innerHTML = this.dataset.description;
@@ -136,7 +142,6 @@ function pipExit() {
 	main.classList.remove("pip");
 	stage.classList.remove("small");
 	counter.classList.remove("hidden");
-	// slide.classList.remove("dark");
 	stage.removeEventListener("click", onPip);
 	stage.removeEventListener("touchstart", onPip);
 }
@@ -205,8 +210,11 @@ mobileBTN.addEventListener("click", function(event){
 	toggleClose();
 });
 
-header.addEventListener("click", function(event){
-	
+header.addEventListener("click", showHome);
+header.addEventListener("touchstart", showHome);
+
+function showHome(event) {
+
 	event.preventDefault();
 	// showPage(this);
 
@@ -215,7 +223,7 @@ header.addEventListener("click", function(event){
 	if (!switcher.classList.contains("active"))
 		change.click();
 
-});
+}
 
 
 close.addEventListener("click", function(event) {
@@ -226,9 +234,9 @@ close.addEventListener("click", function(event) {
 	toggleClose();
 });
 
-// stage.addEventListener("transitionEvent", function() {
-// 	// events.emit("pip");
-// })
+stage.addEventListener(transitionEvent, function() {
+	events.emit("pip");
+})
 
 function getCookie(name) {
 	var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
@@ -269,7 +277,7 @@ cookieBTN.addEventListener("click", function(event) {
 		setCookie("consent", true, 365);
 		consent = true;
 		updateConsent();
-	}
+	} 
 
 });
 

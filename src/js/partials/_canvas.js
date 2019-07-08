@@ -66,11 +66,11 @@ export const canvas = (function(){
 
 	stage.appendChild(renderer.domElement);
 	window.addEventListener("resize", onResize);
+	events.on("pip", onResize);
+	
 	GameLoop();
 
 	window.scene = scene;
-
-	// events.on("pip", onResize);
 
 	return {
 		scene: scene,
