@@ -431,3 +431,13 @@ footer {
 }
 
 #ie { padding: 150px; }
+
+
+#feedback > div {
+
+	@include respond-to(phones) {
+		margin: 0 -1rem;
+		width: 110%;
+	}
+
+}
