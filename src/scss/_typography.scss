@@ -97,7 +97,8 @@ blockquote {
 	cite {
 		position: absolute;
 		background-color: inherit;
-		background-image: linear-gradient(transparent, rgba(black, 0.15));
+		// background-image: linear-gradient(transparent, rgba(black, 0.15));
+		background-image: inherit;
 		border-radius: 0.5rem;
 		padding: 1rem;
 		line-height: 1;
@@ -113,6 +114,10 @@ blockquote {
 	&.red { background-color: $red; }
 	&.pink { background-color: $pink; }
 	&.green { background-color: $green; }
+	&.orange { background-color: $orange; }
+	&.grad-orange-pink { background-image: linear-gradient(135deg, #FEE140 0%, #FA709A 100%);}
+	&.grad-pink-blue { background-image: linear-gradient(-45deg, #00DBDE 0%, #FC00FF 100%);}
+	&.grad-orange { background-image: linear-gradient(180deg, #FFB700 0%, #FFA500 100%);}
 	
 	&.right cite { left: $margin-small; right: auto;}
 	

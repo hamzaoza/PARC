@@ -11,12 +11,13 @@ export const media = function(mesh){
 	if (data.type != "video") {
 
 		const descpos = data.position || "top left";
-		const bgpos = data.position || "center";
+		const bgpos = data.bgPosition || "center";
+		const bgcolor = data.bgColour || "";
 		const content = data.description ? `<p>${data.description}</p>` : "";
 		const theme = data.theme ? "dark" : "";
 		const credit = data.credit ? `<small><a href="${data.credit.link}" target="_blank">${data.credit.text}</a></small>` : "";
 
-		let bg = `<div class="bg" style="background-image: url(${data.url}); background-position: ${bgpos}"></div>`;
+		let bg = `<div class="bg" style="background-image: url(${data.url}); background-position: ${bgpos}; background-color: ${bgcolor};"></div>`;
 		let summary = `<div class="slide-desc ${descpos} ${theme}"><h2>${data.title}</h2> ${content} ${credit}</div>`;
 		let quotes = "";
 

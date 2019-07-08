@@ -346,7 +346,6 @@ footer {
 		margin: -$margin;
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center;
 	}
 
 	@include respond-to(phones) {
