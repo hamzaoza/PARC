@@ -4,7 +4,7 @@ Typography CSS
 
 html {
 	font-family: $font-primary;
-	line-height: 1.5;
+	line-height: 1.6;
 	font-weight: 400;
 	color: $black;
 	
@@ -54,6 +54,7 @@ a {
 .dark a {
 	color: $white;
 	border-bottom-color: $white;
+	&:hover { text-decoration: none; border-bottom-color: transparent; }
 }
 
 button {

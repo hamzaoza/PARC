@@ -30,7 +30,11 @@ export const Pavilion = {
 					"cite" : "Lindsay Prior (1992)",
 					"colour" : "green",
 					"position" : "left bottom",
-				}]
+				}],
+				"credit" : {
+					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
+					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+				},
 			}
 		},
 		{
@@ -41,7 +45,11 @@ export const Pavilion = {
 				"title" : "Central Chimney",
 				"position": "left bottom",
 				"theme" : "dark",
-				"description": "The job of the central chimney was to keep air moving and circulating. The central stove drew air from surrounding windows, to evacuate air up and out through high vaulted ceilings."
+				"description": "The job of the central chimney was to keep air moving and circulating. The central stove drew air from surrounding windows, to evacuate air up and out through high vaulted ceilings.",
+				"credit" : {
+					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
+					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+				},
 			}
 		},
 		{
@@ -51,7 +59,11 @@ export const Pavilion = {
 				"url" : "",
 				"title" : "Windows",
 				"position": "left middle",
-				"description": "Windows were situated either side of each bed with direct access to create an <em>“island of fresh air”</em>. They tended to be floor to ceiling height to maximise ventilation and natural daylight."
+				"description": "Windows were situated either side of each bed with direct access to create an <em>“island of fresh air”</em>. They tended to be floor to ceiling height to maximise ventilation and natural daylight.",
+				"credit" : {
+					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
+					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+				},
 			}
 		},
 		{
@@ -65,7 +77,7 @@ export const Pavilion = {
 					"quote" : "First rule of nursing, (is) to keep the air he breathes as pure as the external air, without chilling him.",
 					"cite" : "Florence Nightingale (1860)",
 					"colour" : "pink",
-					"position" : "center middle",
+					"position" : "center middle"
 				}]
 			}
 		},
@@ -81,7 +93,11 @@ export const Pavilion = {
 					"cite" : "Lindsay Prior (1992)",
 					"position" : "left bottom",
 					"colour" : "green"
-				}]
+				}],
+				"credit" : {
+					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
+					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+				},
 			}
 		},
 		{
@@ -91,7 +107,7 @@ export const Pavilion = {
 				"url" : "images/pavilion/toilets.jpg",
 				"title" : "Toilets",
 				"position": "left middle",
-				"description": "Sanitary areas (toilets, baths) were situated to expel foul gasses away from the main <em>“fresh air”</em> ward.",
+				"description": "Sanitary areas (toilets, baths) were situated to expel foul gasses away from the main <em>“fresh air”</em> ward."
 			}
 		},
 		{
@@ -100,9 +116,12 @@ export const Pavilion = {
 			"data" : {
 				"url" : "images/pavilion/kitchen.jpg",
 				"title" : "Kitchen",
-				"description": "Image courtesy of <a href='http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&'>Penn Libraries, University of Pennsylvania</a>.",
 				"position": "left bottom",
 				"theme" : "dark",
+				"credit" : {
+					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
+					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+				},
 			}
 		},
 		{
@@ -113,6 +132,10 @@ export const Pavilion = {
 				"title" : "Surgery",
 				"position": "left bottom",
 				"theme" : "dark",
+				"credit" : {
+					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
+					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+				},
 			}
 		},
 	]
