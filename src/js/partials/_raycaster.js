@@ -9,7 +9,7 @@ export const raycaster = function(group, emitter){
 
 	events.on("sceneRender", function(){
 		stage.addEventListener("click", onClick);
-		stage.addEventListener("touchend", onClick);
+		stage.addEventListener("touchstart", onClick);
 	});
 
 	function onClick(event) {
@@ -58,9 +58,11 @@ export const raycaster = function(group, emitter){
 		let top =  rect.top + document.body.scrollTop;
 		let left = rect.left + document.body.scrollLeft;
 		let vector3D = mouse3D.clone().unproject(camera);
+		let x = event.clientX || event.touches[0].clientX;
+		let y = event.clientY || event.touches[0].clientY;
 
-		mouse.x = ((event.clientX - left) / stage.offsetWidth ) * 2 - 1;
-		mouse.y = - (((event.clientY - top) / stage.offsetHeight ) * 2 - 1);
+		mouse.x = ((x - left) / stage.offsetWidth ) * 2 - 1;
+		mouse.y = - (((y - top) / stage.offsetHeight ) * 2 - 1);
 		vector3D.set(mouse.x, mouse.y, 0.5);
 		vector3D.unproject(camera);
 

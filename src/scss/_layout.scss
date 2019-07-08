@@ -317,6 +317,7 @@ footer {
 
 .slide {
 
+	background: $white;
 	position: relative;
 	overflow: hidden;
 	height: 0;
@@ -380,13 +381,13 @@ footer {
 
 #close { z-index: 150; }
 
-#dummy {
-	position: absolute;
-	left: 0;
-	top: 10rem;
-	margin: 0;
-	padding: 1rem;
-}
+// #dummy {
+// 	position: absolute;
+// 	left: 0;
+// 	top: 10rem;
+// 	margin: 0;
+// 	padding: 1rem;
+// }
 
 .logos {
 	

@@ -51,36 +51,15 @@ change.addEventListener("click", function(event){
 	event.preventDefault();
 });
 
+change.addEventListener("touchend", function(event){
+	toggleSwitch();
+	event.preventDefault();
+});
+
 clinics.forEach(function(clinic) {
 
-	clinic.addEventListener("click", function(event){
-
-		event.preventDefault();
-
-		if (this.id != "present") {
-
-			var site = Clinics[this.dataset.site];
-			var current = scene.getObjectByName(active);
-
-			if (current)
-				scene.remove(current);
-			
-			if (site)
-				scene.add(site);
-
-			active = this.dataset.site;
-
-			toggleSwitch();
-			
-			timeline.classList.add("active");
-			sites.classList.remove("active");
-
-		} else {
-			timeline.classList.remove("active");
-			sites.classList.add("active");
-		}
-
-	});
+	clinic.addEventListener("click", switchModel);
+	clinic.addEventListener("touchend", switchModel);
 
 	clinic.addEventListener("mouseover", function(event){
 		event.preventDefault();
@@ -88,6 +67,34 @@ clinics.forEach(function(clinic) {
 	});
 
 });
+
+function switchModel(event) {
+
+	event.preventDefault();
+
+	if (this.id != "present") {
+
+		var site = Clinics[this.dataset.site];
+		var current = scene.getObjectByName(active);
+
+		if (current)
+			scene.remove(current);
+		
+		if (site)
+			scene.add(site);
+
+		active = this.dataset.site;
+
+		toggleSwitch();
+		
+		timeline.classList.add("active");
+		sites.classList.remove("active");
+
+	} else {
+		timeline.classList.remove("active");
+		sites.classList.add("active");
+	}
+}
 
 
 function toggleSwitch() {
@@ -115,6 +122,7 @@ function pipEnter(small) {
 		stage.classList.add("small");
 
 	stage.addEventListener("click", onPip);
+	stage.addEventListener("touchstart", onPip);
 
 }
 
@@ -130,6 +138,7 @@ function pipExit() {
 	counter.classList.remove("hidden");
 	// slide.classList.remove("dark");
 	stage.removeEventListener("click", onPip);
+	stage.removeEventListener("touchstart", onPip);
 }
 
 function showPage(self) {
