@@ -45,7 +45,7 @@ h4 { font-size: 1.125rem; margin: 0;}
 a {
 	color: $theme;
 	text-decoration: none;
-	border-bottom: dotted 1px $theme;
+	border-bottom: solid 1px $theme;
 
 	&:hover { text-decoration: none; border-bottom-color: transparent; }
 
@@ -91,20 +91,21 @@ blockquote {
 	color: white;
 	position: relative;
 	margin: 0;
+	font-weight: 700;
+	line-height: 1.5;
+	text-shadow: 0 0 2px rgba($black, 0.5);
 	
 	p:last-of-type { margin-bottom: 0; }
 	
 	cite {
 		position: absolute;
 		background-color: inherit;
-		// background-image: linear-gradient(transparent, rgba(black, 0.15));
 		background-image: inherit;
 		border-radius: 0.5rem;
 		padding: 1rem;
 		line-height: 1;
 		bottom: -$margin-small;
 		right: $margin-small;
-		font-weight: 700;
 		font-size: 0.875rem;
 		font-style: normal;
 	}
@@ -115,7 +116,8 @@ blockquote {
 	&.pink { background-color: $pink; }
 	&.green { background-color: $green; }
 	&.orange { background-color: $orange; }
-	&.grad-orange-pink { background-image: linear-gradient(135deg, #FEE140 0%, #FA709A 100%);}
+	&.gray, &.grey { background-color: $gray-dark; color: $black; text-shadow: none;}
+	&.grad-orange-pink { background-image: linear-gradient(135deg, #FEE140 0%, #FA709A 100%); color: $black; text-shadow: none;}
 	&.grad-pink-blue { background-image: linear-gradient(-45deg, #00DBDE 0%, #FC00FF 100%);}
 	&.grad-orange { background-image: linear-gradient(180deg, #FFB700 0%, #FFA500 100%);}
 	

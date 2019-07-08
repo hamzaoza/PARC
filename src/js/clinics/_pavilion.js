@@ -75,7 +75,7 @@ export const Pavilion = {
 			"data" : {
 				"url" : "images/pavilion/windows-2.jpg",
 				"title" : "Windows",
-				"position": "left bottom",
+				"position": "center bottom",
 				"theme" : "dark",
 				"quotes" : [{
 					"quote" : "First rule of nursing, (is) to keep the air he breathes as pure as the external air, without chilling him.",

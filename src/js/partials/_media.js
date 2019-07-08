@@ -11,21 +11,29 @@ export const media = function(mesh){
 	if (data.type != "video") {
 
 		const descpos = data.position || "top left";
-		const bgpos = data.bgPosition || "center";
-		const bgcolor = data.bgColour || "";
 		const content = data.description ? `<p>${data.description}</p>` : "";
-		const theme = data.theme ? "dark" : "";
 		const credit = data.credit ? `<small><a href="${data.credit.link}" target="_blank">${data.credit.text}</a></small>` : "";
+		const bgImage = data.url ? `background-image: url(${data.url});` : "";
 
-		let bg = `<div class="bg" style="background-image: url(${data.url}); background-position: ${bgpos}; background-color: ${bgcolor};"></div>`;
-		let summary = `<div class="slide-desc ${descpos} ${theme}"><h2>${data.title}</h2> ${content} ${credit}</div>`;
+		let bg = `<div class="bg" style="${bgImage}"></div>`;
+		let summary = `<div class="slide-desc ${descpos}"><h2>${data.title}</h2> ${content} ${credit}</div>`;
 		let quotes = "";
 
-		if (data.quotes) {
+		if (data.quotes && data.quotes.length == 1 && !content) {
+			
+			const quote = data.quotes[0];
+			const cite = quote.cite ? `<cite class="shadow">${quote.cite}</cite>` : "";
+			summary = `<div class="slide-desc ${descpos}"><h2>${data.title}</h2>${credit}<blockquote class="rounded-small shadow ${quote.colour}"><p>${quote.quote}</p>${cite}</blockquote></div>`;
+
+		} else if (data.quotes) {
 			data.quotes.forEach(quote => {
-				quotes += `<blockquote class="rounded-small shadow ${quote.position} ${quote.colour}"><p>${quote.quote}</p><cite class="shadow">${quote.cite}</cite></blockquote>`
+				const cite = quote.cite ? `<cite class="shadow">${quote.cite}</cite>` : "";
+				quotes += `<blockquote class="rounded-small shadow ${quote.position} ${quote.colour}"><p>${quote.quote}</p>${cite}</blockquote>`
 			});
 		}
+
+		if (data.theme)
+			slide.classList.add(data.theme);
 
 		slide.innerHTML = bg + summary + quotes;
 
