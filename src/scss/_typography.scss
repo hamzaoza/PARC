@@ -51,6 +51,11 @@ a {
 
 }
 
+.dark a {
+	color: $white;
+	border-bottom-color: $white;
+}
+
 button {
 	
 	background: none;
