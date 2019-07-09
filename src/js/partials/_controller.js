@@ -2,6 +2,7 @@ import "./_poly"; // quiet
 import { events } from "./_events";
 import { canvas } from "./_canvas"
 import { Clinics } from "./_clinics"
+import { gtag } from "./_google";
 
 const change = document.getElementById("change");
 const switcher = document.getElementsByClassName("switcher")[0];
@@ -96,6 +97,8 @@ function switchModel(event) {
 		timeline.classList.add("active");
 		sites.classList.remove("active");
 
+		gtag.event("Model", "click", active);
+
 	} else {
 		timeline.classList.remove("active");
 		sites.classList.add("active");
@@ -152,6 +155,7 @@ function showPage(self) {
 	document.getElementById(self.dataset.target).classList.add("active");
 	counter.classList.add("hidden");
 	pipEnter(true);
+	gtag.event("Page", "click", upperCase(self.dataset.target));
 }
 
 function clearPages() {
@@ -224,6 +228,8 @@ function showHome(event) {
 	if (!switcher.classList.contains("active"))
 		change.click();
 
+	gtag.event("Page", "click", "Home");
+
 }
 
 
@@ -281,6 +287,10 @@ cookieBTN.addEventListener("click", function(event) {
 	} 
 
 });
+
+function upperCase(str) {
+	return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
 
 if (Clinics.Global)
 	scene.add(Clinics.Global);
