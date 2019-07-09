@@ -21,19 +21,16 @@ const counter = document.getElementsByClassName("hotspots")[0];
 const slide = document.getElementsByClassName("slide")[0];
 const tag = document.getElementsByClassName("site-desc")[0];
 const close = document.getElementById("close");
-const cookieBTN = document.getElementById("cookie");
-const consentDIV = document.getElementById("consent");
 const scene = canvas.scene;
 const isMobile = screen.width < 480 ? true : false;
 const anchors = document.getElementsByTagName("a");
-
-let consent = getCookie("consent") ? true : false;
+const transitionEvent = whichTransitionEvent();
 let active;
 
 function whichTransitionEvent(){
 	
 	var t, el = document.createElement("fakeelement");
-	var transitions = {
+	const transitions = {
 		"transition"      : "transitionend",
 		"OTransition"     : "oTransitionEnd",
 		"MozTransition"   : "transitionend",
@@ -46,7 +43,6 @@ function whichTransitionEvent(){
 	}
 
 }
-var transitionEvent = whichTransitionEvent();
 
 for (let anchor of anchors) {
 	const exp = new RegExp('/' + window.location.host + '/');
@@ -245,48 +241,7 @@ stage.addEventListener(transitionEvent, function() {
 	events.emit("pip");
 })
 
-function getCookie(name) {
-	var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
-	return v ? v[2] : null;
-}
 
-function setCookie(name, value, days) {
-	var d = new Date;
-	d.setTime(d.getTime() + 24*60*60*1000*days);
-	document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
-}
-
-function deleteCookie(name) { setCookie(name, '', -1); }
-
-function updateConsent() {
-
-	if (consent) {
-		consentDIV.innerHTML = "Opted In";
-		cookieBTN.innerHTML = "Opt Out";
-	} else {
-		consentDIV.innerHTML = "Opted Out";
-		cookieBTN.innerHTML = "Opt In";
-	}
-	
-}
-
-updateConsent();
-
-cookieBTN.addEventListener("click", function(event) {
-
-	event.preventDefault();
-
-	if (consent) {
-		deleteCookie("consent");
-		consent = false;
-		updateConsent();
-	} else {
-		setCookie("consent", true, 365);
-		consent = true;
-		updateConsent();
-	} 
-
-});
 
 function upperCase(str) {
 	return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});

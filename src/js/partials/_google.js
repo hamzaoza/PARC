@@ -4,6 +4,7 @@ class GTag {
 
 		const g = document.createElement("script");
 		
+		g.setAttribute("id", "analytics");
 		g.src = "https://www.google-analytics.com/analytics.js";
 		document.body.appendChild(g);
 
@@ -11,9 +12,9 @@ class GTag {
 		
 		this.ga.q = [];
 		this.ga.l = +new Date;
-		this.ga('create', id, {'siteSpeedSampleRate': 100});
-		this.ga('set','transport','beacon');
-		this.ga('send', 'pageview');
+		this.ga("create", id, {"siteSpeedSampleRate": 100});
+		this.ga("set","transport","beacon");
+		this.ga("send", "pageview");
 
 	}
 
@@ -23,7 +24,7 @@ class GTag {
 
 	event(category, action, label) {
 		if (typeof window.ga !== "undefined")
-			window.ga('send', 'event', category, action, label);
+			window.ga("send", "event", category, action, label);
 	}
 
 }
