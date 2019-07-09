@@ -57,7 +57,7 @@ a {
 	&:hover { text-decoration: none; border-bottom-color: transparent; }
 }
 
-button {
+button, input[type=submit] {
 	
 	background: none;
 	border: 0;
@@ -125,3 +125,32 @@ blockquote {
 	&.right cite { left: $margin-small; right: auto;}
 	
 }
+
+label {
+	cursor: pointer;
+	font-weight: 700;
+	display: block;
+}
+
+input, textarea {
+	width: 70%;
+	border: solid 1px $gray-dark;
+	margin-bottom: $margin-small;
+	padding: $padding-small / 2;
+	border-radius: $radius-small / 2;
+
+	&:focus {
+		background: rgba($orange, 0.1);
+		border-color: $orange;
+	}
+
+	&:valid { border-color: $green; }
+
+}
+
+textarea {
+	min-height: 10rem;
+	width: 95%;
+}
+
+input[type=submit] { width: auto; }
