@@ -36,7 +36,7 @@ export const hotspots = function(clinic, hotspots){
 	}
 
 	function rotate(){
-		clinic.rotation.y += helpers.degRad(0.07);
+		clinic.rotation.y += helpers.degRad(0.04);
 	}
 
 	function _newItem(mesh){
@@ -59,7 +59,7 @@ export const hotspots = function(clinic, hotspots){
 	hotspots.forEach(function(hotspot){
 
 		let t = 0;
-		let increment = 0.01 + (counter * 0.005);
+		let increment = 0.005 + (counter * 0.001);
 
 		const material = new THREE.MeshLambertMaterial({ 
 			color: color,

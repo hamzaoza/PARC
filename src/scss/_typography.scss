@@ -73,7 +73,7 @@ button, input[type=submit] {
 	&.blue { background-color: $blue; color: $white;}
 	&.dark { background-color: $black; color: $white;}
 	&.white { background-color: $white; }
-	&.gray { background-color: $gray-dark; }
+	&.gray { background-color: $gray-light; }
 
 	&:disabled { background: $gray-dark; cursor: not-allowed; }
 
