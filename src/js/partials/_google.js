@@ -1,7 +1,9 @@
+import { events } from "./_events";
+
 class GTag {
 
-	constructor(id) {
-
+	setup(id) {
+		
 		const g = document.createElement("script");
 		
 		g.setAttribute("id", "analytics");
@@ -18,17 +20,36 @@ class GTag {
 
 	}
 
+	remove() {
+		const g = document.getElementById("analytics");
+		g.parentNode.removeChild(g);
+		window.ga = "";
+	}
+
 	ga() {
 		this.ga.q.push(arguments);
 	}
 
 	event(category, action, label) {
-		if (typeof window.ga !== "undefined")
+		if (typeof window.ga !== "undefined" && window.analytics)
 			window.ga("send", "event", category, action, label);
 	}
 
 }
 
-export const gtag = new GTag("UA-138062674-1");
+export const gtag = new GTag();
+
+events.on("analytics", function(){
+
+	if (window.analytics) {
+		gtag.setup("UA-138062674-1");
+	} else {
+		gtag.remove();
+	}
+
+});
+
+if (window.analytics)
+	gtag.setup("UA-138062674-1");
 
 // gtag.event("Test Category", "click", "Something");

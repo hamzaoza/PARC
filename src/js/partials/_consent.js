@@ -1,36 +1,38 @@
-import { events } from "./_events";
 import { Cookies } from "./_cookie";
-import { gtag } from "./_google";
+import { events } from "./_events";
 
-const cookieBTN = document.getElementById("cookie");
+const optIn = document.getElementById("optIn");
+const optOut = document.getElementById("optOut");
 const consentDIV = document.getElementById("consent");
 const cookies = new Cookies();
-let consent = cookies.get("consent") ? cookies.get("consent") : false;
+const header = document.getElementsByTagName("header")[0];
 
-cookieBTN.addEventListener("click", function(event) {
+window.analytics = cookies.get("analytics") ? cookies.get("analytics") : false;
 
+optIn.addEventListener("click", function(event){
 	event.preventDefault();
+	cookies.set("analytics", true, 365);
+	window.analytics = true;
+	updateConsent();
+	header.click();
+	events.emit("analytics");
+});
 
-	if (consent) {
-		cookies.delete("consent")
-		consent = false;
-		updateConsent();
-	} else {
-		cookies.set("consent", true, 365);
-		consent = true;
-		updateConsent();
-	} 
-
+optOut.addEventListener("click", function(event){
+	event.preventDefault();
+	cookies.delete("analytics");
+	window.analytics = false;
+	updateConsent();
+	header.click();
+	events.emit("analytics");
 });
 
 function updateConsent() {
 
-	if (consent) {
+	if (window.analytics) {
 		consentDIV.innerHTML = "Opted In";
-		cookieBTN.innerHTML = "Opt Out";
 	} else {
 		consentDIV.innerHTML = "Opted Out";
-		cookieBTN.innerHTML = "Opt In";
 	}
 	
 }

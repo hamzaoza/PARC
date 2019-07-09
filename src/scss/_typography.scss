@@ -66,13 +66,14 @@ button {
 	font-weight: 700;
 	line-height: 1;
 	cursor: pointer;
+	margin-bottom: $margin-small;
 
 	&.theme { background-color: $theme; color: $white;}
 	&.yellow { background-color: $yellow; }
 	&.blue { background-color: $blue; color: $white;}
 	&.dark { background-color: $black; color: $white;}
 	&.white { background-color: $white; }
-	&.border { border: solid 0.0625rem $theme; }
+	&.gray { background-color: $gray-dark; }
 
 	&:disabled { background: $gray-dark; cursor: not-allowed; }
 

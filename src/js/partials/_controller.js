@@ -25,6 +25,7 @@ const scene = canvas.scene;
 const isMobile = screen.width < 480 ? true : false;
 const anchors = document.getElementsByTagName("a");
 const transitionEvent = whichTransitionEvent();
+const pref = document.getElementById("pref");
 let active;
 
 function whichTransitionEvent(){
@@ -100,7 +101,6 @@ function switchModel(event) {
 		sites.classList.add("active");
 	}
 }
-
 
 function toggleSwitch() {
 	switcher.classList.toggle("active");
@@ -239,9 +239,12 @@ close.addEventListener("click", function(event) {
 
 stage.addEventListener(transitionEvent, function() {
 	events.emit("pip");
-})
+});
 
-
+pref.addEventListener("click", function(event){
+	event.preventDefault();
+	showPage(this);
+});
 
 function upperCase(str) {
 	return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
@@ -249,3 +252,9 @@ function upperCase(str) {
 
 if (Clinics.Global)
 	scene.add(Clinics.Global);
+
+if (!window.analytics) {
+	showPage({
+		dataset : { target : "cookies" }
+	});
+}
