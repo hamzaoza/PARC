@@ -154,3 +154,18 @@ textarea {
 }
 
 input[type=submit] { width: auto; }
+
+.error, .success { 
+	width: 95%;
+	font-weight: 700;
+	color: $white;
+}
+
+.success { background: $green; }
+.error { background: $red; }
+.fadeIn { animation: fadeIn 350ms ease-in-out; }
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}

@@ -1,19 +1,20 @@
 const form = document.getElementById("contact-form");
+const message = document.getElementsByClassName("cf-response")[0];
 
 function postAjax(url, data, success) {
-	var params = typeof data == 'string' ? data : Object.keys(data).map(
-			function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }
-		).join('&');
 
-	var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
-	xhr.open('POST', url);
-	xhr.onreadystatechange = function() {
-		if (xhr.readyState>3 && xhr.status==200) { success(xhr.responseText); }
-	};
-	xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-	xhr.setRequestHeader('Content-Type', 'application/json');
-	xhr.send(params);
-	return xhr;
+	let httpRequest = new XMLHttpRequest();
+
+	httpRequest.open('POST', url);
+	httpRequest.setRequestHeader('Accept', 'application/json');
+	httpRequest.send(data);
+	httpRequest.onreadystatechange = function(){
+
+	if (this.readyState == 4)
+		success(JSON.parse(this.response));
+
+	}
+
 }
 
 form.addEventListener("submit", function(event){
@@ -23,20 +24,8 @@ form.addEventListener("submit", function(event){
 	const href = this.getAttribute("action");
 	const data = new FormData(this);
 
-	console.log(data);
-
 	postAjax(href, data, function(response){
-
-		console.log(response);
-
-		if (response.status == "success"){
-			console.log("We received your submission, thank you!");
-		} else {
-			console.log("An error occured: " + response.message);
-		}
-
+		message.innerHTML = `<p class="margin-bottom rounded-small fadeIn ${response.status}">${response.message}</p>`;
 	});
 
 });
-
-// postAjax('http://foo.bar/', { p1: 1, p2: 'Hello World' }, function(data){ console.log(data); });

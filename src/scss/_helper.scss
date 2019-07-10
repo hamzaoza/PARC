@@ -79,6 +79,8 @@ Helper classes
 
 .shadow { box-shadow: 0 0 30px rgba($black, 0.35); }
 
+.margin-bottom { margin-bottom: $margin-small !important; }
+
 .rounded {
 	border-radius: $radius;
 	padding: $padding;
