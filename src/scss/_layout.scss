@@ -9,7 +9,7 @@ body {
 	height: 100%;
 	overflow: hidden;
 	@include respond-to(tablets) { padding: $padding-small; }
-	@include respond-to(phones) { padding: 0; }
+	@include respond-to(phones) { padding: 0; overflow-y: auto; }
 }
 
 *:last-child { margin-bottom: 0;}
@@ -19,6 +19,7 @@ body {
 	display: flex;
 	width: 100%;
 	height: 100%;
+	@include respond-to(phones) {  }
 }
 
 header {
@@ -27,9 +28,7 @@ header {
 	position: absolute;
 	z-index: 100;
 	cursor: pointer;
-
 	@include respond-to(phones) { transform: scale(0); }
-
 }
 
 main {
@@ -40,12 +39,11 @@ main {
 	position: relative;
 
 	@include respond-to(tablets) { margin: $margin; }
-	@include respond-to(phones) { margin: 0; }
+	@include respond-to(phones) { margin: 0; height: auto;}
 
 }
 
 .stage {
-	// background: $white;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -53,7 +51,6 @@ main {
 	right: 0;
 	z-index: 10;
 	padding: 0;
-
 }
 
 canvas {
@@ -289,7 +286,7 @@ footer {
 		transform: scale(1);
 		height: 100%;
 		padding-top: $padding;
-		@include respond-to(phones) { padding-top: $padding * 1.5; }	
+		@include respond-to(phones) { padding-top: $padding * 1.5; height: auto;}
 	}
 	
 	@include respond-to(phones) { flex-wrap: wrap }
@@ -374,8 +371,7 @@ footer {
 		.slide-desc { display: none; }
 		.mobile-desc {
 			display: block;
-			padding: $padding-small;
-			margin-bottom: $margin;
+			padding: $padding;
 			max-width: 100%;
 		}
 

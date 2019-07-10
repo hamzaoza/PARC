@@ -15,7 +15,7 @@ html {
 	/* Enable kerning and optional ligatures */
 	text-rendering: optimizeLegibility;
 
-	@include respond-to(phones) { line-height: 1.35;}
+	@include respond-to(phones) { line-height: 1.5;}
 	@include respond-to(xldesktop) { font-size: 120%; }
 
 }

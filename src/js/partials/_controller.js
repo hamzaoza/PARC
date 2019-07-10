@@ -22,10 +22,11 @@ const slide = document.getElementsByClassName("slide")[0];
 const tag = document.getElementsByClassName("site-desc")[0];
 const close = document.getElementById("close");
 const scene = canvas.scene;
-const isMobile = screen.width < 480 ? true : false;
 const anchors = document.getElementsByTagName("a");
 const transitionEvent = whichTransitionEvent();
 const pref = document.getElementById("pref");
+
+let isMobile = window.innerWidth < 480 ? true : false;
 let active;
 
 function whichTransitionEvent(){
@@ -258,3 +259,26 @@ if (!window.analytics) {
 		dataset : { target : "cookies" }
 	});
 }
+
+function updateMobile() {
+
+	const body = document.getElementsByTagName("body")[0];
+	const wrapper = document.getElementsByClassName("wrapper")[0];
+
+	if (isMobile) {
+		body.style.minHeight = window.innerHeight + "px";
+		wrapper.style.minHeight = window.innerHeight + "px";
+	} else {
+		body.style.minHeight = "";
+		wrapper.style.minHeight = "";
+	}
+
+}
+
+window.addEventListener("resize", function(event) {
+	event.preventDefault();
+	isMobile = screen.width < 480 ? true : false;
+	updateMobile();
+});
+
+updateMobile();

@@ -19,6 +19,7 @@ html {
 	-webkit-text-size-adjust: 100%; /* 2 */
 	height: 100%;
 	overflow: hidden;
+	@include respond-to(phones) { overflow: auto; height: auto; min-height: 100%; }
 }
 
 /* Sections
