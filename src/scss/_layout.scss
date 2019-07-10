@@ -350,6 +350,7 @@ footer {
 	}
 
 	.slide-desc * { transition: none; }
+	.mobile-desc { display: none; }
 
 	@include respond-to(phones) {
 
@@ -370,10 +371,12 @@ footer {
 			padding: 0;
 		}
 
-		.slide-desc { 
+		.slide-desc { display: none; }
+		.mobile-desc {
+			display: block;
 			padding: $padding-small;
-			max-width: none;
-			transform: none;
+			margin-bottom: $margin;
+			max-width: 100%;
 		}
 
 		blockquote { display: none; }

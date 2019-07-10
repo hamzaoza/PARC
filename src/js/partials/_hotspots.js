@@ -27,12 +27,10 @@ export const hotspots = function(clinic, hotspots){
 	}
 
 	function checkCounter(data){
-
 		if (data.clicked == false) {
 			decCounter(1);
 			data.clicked = true;
 		}
-
 	}
 
 	function rotate(){
@@ -40,9 +38,7 @@ export const hotspots = function(clinic, hotspots){
 	}
 
 	function _newItem(mesh){
-		// console.log(mesh);
 		media(mesh);
-		// events.off("sceneUpdate", rotate);
 		gtag.event("Hotspot", "click", mesh.name);
 		mesh.material.emissiveIntensity = 0;
 	}
@@ -52,7 +48,6 @@ export const hotspots = function(clinic, hotspots){
 	}
 
 	function _noItem(mesh) {
-		// events.on("sceneUpdate", rotate);
 		checkCounter(mesh.userData);
 	}
 

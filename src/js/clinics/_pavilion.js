@@ -77,6 +77,7 @@ export const Pavilion = {
 				"title" : "Windows",
 				"position": "center bottom",
 				"theme" : "dark",
+				"mobile" : "First rule of nursing, (is) to keep the air he breathes as pure as the external air, without chilling him. - Florence Nightingale (1860)",
 				"quotes" : [{
 					"quote" : "First rule of nursing, (is) to keep the air he breathes as pure as the external air, without chilling him.",
 					"cite" : "Florence Nightingale (1860)",
@@ -92,6 +93,7 @@ export const Pavilion = {
 				"url" : "images/pavilion/piazza.jpg",
 				"title" : "Piazza",
 				"position": "left middle",
+				"mobile" : "Beds were wheeled outside onto surrounding balconies / porch / galleries during the daytime as part of the <em>“fresh air cure”</em> with easy access to outside spaces and gardens. - Lindsay Prior (1992)",
 				"quotes" : [{
 					"quote" : "Beds were wheeled outside onto surrounding balconies / porch / galleries during the daytime as part of the <em>“fresh air cure”</em> with easy access to outside spaces and gardens.",
 					"cite" : "Lindsay Prior (1992)",
@@ -162,6 +164,7 @@ export const Pavilion = {
 				"title" : "“Antibiotic Era”",
 				"position": "left bottom",
 				"theme" : "dark",
+				"mobile" : "Antibiotics meant that hospitals '... turned away from Nightingale’s principles, closing their windows and shutting out the sun' - Swain (2013)",
 				"quotes" : [{
 					"quote" : "The ‘... introduction of drug therapy at the close of World War II’ represented a ‘dramatic break … by the 1960s, antimicrobial treatment had rendered sanatoria, [and] the rest cure obsolete",
 					"cite" : "Adams et al (2008)",

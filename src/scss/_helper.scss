@@ -114,6 +114,8 @@ nav.rounded-small {
     scrollbar-color: $gray-dark transparent;
 	scrollbar-width: thin;
 
+	@include respond-to(phones) { height: auto; }
+
 }
 
 .bounce:active, button:active {

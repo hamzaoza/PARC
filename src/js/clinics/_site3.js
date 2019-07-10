@@ -84,6 +84,7 @@ export const Site3 = {
 				"url" : "images/site3/benches-corner.jpg",
 				"title": "Waiting (Corner)",
 				"position": "right middle",
+				"mobile" : "I would generally avoid other people…I tend to sit just in the far corner. - Alex, Patient",
 				"quotes" : [{
 					"quote" : "I would generally avoid other people…I tend to sit just in the far corner.",
 					"cite" : "Alex, Patient",
@@ -131,6 +132,7 @@ export const Site3 = {
 				"theme" : "dark",
 				"title" : "Toilets",
 				"position": "left bottom",
+				"mobile" : "I use that disabled toilet there to do a sputum sample. I can imagine some people don’t bother.  But I do struggle sometimes to fetch stuff up, and a lot of people can just do it very easily. - Larry, Patient",
 				"quotes" : [{
 					"quote" : "I use that disabled toilet there to do a sputum sample. I can imagine some people don’t bother.  But I do struggle sometimes to fetch stuff up, and a lot of people can just do it very easily.",
 					"cite" : "Larry, Patient",
@@ -146,6 +148,7 @@ export const Site3 = {
 				"title" : "Nurse",
 				"url" : "images/site3/nurse.jpg",
 				"position": "right bottom",
+				"mobile" : "In an ideal world, for cystic fibrosis, you would have a patient in a room and they wouldn’t move from that room; everyone would go in to them and then they would leave. We don’t have the facilities to have a patient in a room and we all move around. - Elaine, Nurse",
 				"quotes" : [{
 					"quote" : "In an ideal world, for cystic fibrosis, you would have a patient in a room and they wouldn’t move from that room; everyone would go in to them and then they would leave. We don’t have the facilities to have a patient in a room and we all move around.",
 					"colour" : "pink",
@@ -165,6 +168,7 @@ export const Site3 = {
 				"title" : "Consultant",
 				"url" : "images/site3/consultant-2.jpg",
 				"position": "right bottom",
+				"mobile" : "I haven’t got any windows in my room….sometimes I do worry that affects the airflow, if someone coughs in the room, is that sticking around longer? - Rob, Consultant",
 				"quotes" : [{
 					"quote" : "...I prefer consulting room 20, if I get to choose, because I can move my chair to see who’s waiting outside. Again the consultants come out to call patients…",
 					"cite" : "Issac, Consultant",
@@ -185,6 +189,7 @@ export const Site3 = {
 				"title" : "Physiotherapist",
 				"url" : "images/site3/physio.jpg",
 				"position": "left top",
+				"mobile" : "I’ll open the windows if I’ve been getting people coughing and clearing stuff or have done a nebuliser trial, to try and get the air flow through. But we’ve got that many patients, you don’t have a lot of time before you get someone else in. - Mandy, Physiotherapist",
 				"quotes" : [{
 					"quote" : "I’ll open the windows if I’ve been getting people coughing and clearing stuff or have done a nebuliser trial, to try and get the air flow through. But we’ve got that many patients, you don’t have a lot of time before you get someone else in.",
 					"colour" : "red",
@@ -204,6 +209,7 @@ export const Site3 = {
 				"title" : "Physiotherapist",
 				"url" : "images/site3/physio.jpg",
 				"position": "left top",
+				"mobile" : "I’m collecting sputum samples, and quite often I've got to go looking for a clinical waste bin, they’re not in each room. <br/><br/> So on a Monday I’d have to walk up here to get rid of any infectious stuff before seeing the next person. - Mandy, Physiotherapist",
 				"quotes" : [{
 					"quote" : "I’m collecting sputum samples, and quite often I've got to go looking for a clinical waste bin, they’re not in each room. <br/><br/> So on a Monday I’d have to walk up here to get rid of any infectious stuff before seeing the next person.",
 					"cite" : "Mandy, Physiotherapist",
@@ -219,6 +225,7 @@ export const Site3 = {
 				"title" : "Corridors",
 				"url" : "images/site3/corridors.jpg",
 				"position": "right bottom",
+				"mobile" : "I’d say this is a risky area, because it’s quite narrow, and you’ve got people coming from the waiting area…So I feel like this is like a crossover point, a pinch point that feels quite tight and can be congested sometimes. - Rob, Consultant",
 				"quotes" : [{
 					"quote" : "I’d say this is a risky area, because it’s quite narrow, and you’ve got people coming from the waiting area…So I feel like this is like a crossover point, a pinch point that feels quite tight and can be congested sometimes.",
 					"cite" : "Rob, Consultant",
