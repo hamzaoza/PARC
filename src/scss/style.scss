@@ -3,8 +3,8 @@ Import all the various SCSS files in the appropriate order.
 ========================================================================== */
 
 @import "./variables";
-@import "./normalize";
 @import "./media";
+@import "./normalize";
 @import "./base";
 @import "./typography";
 @import "./helper";
