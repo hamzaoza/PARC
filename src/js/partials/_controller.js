@@ -12,7 +12,6 @@ const stage = document.getElementsByClassName("stage")[0];
 const timeline = document.getElementById("timeline");
 const sites = document.getElementById("sites");
 const nav = document.getElementsByTagName("nav")[0];
-const navLinks = document.querySelectorAll("nav a");
 const pages = document.querySelectorAll(".page");
 const main = document.getElementsByTagName("main")[0];
 const mobileBTN = document.getElementById("mobile-nav");
@@ -25,7 +24,6 @@ const close = document.getElementById("close");
 const scene = canvas.scene;
 const anchors = document.getElementsByTagName("a");
 const transitionEvent = whichTransitionEvent();
-const pref = document.getElementById("pref");
 
 let isMobile = window.innerWidth < 480 ? true : false;
 let active;
@@ -70,7 +68,7 @@ clinics.forEach(function(clinic) {
 
 	clinic.addEventListener("click", function(event){
 		event.preventDefault();
-		router.navigate('/model/' + this.dataset.site);
+		router.navigate('/clinic/' + this.dataset.site);
 	});
 	
 	clinic.addEventListener("mouseover", function(event){
@@ -114,15 +112,8 @@ function toggleSwitch() {
 	change.classList.toggle("dark");
 	change.classList.toggle("active");
 	counter.classList.toggle("hidden");
-	change.innerText = change.innerText == 'Change Model' ? 'Close' : 'Change Model';
+	change.innerText = change.innerText == 'Change Clinic' ? 'Close' : 'Change Clinic';
 }
-
-// navLinks.forEach(function(link){
-// 	link.addEventListener("click", function(event){
-// 		event.preventDefault();
-// 		showPage(this);
-// 	});
-// });
 
 function pipEnter(small) {
 	
@@ -206,7 +197,7 @@ function showMobileNav() {
 
 cta.addEventListener("click", function(event){
 	event.preventDefault();
-	router.navigate("/feedback");
+	router.navigate("/" + this.dataset.target);
 	hideMobileNav();
 	showClose();
 });
@@ -221,7 +212,8 @@ header.addEventListener("click", function(event){
 	event.preventDefault();
 	router.navigate("/");
 });
-header.addEventListener("touchstart", showHome);
+
+// header.addEventListener("touchstart", showHome);
 
 function showHome() {
 
@@ -246,11 +238,6 @@ close.addEventListener("click", function(event) {
 stage.addEventListener(transitionEvent, function() {
 	events.emit("pip");
 });
-
-// pref.addEventListener("click", function(event){
-// 	event.preventDefault();
-// 	showPage(this);
-// });
 
 function upperCase(str) {
 	return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
@@ -292,7 +279,7 @@ router.on(function() {
 
 });
 
-router.notFound(function () {
+router.notFound(function() {
 	router.navigate("/");
 });
 
@@ -300,7 +287,7 @@ router.on('/:page', function(params) {
 	showPage(params.page);
 });
 
-router.on('/model/:clinic', function(params) {
+router.on('/clinic/:clinic', function(params) {
 	switchModel(upperCase(params.clinic));
 });
 
