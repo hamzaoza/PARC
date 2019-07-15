@@ -285,7 +285,7 @@ router.on(function() {
 });
 
 router.notFound(function() {
-	router.navigate("/");
+	showPage("404");
 });
 
 router.on('/:page', function(params) {
