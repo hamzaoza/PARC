@@ -83,7 +83,7 @@ export const Site3 = {
 			"data" : {
 				"url" : "images/site3/benches-corner.jpg",
 				"title": "Waiting (Corner)",
-				"position": "right middle",
+				"position": "right bottom",
 				"mobile" : "I would generally avoid other people…I tend to sit just in the far corner. - Alex, Patient",
 				"quotes" : [{
 					"quote" : "I would generally avoid other people…I tend to sit just in the far corner.",
