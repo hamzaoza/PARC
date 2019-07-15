@@ -17,6 +17,7 @@
   "homepage": "https://github.com/hamzaoza/parc#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "navigo": "^7.1.2",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
