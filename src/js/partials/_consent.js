@@ -3,7 +3,7 @@ import { events } from "./_events";
 
 const optIn = document.getElementById("optIn");
 const optOut = document.getElementById("optOut");
-const consentDIV = document.getElementById("consent");
+const consentDIV = document.getElementById("cookies");
 const cookies = new Cookies();
 const header = document.getElementsByTagName("header")[0];
 

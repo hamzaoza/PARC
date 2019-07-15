@@ -63,10 +63,12 @@ change.addEventListener("touchend", function(event){
 
 clinics.forEach(function(clinic) {
 
-	// clinic.addEventListener("click", switchModel);
-	// clinic.addEventListener("touchend", switchModel);
-
 	clinic.addEventListener("click", function(event){
+		event.preventDefault();
+		router.navigate('/clinic/' + this.dataset.site);
+	});
+
+	clinic.addEventListener("touchend", function(event){
 		event.preventDefault();
 		router.navigate('/clinic/' + this.dataset.site);
 	});
@@ -213,7 +215,10 @@ header.addEventListener("click", function(event){
 	router.navigate("/");
 });
 
-// header.addEventListener("touchstart", showHome);
+header.addEventListener("touchstart", function(event){
+	event.preventDefault();
+	router.navigate("/");
+});
 
 function showHome() {
 
@@ -272,7 +277,7 @@ updateMobile();
 router.on(function() {
 
 	if (window.analytics === "unset") {
-		router.navigate("/cookies");
+		router.navigate("/consent");
 	} else {
 		showHome();
 	}
