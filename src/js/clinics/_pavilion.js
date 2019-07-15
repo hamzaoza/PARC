@@ -161,7 +161,7 @@ export const Pavilion = {
 			"position" : [0, 7, 17],
 			"data" : {
 				"url" : "images/pavilion/antibiotic-1.jpg",
-				"title" : "“Antibiotic Era”",
+				"title" : "Antibiotic Era",
 				"position": "left bottom",
 				"theme" : "dark",
 				"mobile" : "Antibiotics meant that hospitals '... turned away from Nightingale’s principles, closing their windows and shutting out the sun' - Swain (2013)",
