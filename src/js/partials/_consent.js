@@ -7,7 +7,7 @@ const consentDIV = document.getElementById("consent");
 const cookies = new Cookies();
 const header = document.getElementsByTagName("header")[0];
 
-window.analytics = cookies.get("analytics") ? cookies.get("analytics") : false;
+window.analytics = cookies.get("analytics") ? cookies.get("analytics") : "unset";
 
 optIn.addEventListener("click", function(event){
 	event.preventDefault();

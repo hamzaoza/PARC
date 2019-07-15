@@ -3,6 +3,7 @@ import { events } from "./_events";
 import { canvas } from "./_canvas"
 import { Clinics } from "./_clinics"
 import { gtag } from "./_google";
+import { router } from "./_routing";
 
 const change = document.getElementById("change");
 const switcher = document.getElementsByClassName("switcher")[0];
@@ -64,8 +65,14 @@ change.addEventListener("touchend", function(event){
 
 clinics.forEach(function(clinic) {
 
-	clinic.addEventListener("click", switchModel);
-	clinic.addEventListener("touchend", switchModel);
+	// clinic.addEventListener("click", switchModel);
+	// clinic.addEventListener("touchend", switchModel);
+
+	clinic.addEventListener("click", function(event){
+		event.preventDefault();
+		router.navigate('/model/' + this.dataset.site);
+	});
+	
 	clinic.addEventListener("mouseover", function(event){
 		event.preventDefault();
 		tag.innerHTML = this.dataset.description;
@@ -73,13 +80,11 @@ clinics.forEach(function(clinic) {
 
 });
 
-function switchModel(event) {
+function switchModel(clinic) {
 
-	event.preventDefault();
+	if (clinic != "Present") {
 
-	if (this.id != "present") {
-
-		var site = Clinics[this.dataset.site];
+		var site = Clinics[clinic];
 		var current = scene.getObjectByName(active);
 
 		if (current)
@@ -88,7 +93,7 @@ function switchModel(event) {
 		if (site)
 			scene.add(site);
 
-		active = this.dataset.site;
+		active = clinic;
 
 		toggleSwitch();
 		
@@ -112,12 +117,12 @@ function toggleSwitch() {
 	change.innerText = change.innerText == 'Change Model' ? 'Close' : 'Change Model';
 }
 
-navLinks.forEach(function(link){
-	link.addEventListener("click", function(event){
-		event.preventDefault();
-		showPage(this);
-	});
-});
+// navLinks.forEach(function(link){
+// 	link.addEventListener("click", function(event){
+// 		event.preventDefault();
+// 		showPage(this);
+// 	});
+// });
 
 function pipEnter(small) {
 	
@@ -147,12 +152,12 @@ function pipExit() {
 	stage.removeEventListener("touchstart", onPip);
 }
 
-function showPage(self) {
+function showPage(page) {
 	clearPages();
-	document.getElementById(self.dataset.target).classList.add("active");
+	document.getElementById(page).classList.add("active");
 	counter.classList.add("hidden");
 	pipEnter(true);
-	gtag.event("Page", "click", upperCase(self.dataset.target));
+	gtag.event("Page", "click", upperCase(page));
 }
 
 function clearPages() {
@@ -201,7 +206,7 @@ function showMobileNav() {
 
 cta.addEventListener("click", function(event){
 	event.preventDefault();
-	showPage(this);
+	router.navigate("/feedback");
 	hideMobileNav();
 	showClose();
 });
@@ -212,13 +217,13 @@ mobileBTN.addEventListener("click", function(event){
 	toggleClose();
 });
 
-header.addEventListener("click", showHome);
+header.addEventListener("click", function(event){
+	event.preventDefault();
+	router.navigate("/");
+});
 header.addEventListener("touchstart", showHome);
 
-function showHome(event) {
-
-	event.preventDefault();
-	// showPage(this);
+function showHome() {
 
 	pipExit();
 	clearPages();
@@ -242,10 +247,10 @@ stage.addEventListener(transitionEvent, function() {
 	events.emit("pip");
 });
 
-pref.addEventListener("click", function(event){
-	event.preventDefault();
-	showPage(this);
-});
+// pref.addEventListener("click", function(event){
+// 	event.preventDefault();
+// 	showPage(this);
+// });
 
 function upperCase(str) {
 	return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
@@ -253,12 +258,6 @@ function upperCase(str) {
 
 if (Clinics.Global)
 	scene.add(Clinics.Global);
-
-if (!window.analytics) {
-	showPage({
-		dataset : { target : "cookies" }
-	});
-}
 
 function updateMobile() {
 
@@ -282,3 +281,27 @@ window.addEventListener("resize", function(event) {
 });
 
 updateMobile();
+
+router.on(function() {
+
+	if (window.analytics === "unset") {
+		router.navigate("/cookies");
+	} else {
+		showHome();
+	}
+
+});
+
+router.notFound(function () {
+	router.navigate("/");
+});
+
+router.on('/:page', function(params) {
+	showPage(params.page);
+});
+
+router.on('/model/:clinic', function(params) {
+	switchModel(upperCase(params.clinic));
+});
+
+router.resolve();
