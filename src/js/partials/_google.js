@@ -42,17 +42,22 @@ class GTag {
 
 export const gtag = new GTag();
 
-events.on("analytics", function(){
+events.on("analytics", updateConsent);
 
-	if (window.analytics == true) {
+function updateConsent() {
+
+	const consentDIV = document.getElementById("cookies");
+
+	if (window.analytics == "true") {
 		gtag.setup("UA-138062674-1");
+		consentDIV.innerHTML = "Opted In";
 	} else {
 		gtag.remove();
+		consentDIV.innerHTML = "Opted Out";
 	}
 
-});
+}
 
-if (window.analytics == true)
-	gtag.setup("UA-138062674-1");
+updateConsent();
 
 // gtag.event("Test Category", "click", "Something");

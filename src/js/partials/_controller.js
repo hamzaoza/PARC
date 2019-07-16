@@ -231,7 +231,6 @@ function showHome() {
 
 }
 
-
 close.addEventListener("click", function(event) {
 	event.preventDefault();
 	hideMobileNav();
