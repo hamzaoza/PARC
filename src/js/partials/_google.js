@@ -22,7 +22,7 @@ class GTag {
 
 	remove() {
 		const g = document.getElementById("analytics");
-		
+
 		if (g)
 			g.parentNode.removeChild(g);
 
@@ -52,7 +52,7 @@ events.on("analytics", function(){
 
 });
 
-if (window.analytics)
+if (window.analytics == true)
 	gtag.setup("UA-138062674-1");
 
 // gtag.event("Test Category", "click", "Something");
