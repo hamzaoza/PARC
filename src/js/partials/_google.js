@@ -22,7 +22,10 @@ class GTag {
 
 	remove() {
 		const g = document.getElementById("analytics");
-		g.parentNode.removeChild(g);
+		
+		if (g)
+			g.parentNode.removeChild(g);
+
 		window.ga = "";
 	}
 
@@ -41,7 +44,7 @@ export const gtag = new GTag();
 
 events.on("analytics", function(){
 
-	if (window.analytics) {
+	if (window.analytics == true) {
 		gtag.setup("UA-138062674-1");
 	} else {
 		gtag.remove();
