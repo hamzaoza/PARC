@@ -24,6 +24,7 @@ const close = document.getElementById("close");
 const scene = canvas.scene;
 const anchors = document.getElementsByTagName("a");
 const transitionEvent = whichTransitionEvent();
+const frame = document.querySelector("#participate iframe");
 
 let isMobile = window.innerWidth < 480 ? true : false;
 let active;
@@ -296,3 +297,7 @@ router.on('/clinic/:clinic', function(params) {
 });
 
 router.resolve();
+
+window.onload = function(){
+	frame.setAttribute("src", frame.dataset.src);
+}
