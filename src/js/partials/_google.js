@@ -34,7 +34,7 @@ class GTag {
 	}
 
 	event(category, action, label) {
-		if (typeof window.ga !== "undefined" && window.analytics)
+		if (typeof window.ga == "function" && window.analytics == "true")
 			window.ga("send", "event", category, action, label);
 	}
 
