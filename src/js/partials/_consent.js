@@ -29,7 +29,7 @@ optOut.addEventListener("click", function(event){
 
 function updateConsent() {
 
-	if (window.analytics) {
+	if (window.analytics == true) {
 		consentDIV.innerHTML = "Opted In";
 	} else {
 		consentDIV.innerHTML = "Opted Out";
