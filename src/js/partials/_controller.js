@@ -101,7 +101,7 @@ function switchModel(clinic) {
 		
 		timeline.classList.add("active");
 		sites.classList.remove("active");
-		title.innerHTML = "Model: " + clinic;
+		title.innerHTML = "Model: " + clinic.replace("-", " ");
 
 		gtag.page();
 
