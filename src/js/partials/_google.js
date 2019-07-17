@@ -16,7 +16,9 @@ class GTag {
 		this.ga.l = +new Date;
 		this.ga("create", id, {"siteSpeedSampleRate": 100});
 		this.ga("set","transport","beacon");
-		this.ga("send", "pageview");
+		this.ga("send", "pageview", {
+			"page": location.pathname + location.search + location.hash
+		});
 
 	}
 
@@ -36,6 +38,13 @@ class GTag {
 	event(category, action, label) {
 		if (typeof window.ga == "function" && window.analytics == "true")
 			window.ga("send", "event", category, action, label);
+	}
+
+	page() {
+		if (typeof window.ga == "function" && window.analytics == "true")
+			window.ga("send", "pageview", {
+				"page": location.pathname + location.search + location.hash
+			});
 	}
 
 }

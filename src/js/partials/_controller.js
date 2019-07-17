@@ -101,7 +101,7 @@ function switchModel(clinic) {
 		timeline.classList.add("active");
 		sites.classList.remove("active");
 
-		gtag.event("Model", "click", active);
+		gtag.page();
 
 	} else {
 		timeline.classList.remove("active");
@@ -151,7 +151,7 @@ function showPage(page) {
 	document.getElementById(page).classList.add("active");
 	counter.classList.add("hidden");
 	pipEnter(true);
-	gtag.event("Page", "click", upperCase(page));
+	gtag.page();
 }
 
 function clearPages() {
@@ -228,7 +228,7 @@ function showHome() {
 	if (!switcher.classList.contains("active"))
 		change.click();
 
-	gtag.event("Page", "click", "Home");
+	gtag.page();
 
 }
 
