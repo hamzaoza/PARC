@@ -8,8 +8,8 @@ import { Skane } from "./_skane";
 export const Data = {
 	"Global" : Global,
 	"Past" : Pavilion,
-	"Site1" : Site1,
-	"Site2" : Site2,
-	"Site3" : Site3,
+	"Clinic-1" : Site1,
+	"Clinic-2" : Site2,
+	"Clinic-3" : Site3,
 	"Future" : Skane
 }

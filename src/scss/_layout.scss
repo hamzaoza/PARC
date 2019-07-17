@@ -90,7 +90,7 @@ canvas {
 
 	&.active { transform: scale(1); }
 	&.active ~ .hotspots { display: none; }
-	&.active ~ #dummy { display: none; }
+	&.active ~ .clinic-title { display: none; }
 
 	button { 
 		color: $white;
@@ -135,6 +135,16 @@ canvas {
 		display: block;
 		font-size: 1.5rem;
 	}
+
+}
+
+.clinic-title {
+	position: absolute;
+	top: $margin * 1.25;
+	left: 50%;
+	transform: translateX(-50%);
+	color: $white;
+	text-shadow: 0 0 1rem rgba($black, 1);
 
 }
 

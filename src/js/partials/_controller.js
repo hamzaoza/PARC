@@ -18,6 +18,7 @@ const mobileBTN = document.getElementById("mobile-nav");
 const cta = document.getElementById("cta");
 const header = document.getElementsByTagName("header")[0];
 const counter = document.getElementsByClassName("hotspots")[0];
+const title = document.getElementsByClassName("clinic-title")[0];
 const slide = document.getElementsByClassName("slide")[0];
 const tag = document.getElementsByClassName("site-desc")[0];
 const close = document.getElementById("close");
@@ -100,6 +101,7 @@ function switchModel(clinic) {
 		
 		timeline.classList.add("active");
 		sites.classList.remove("active");
+		title.innerHTML = "Model: " + clinic;
 
 		gtag.page();
 
@@ -115,6 +117,7 @@ function toggleSwitch() {
 	change.classList.toggle("dark");
 	change.classList.toggle("active");
 	counter.classList.toggle("hidden");
+	title.classList.toggle("hidden");
 	change.innerText = change.innerText == 'Change Clinic' ? 'Close' : 'Change Clinic';
 }
 
@@ -122,6 +125,7 @@ function pipEnter(small) {
 	
 	main.classList.add("pip");
 	counter.classList.add("hidden");
+	title.classList.add("hidden");
 	
 	if (small == true)
 		stage.classList.add("small");
@@ -141,6 +145,7 @@ function pipExit() {
 	main.classList.remove("pip");
 	stage.classList.remove("small");
 	counter.classList.remove("hidden");
+	title.classList.remove("hidden");
 	slide.classList.remove("dark");
 	stage.removeEventListener("click", onPip);
 	stage.removeEventListener("touchstart", onPip);
@@ -150,6 +155,7 @@ function showPage(page) {
 	clearPages();
 	document.getElementById(page).classList.add("active");
 	counter.classList.add("hidden");
+	title.classList.add("hidden");
 	pipEnter(true);
 	gtag.page();
 }

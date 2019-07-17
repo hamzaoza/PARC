@@ -50,6 +50,8 @@ a {
 
 }
 
+.light { color: $white; }
+
 .dark a {
 	color: $white;
 	border-bottom-color: $white;
@@ -154,7 +156,7 @@ textarea {
 
 input[type=submit] { width: auto; }
 
-.error, .success { 
+.error, .success {
 	width: 95%;
 	font-weight: 700;
 	color: $white;
