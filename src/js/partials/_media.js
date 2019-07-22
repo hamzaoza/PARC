@@ -1,4 +1,5 @@
 import { events } from "./_events";
+import { Texture } from "./_floor";
 
 export const media = function(mesh){
 
@@ -40,6 +41,6 @@ export const media = function(mesh){
 
 	events.emit("changeSlide");
 
-	// Texture(data.floor);
+	// Texture("");
 
 }

@@ -4,6 +4,7 @@ import { canvas } from "./_canvas"
 import { Clinics } from "./_clinics"
 import { gtag } from "./_google";
 import { router } from "./_routing";
+import { Texture } from "./_floor";
 
 const switchChange = document.getElementById("switch-change");
 const switchClose = document.getElementById("switch-close");
@@ -139,6 +140,11 @@ function switchModel(clinic) {
 		timeline.classList.add("active");
 		sites.classList.remove("active");
 		title.innerHTML = "Model: " + clinic.replace("-", " ");
+
+		setTimeout(function() {
+			if (site.userData.floor)
+				Texture(site.userData.floor);
+		}, 50);
 
 		gtag.page();
 

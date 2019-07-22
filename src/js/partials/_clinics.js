@@ -27,10 +27,14 @@ export const Clinics = (function(){
 		if (data.hotspots)
 			hotspots(clinic, data.hotspots);
 
+		if (data.floor)
+			clinic.userData.floor = data.floor;
+
 		clinics[name] = clinic;
 
 	}
 
 	return clinics;
+
 
 })();

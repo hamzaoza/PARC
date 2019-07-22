@@ -3,16 +3,17 @@ import { canvas } from "./_canvas";
 
 export const Texture = function(source){
 
-	var floor = canvas.scene.getObjectByName("floor");
+	const floor = canvas.scene.getObjectByName("floor");
+	const video = document.getElementById("texture");
+	const texture = new THREE.VideoTexture(video, THREE.UVMapping);
+
+	console.log(floor);
 
 	if (source == null || source == "") {
 		floor.material.map = null;
 		floor.material.needsUpdate = true;
 		return;
 	}
-
-	var video = document.getElementById("texture");
-	var texture = new THREE.VideoTexture(video, THREE.UVMapping);
 
 	texture.minFilter = THREE.LinearFilter;
 	texture.magFilter = THREE.LinearFilter;
