@@ -128,16 +128,22 @@ function switchModel(clinic) {
 	}
 }
 
-switchChange.addEventListener("click", function(event){
+switchChange.addEventListener("click", onSwitchChange);
+switchChange.addEventListener("touchstart", onSwitchChange);
+
+function onSwitchChange(event) {
 	event.preventDefault();
 	router.navigate("/");
-});
+}
 
-switchClose.addEventListener("click", function(event){
+switchClose.addEventListener("click", onSwitchClose);
+switchClose.addEventListener("touchstart", onSwitchClose);
+
+function onSwitchClose(event) {
 	event.preventDefault();
 	hideSwitcher();
 	router.navigate("/clinic/" + active.toLowerCase());
-});
+}
 
 function showSwitcher() {
 
@@ -154,13 +160,11 @@ function showSwitcher() {
 }
 
 function hideSwitcher() {
-
 	switcher.classList.remove("active");
 	counter.classList.remove("hidden");
 	title.classList.remove("hidden");
 	switchChange.classList.remove("hidden");
 	switchClose.classList.add("hidden");
-
 }
 
 function pipEnter(small) {
@@ -274,15 +278,13 @@ mobileBTN.addEventListener("click", function(event){
 	toggleClose();
 });
 
-header.addEventListener("click", function(event){
-	event.preventDefault();
-	router.navigate("/");
-});
+header.addEventListener("click", onHeader);
+header.addEventListener("touchstart", onHeader);
 
-header.addEventListener("touchstart", function(event){
+function onHeader(event) {
 	event.preventDefault();
 	router.navigate("/");
-});
+}
 
 close.addEventListener("click", function(event) {
 	event.preventDefault();
@@ -329,4 +331,3 @@ updateMobile();
 window.onload = function(){
 	frame.setAttribute("src", frame.dataset.src);
 }
-
