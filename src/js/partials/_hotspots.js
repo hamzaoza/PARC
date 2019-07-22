@@ -35,7 +35,7 @@ export const hotspots = function(clinic, hotspots){
 	}
 
 	function rotate(){
-		clinic.rotation.y += helpers.degRad(0.04);
+		clinic.rotation.y += helpers.degRad(0.02);
 	}
 
 	function _newItem(mesh){
