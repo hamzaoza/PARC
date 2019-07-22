@@ -76,7 +76,10 @@ button, input[type=submit] {
 	&.white { background-color: $white; }
 	&.gray { background-color: $gray-light; }
 
-	&:disabled { background: $gray-dark; cursor: not-allowed; }
+	&:disabled { 
+		background: $gray-dark; cursor: not-allowed; 
+		opacity: 0.1;
+	}
 
 	&:hover:not(:disabled) { background-image: linear-gradient(rgba($white, 0.1), rgba($white, 0.1)) }
 	&:active:not(:disabled){ transform: scale(0.8); box-shadow: none; }

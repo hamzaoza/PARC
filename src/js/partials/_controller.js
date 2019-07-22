@@ -103,6 +103,9 @@ function switchModel(clinic) {
 		sites.classList.remove("active");
 		title.innerHTML = "Model: " + clinic.replace("-", " ");
 
+		if (active)
+			change.removeAttribute("disabled");
+
 		gtag.page();
 
 	} else {
