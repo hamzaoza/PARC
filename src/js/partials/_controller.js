@@ -292,6 +292,13 @@ close.addEventListener("click", function(event) {
 	clearPages();
 	pipExit();
 	toggleClose();
+
+	if (switcher.classList.contains("active")) {
+		router.navigate("/");
+	} else {
+		router.navigate("/clinic/" + active.toLowerCase());
+	}
+
 });
 
 stage.addEventListener(transitionEvent, function() {
