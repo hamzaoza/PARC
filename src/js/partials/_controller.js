@@ -130,9 +130,15 @@ function pipEnter(small) {
 	if (small == true)
 		stage.classList.add("small");
 
+	stage.addEventListener(transitionEvent, transitionPip);
+
+}
+
+function transitionPip(event) {
+	event.preventDefault();
 	stage.addEventListener("click", onPip);
 	stage.addEventListener("touchstart", onPip);
-
+	stage.removeEventListener(transitionEvent, transitionPip);
 }
 
 function onPip(event) {
