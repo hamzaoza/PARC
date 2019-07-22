@@ -37,7 +37,7 @@ router.on(function() {
 	if (window.analytics === "unset") {
 		router.navigate("/consent");
 	} else {
-		router.navigate("/selector");
+		showSwitcher()
 	}
 
 });
@@ -46,15 +46,11 @@ router.notFound(function() {
 	showPage("404");
 });
 
-router.on('/selector', function() {
-	showSwitcher()
-});
-
-router.on('/:page', function(params) {
+router.on("/:page", function(params) {
 	showPage(params.page);
 });
 
-router.on('/clinic/:clinic', function(params) {
+router.on("/clinic/:clinic", function(params) {
 	switchModel(upperCase(params.clinic));
 });
 
@@ -83,13 +79,11 @@ for (let anchor of anchors) {
 		anchor.setAttribute("target", "_blank");
 }
 
-
-
 clinics.forEach(function(clinic) {
 
 	function routeClinic(event) {
 		event.preventDefault();
-		router.navigate('/clinic/' + this.dataset.site);
+		router.navigate("/clinic/" + this.dataset.site);
 	}
 
 	clinic.addEventListener("click", routeClinic);
@@ -136,7 +130,7 @@ function switchModel(clinic) {
 
 switchChange.addEventListener("click", function(event){
 	event.preventDefault();
-	router.navigate("/selector");
+	router.navigate("/");
 });
 
 switchClose.addEventListener("click", function(event){
@@ -195,7 +189,7 @@ function onPip(event) {
 	clearPages();
 
 	if (switcher.classList.contains("active")) {
-		router.navigate("/selector");
+		router.navigate("/");
 	} else {
 		router.navigate("/clinic/" + active.toLowerCase());
 	}
