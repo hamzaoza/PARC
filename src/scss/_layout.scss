@@ -146,6 +146,10 @@ canvas {
 	color: $white;
 	text-shadow: 0 0 1rem rgba($black, 1);
 	font-size: 1.6875rem;
+	text-align: center;
+
+	@include respond-to(phones) { top: $margin * 2.25; width: 100%;}
+
 }
 
 .switch-btn {
