@@ -5,7 +5,9 @@ import { Clinics } from "./_clinics"
 import { gtag } from "./_google";
 import { router } from "./_routing";
 
-const change = document.getElementById("change");
+const switchChange = document.getElementById("switch-change");
+const switchClose = document.getElementById("switch-close");
+
 const switcher = document.getElementsByClassName("switcher")[0];
 const clinics = document.querySelectorAll(".controls button");
 const stage = document.getElementsByClassName("stage")[0];
@@ -30,6 +32,34 @@ const frame = document.querySelector("#participate iframe");
 let isMobile = window.innerWidth < 480 ? true : false;
 let active;
 
+router.on(function() {
+
+	if (window.analytics === "unset") {
+		router.navigate("/consent");
+	} else {
+		router.navigate("/selector");
+	}
+
+});
+
+router.notFound(function() {
+	showPage("404");
+});
+
+router.on('/selector', function() {
+	showSwitcher()
+});
+
+router.on('/:page', function(params) {
+	showPage(params.page);
+});
+
+router.on('/clinic/:clinic', function(params) {
+	switchModel(upperCase(params.clinic));
+});
+
+router.resolve();
+
 function whichTransitionEvent(){
 	
 	var t, el = document.createElement("fakeelement");
@@ -53,27 +83,17 @@ for (let anchor of anchors) {
 		anchor.setAttribute("target", "_blank");
 }
 
-change.addEventListener("click", function(event){
-	toggleSwitch();
-	event.preventDefault();
-});
 
-change.addEventListener("touchend", function(event){
-	toggleSwitch();
-	event.preventDefault();
-});
 
 clinics.forEach(function(clinic) {
 
-	clinic.addEventListener("click", function(event){
+	function routeClinic(event) {
 		event.preventDefault();
 		router.navigate('/clinic/' + this.dataset.site);
-	});
+	}
 
-	clinic.addEventListener("touchend", function(event){
-		event.preventDefault();
-		router.navigate('/clinic/' + this.dataset.site);
-	});
+	clinic.addEventListener("click", routeClinic);
+	clinic.addEventListener("touchend", routeClinic);
 	
 	clinic.addEventListener("mouseover", function(event){
 		event.preventDefault();
@@ -97,14 +117,14 @@ function switchModel(clinic) {
 
 		active = clinic;
 
-		toggleSwitch();
+		hideSwitcher();
+
+		if (active)
+			switchClose.removeAttribute("disabled");
 		
 		timeline.classList.add("active");
 		sites.classList.remove("active");
 		title.innerHTML = "Model: " + clinic.replace("-", " ");
-
-		if (active)
-			change.removeAttribute("disabled");
 
 		gtag.page();
 
@@ -114,14 +134,39 @@ function switchModel(clinic) {
 	}
 }
 
-function toggleSwitch() {
-	switcher.classList.toggle("active");
-	change.classList.toggle("theme");
-	change.classList.toggle("dark");
-	change.classList.toggle("active");
-	counter.classList.toggle("hidden");
-	title.classList.toggle("hidden");
-	change.innerText = change.innerText == 'Change Clinic' ? 'Close' : 'Change Clinic';
+switchChange.addEventListener("click", function(event){
+	event.preventDefault();
+	router.navigate("/selector");
+});
+
+switchClose.addEventListener("click", function(event){
+	event.preventDefault();
+	hideSwitcher();
+	router.navigate("/clinic/" + active.toLowerCase());
+});
+
+function showSwitcher() {
+
+	pipExit();
+	clearPages();
+
+	switcher.classList.add("active");
+	counter.classList.add("hidden");
+	title.classList.add("hidden");
+	switchChange.classList.add("hidden");
+	switchClose.classList.remove("hidden");
+
+	gtag.page();
+}
+
+function hideSwitcher() {
+
+	switcher.classList.remove("active");
+	counter.classList.remove("hidden");
+	title.classList.remove("hidden");
+	switchChange.classList.remove("hidden");
+	switchClose.classList.add("hidden");
+
 }
 
 function pipEnter(small) {
@@ -148,9 +193,17 @@ function onPip(event) {
 	event.preventDefault();
 	pipExit();
 	clearPages();
+
+	if (switcher.classList.contains("active")) {
+		router.navigate("/selector");
+	} else {
+		router.navigate("/clinic/" + active.toLowerCase());
+	}
+
 }
 
 function pipExit() {
+
 	main.classList.remove("pip");
 	stage.classList.remove("small");
 	counter.classList.remove("hidden");
@@ -158,6 +211,7 @@ function pipExit() {
 	slide.classList.remove("dark");
 	stage.removeEventListener("click", onPip);
 	stage.removeEventListener("touchstart", onPip);
+
 }
 
 function showPage(page) {
@@ -236,18 +290,6 @@ header.addEventListener("touchstart", function(event){
 	router.navigate("/");
 });
 
-function showHome() {
-
-	pipExit();
-	clearPages();
-
-	if (!switcher.classList.contains("active"))
-		change.click();
-
-	gtag.page();
-
-}
-
 close.addEventListener("click", function(event) {
 	event.preventDefault();
 	hideMobileNav();
@@ -290,30 +332,7 @@ window.addEventListener("resize", function(event) {
 
 updateMobile();
 
-router.on(function() {
-
-	if (window.analytics === "unset") {
-		router.navigate("/consent");
-	} else {
-		showHome();
-	}
-
-});
-
-router.notFound(function() {
-	showPage("404");
-});
-
-router.on('/:page', function(params) {
-	showPage(params.page);
-});
-
-router.on('/clinic/:clinic', function(params) {
-	switchModel(upperCase(params.clinic));
-});
-
-router.resolve();
-
 window.onload = function(){
 	frame.setAttribute("src", frame.dataset.src);
 }
+

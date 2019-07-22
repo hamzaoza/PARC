@@ -148,12 +148,13 @@ canvas {
 	font-size: 1.6875rem;
 }
 
-#change {
+.switch-btn {
 
 	position: absolute;
 	bottom: $margin;
 	left: 50%;
 	transform: translateX(-50%);
+	margin: 0;
 
 	@include respond-to(phones) { bottom: $margin-small}
 
@@ -188,8 +189,7 @@ canvas {
 
 	.stage.small { width: 22%; height: 22%; }
 	.switcher { display: none; }
-
-	#change { transform: scale(0); }
+	.switch-btn { transform: scale(0); }
 
 }
 
@@ -391,8 +391,6 @@ footer {
 	small { margin-bottom: $margin-small/2; }
 
 }
-
-#close { z-index: 150; }
 
 .logos {
 	
