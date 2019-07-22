@@ -29,7 +29,7 @@ const anchors = document.getElementsByTagName("a");
 const transitionEvent = whichTransitionEvent();
 const frame = document.querySelector("#participate iframe");
 
-let isMobile = window.innerWidth < 480 ? true : false;
+let isMobile = window.isMobile = window.innerWidth < 480 ? true : false;
 let active;
 
 router.on(function() {
