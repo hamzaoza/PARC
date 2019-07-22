@@ -47,7 +47,27 @@ router.notFound(function() {
 });
 
 router.on("/:page", function(params) {
-	showPage(params.page);
+	
+	const page = params.page.toLowerCase();
+	const pages = (function() {
+
+		const sections = [...document.getElementsByClassName("page")];
+		let pages = [];
+
+		sections.forEach(function(section){
+			pages.push(section.id.toLowerCase());
+		});
+
+		return pages;
+
+	})();
+	
+	if (pages.includes(page)) {
+		showPage(page);
+	} else {
+		showPage("404");
+	}
+
 });
 
 router.on("/clinic/:clinic", function(params) {
