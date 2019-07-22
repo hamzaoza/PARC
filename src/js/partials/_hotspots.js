@@ -9,7 +9,7 @@ import { media } from "./_media";
 export const hotspots = function(clinic, hotspots){
 
 	const color = Options.hotspotColor;
-	const size = 0.45;
+	const size = 0.5;
 	const geometry = new THREE.ConeBufferGeometry(size, size * 3, 16);
 	const points = new THREE.Group();
 	let counter = 0;
