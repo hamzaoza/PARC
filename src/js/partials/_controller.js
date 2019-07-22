@@ -240,6 +240,7 @@ function showHome() {
 
 	pipExit();
 	clearPages();
+
 	if (!switcher.classList.contains("active"))
 		change.click();
 
