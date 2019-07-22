@@ -144,7 +144,7 @@ function switchModel(clinic) {
 		setTimeout(function() {
 			if (site.userData.floor)
 				Texture(site.userData.floor);
-		}, 50);
+		}, 5);
 
 		gtag.page();
 
