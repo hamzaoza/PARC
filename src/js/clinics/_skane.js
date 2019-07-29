@@ -12,6 +12,7 @@ export const Skane = {
 			"scale" : [0.65, 0.65, 0.65]
 		}
 	],
+	"floor" : "assets/textures/skane.mp4",
 	"hotspots" : [{
 		"name" : "skane",
 		"position" : [0, 3, 0],

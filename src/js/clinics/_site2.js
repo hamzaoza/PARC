@@ -10,7 +10,7 @@ export const Site2 = {
 			"path": "assets/models/site2/site2-layout.json"
 		}
 	],
-	"floor" : "assets/textures/site2-pathway.mp4",
+	"floor" : "assets/textures/site2.mp4",
 	"hotspots" : [{
 		"name" : "parking",
 		"position" : [-28, 3.5, -2.5],

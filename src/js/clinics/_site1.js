@@ -10,7 +10,7 @@ export const Site1 = {
 			"path": "assets/models/site1/site1-layout.json"
 		}
 	],
-	"floor" : "assets/textures/site1_path.mp4",
+	"floor" : "assets/textures/site1.mp4",
 	"hotspots" : [{
 		"name" : "entrance",
 		"position" : [-17.5, 4, 14],

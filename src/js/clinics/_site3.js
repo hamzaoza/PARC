@@ -10,7 +10,7 @@ export const Site3 = {
 			"path": "assets/models/site3/site3-layout.json"
 		}
 	],
-	"floor" : "assets/textures/site3-pathway.mp4",
+	"floor" : "assets/textures/site3.mp4",
 	"hotspots" : [
 		{
 			"name" : "checkin",
