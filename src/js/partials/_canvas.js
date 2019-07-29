@@ -70,7 +70,7 @@ export const canvas = (function(){
 	
 	GameLoop();
 
-	window.scene = scene;
+	// window.scene = scene;
 
 	return {
 		scene: scene,
