@@ -33,8 +33,8 @@ p, h1, h2, h3, h4 {	margin: 0 0 $margin-small 0; }
 h1 { font-size: 1.5rem; margin: 0; }
 
 h2 { 
-	font-size: 2.9rem;
-	line-height: 1; 
+	font-size: 2.7rem;
+	line-height: 1.15; 
 	@include respond-to(phones) { font-size: 1.5rem; line-height: 1.35;}
 }
 
