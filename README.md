@@ -13,7 +13,7 @@ Practices of segregation and infection prevention vary across clinics, as do the
 This is an [interactive exhibition](https://app.parcproject.org.uk/) about design and the built environment - we would love to hear your views and your experiences. You can share your ideas by clicking the feedback button.
 
 ## Prerequisites
-Ensure you have [npm](https://www.npmjs.com/) and at least [CodeKit 3.8](https://codekitapp.com/) installed on your system.
+Ensure you have [npm](https://www.npmjs.com/) and at least [CodeKit 3.9.2](https://codekitapp.com/) installed on your system.
 
 ## Installation
 
