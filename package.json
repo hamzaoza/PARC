@@ -1,27 +1,28 @@
 {
-  "name": "parc",
-  "version": "1.0.0",
-  "description": "A virtual exhibition to raise awareness about the interconnectedness of building design and infection, and to create a space for dialogue between designers, architects, clinicians, patients, healthcare managers etc.",
   "main": "index.js",
-  "scripts": {
-    "upload": "git push origin master && git subtree push --prefix=dist origin gh-pages"
+  "bugs": {
+    "url": "https://github.com/hamzaoza/parc/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hamzaoza/parc.git"
   },
-  "author": "Hamza Oza",
-  "bugs": {
-    "url": "https://github.com/hamzaoza/parc/issues"
+  "scripts": {
+    "upload": "git push origin master && git subtree push --prefix=dist origin gh-pages"
   },
+  "optionalDependencies": {},
+  "author": "Hamza Oza",
   "homepage": "https://github.com/hamzaoza/parc#readme",
+  "version": "1.0.0",
+  "description": "A virtual exhibition to raise awareness about the interconnectedness of building design and infection, and to create a space for dialogue between designers, architects, clinicians, patients, healthcare managers etc.",
+  "name": "parc",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.1",
     "navigo": "^7.1.2",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
-    "plyr": "^3.5.4",
-    "three": "^0.102.1"
+    "plyr": "^3.5.6",
+    "three": "^0.106.2"
   }
 }
