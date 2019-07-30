@@ -360,7 +360,3 @@ window.addEventListener("resize", function(event) {
 });
 
 updateMobile();
-
-window.onload = function(){
-	frame.setAttribute("src", frame.dataset.src);
-}
