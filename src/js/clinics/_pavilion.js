@@ -34,7 +34,7 @@ export const Pavilion = {
 				}],
 				"credit" : {
 					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
-					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+					"link" : "http://hdl.library.upenn.edu/1017/d/archives/20040413004"
 				},
 			}
 		},
@@ -51,7 +51,7 @@ export const Pavilion = {
 				"description": "The job of the central chimney was to keep air moving and circulating. The central stove drew air from surrounding windows, to evacuate air up and out through high vaulted ceilings.",
 				"credit" : {
 					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
-					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+					"link" : "http://hdl.library.upenn.edu/1017/d/archives/20020501003"
 				},
 			}
 		},
@@ -66,7 +66,7 @@ export const Pavilion = {
 				"description": "Windows were situated either side of each bed with direct access to create an <em>“island of fresh air”</em>. They tended to be floor to ceiling height to maximise ventilation and natural daylight.",
 				"credit" : {
 					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
-					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+					"link" : "http://hdl.library.upenn.edu/1017/d/archives/20040414002"
 				},
 			}
 		},
@@ -102,8 +102,8 @@ export const Pavilion = {
 					"colour" : "grad-orange-pink"
 				}],
 				"credit" : {
-					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
-					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+					"text" : "",
+					"link" : ""
 				},
 			}
 		},
@@ -129,7 +129,7 @@ export const Pavilion = {
 				"theme" : "dark",
 				"credit" : {
 					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
-					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+					"link" : "http://hdl.library.upenn.edu/1017/d/archives/20100316007"
 				},
 			}
 		},
@@ -143,7 +143,7 @@ export const Pavilion = {
 				"theme" : "dark",
 				"credit" : {
 					"text" : "Image courtesy of Penn Libraries, University of Pennsylvania.",
-					"link" : "http://dla.library.upenn.edu/dla/archives/image.html?q=kitchen&id=ARCHIVES_20100316007&"
+					"link" : "http://hdl.library.upenn.edu/1017/d/archives/20040413006"
 				},
 			}
 		},

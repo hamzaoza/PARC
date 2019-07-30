@@ -108,11 +108,11 @@ export const Skane = {
 			"title" : "Human Microbiome",
 			"position": "left top",
 			"quotes" : [{
-				"quote" : "Human microbiome research has shown that the use of antibiotics can disrupt the normal array of microbes that live in and on our bodies. The constant attempts at sterilisation in hospitals might function on a similar level…",
+				"quote" : "Human microbiome research has shown that the use of antibiotics can disrupt the normal array of microbes that live in and on our bodies. The constant attempts at sterilisation in hospitals might function on a similar level...",
 				"colour" : "pink",
 				"position" : "left middle",
 			},{
-				"quote" : "…the use of broad-spectrum antibiotics, bleach, and hand sanitiser might take out some of the harmful pathogens, but it also cuts a swath through the hordes of non-pathogenic microorganisms",
+				"quote" : "...the use of broad-spectrum antibiotics, bleach, and hand sanitiser might take out some of the harmful pathogens, but it also cuts a swath through the hordes of non-pathogenic microorganisms",
 				"cite" : "Carrie. A. (2014)",
 				"colour" : "pink",
 				"position" : "center bottom",

@@ -103,7 +103,7 @@ export const Site3 = {
 				"position": "left bottom",
 				"description": "Toilets have implications for transfer and cross-infection, because you have patients going into a confined space with the door shut and no air transfer. This becomes a high risk area. <br /><br />If patients are going to use a toilet then it would be preferable if there was a window that could be opened to increase airflow.",
 				"quotes" : [{
-					"quote" : "If patients have deliberately gone into the bathroom to cough and get a sputum sample, that’s where the risk comes from…quite often they don’t like to cough or spit in front of people.",
+					"quote" : "If patients have deliberately gone into the bathroom to cough and get a sputum sample, that’s where the risk comes from...quite often they don’t like to cough or spit in front of people.",
 					"cite" : "Mandy, Physiotherapist",
 					"colour" : "red",
 					"position" : "center middle",
@@ -169,7 +169,7 @@ export const Site3 = {
 				"title" : "Consultant",
 				"url" : "images/site3/consultant-2.jpg",
 				"position": "right bottom",
-				"mobile" : "I haven’t got any windows in my room….sometimes I do worry that affects the airflow, if someone coughs in the room, is that sticking around longer? - Rob, Consultant",
+				"mobile" : "I haven’t got any windows in my room...sometimes I do worry that affects the airflow, if someone coughs in the room, is that sticking around longer? - Rob, Consultant",
 				"quotes" : [{
 					"quote" : "...I prefer consulting room 20, if I get to choose, because I can move my chair to see who’s waiting outside. Again the consultants come out to call patients…",
 					"cite" : "Issac, Consultant",
