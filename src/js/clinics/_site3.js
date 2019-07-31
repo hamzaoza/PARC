@@ -98,6 +98,7 @@ export const Site3 = {
 			"name" : "toilets",
 			"position" : [22.38, 6, 3.18],
 			"data" : {
+				"url" : "",
 				"theme" : "dark",
 				"title" : "Toilets",
 				"position": "left bottom",
@@ -130,6 +131,7 @@ export const Site3 = {
 			"name" : "toilets-disabled",
 			"position" : [-9.38, 4, 10.28],
 			"data" : {
+				"url" : "",
 				"theme" : "dark",
 				"title" : "Toilets",
 				"position": "left bottom",
