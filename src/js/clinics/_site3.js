@@ -167,7 +167,7 @@ export const Site3 = {
 			"position" : [-13.16, 2, 1.26],
 			"data" : {
 				"title" : "Consultant",
-				"url" : "images/site3/consultant-2.jpg",
+				"url" : "images/site3/consultant.jpg",
 				"position": "right bottom",
 				"mobile" : "I haven’t got any windows in my room...sometimes I do worry that affects the airflow, if someone coughs in the room, is that sticking around longer? - Rob, Consultant",
 				"quotes" : [{
