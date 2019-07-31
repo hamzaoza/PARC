@@ -53,12 +53,12 @@ export const Site2 = {
 		"data" : {
 			"url" : "images/site2/route.jpg",
 			"title" : "Route to Clinic",
-			"position": "left bottom",
+			"position": "left middle",
 			"quotes" : [{
 				"quote" : "the patients don’t have to report to reception, they come straight through to us. I’m normally the first person to actually see the patient. So normally when the patients come through they will get put into a designated room, depending on what they grow",
 				"cite" : "Elizabeth, Healthcare Assistant",
 				"colour" : "pink",
-				"position" : "center top",
+				"position" : "left bottom",
 			},{
 				"quote" : "So you don’t have to go to the main reception you just walk straight through. Once I get to the point where I can see the seating area I start ‘scouting’ around to see who else is there. Generally they’re really good at timing appointments. So you don’t come into contact with anybody",
 				"cite" : "Abbi, Patient",
