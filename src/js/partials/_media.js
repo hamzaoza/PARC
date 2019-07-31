@@ -16,7 +16,7 @@ export const media = function(mesh){
 
 		let bg = `<div class="bg" style="${bgImage}"></div>`;
 		let summary = `<div class="slide-desc ${descpos}"><h2>${data.title}</h2> ${content} ${credit}</div>`;
-		let mobileImg = `<div class="mobile-img scroll"><img src="${data.url}" alt="Image for ${data.title}"/></div>`;
+		let mobileImg = `<div class="mobile-img scroll"><img src="${data.url.replace(".jpg", "-m.jpg")}" alt="Image for ${data.title}"/></div>`;
 		let mobile = `<div class="mobile-desc scroll"><h2>${data.title}</h2><p>${mobiledes}</p> ${credit} </div>`;
 		let quotes = "";
 
