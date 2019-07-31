@@ -15,9 +15,10 @@ export const Site2 = {
 		"name" : "parking",
 		"position" : [-28, 3.5, -2.5],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/parking.jpg",
 			"title" : "Parking and Access",
 			"position": "left bottom",
+			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "I tend to not go to the parking meter if I see someone else there, unless it’s someone that to me is very obvious doesn’t have CF...if there’s anyone sort of my own age, I will tend to just like hang back...because it’s enclosed, it’s not just a meter that’s outside, it’s in a little hut. I carry hand sanitiser in my bag.",
 				"cite" : "Abbi, Patient",
@@ -50,7 +51,7 @@ export const Site2 = {
 		"name" : "route",
 		"position" : [-12, 3.5, -2.5],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/route.jpg",
 			"title" : "Route to Clinic",
 			"position": "left bottom",
 			"quotes" : [{
@@ -102,9 +103,10 @@ export const Site2 = {
 		"name" : "mdt",
 		"position" : [2, 3.5, 0.75],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/mdt.jpg",
 			"title" : "Multidisciplinary Team Room",
 			"position": "left top",
+			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "So we all tend to kind of congregate there, because usually by the time you start clinic the patients are getting their observations done, their lung function done and seeing the dietician. So we’re usually, the clinicians are usually the last people to go in, so we usually sit in there, do some emails.",
 				"cite" : "Anthony, Consultant",
@@ -121,7 +123,7 @@ export const Site2 = {
 		"name" : "whiteboard",
 		"position" : [2.75, 3.5, -1.25],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/whiteboard.jpg",
 			"title" : "Whiteboard",
 			"position": "left middle",
 			"quotes" : [{
@@ -145,7 +147,7 @@ export const Site2 = {
 		"name" : "waiting",
 		"position" : [6, 4, 0],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/waiting.jpg",
 			"title" : "Waiting",
 			"position": "left top",
 			"quotes" : [{
@@ -164,7 +166,7 @@ export const Site2 = {
 		"name" : "consulting-organisation",
 		"position" : [6.5, 3.5, -3],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/organisation.jpg",
 			"title" : "Consulting Rooms – Organisation",
 			"position": "right bottom",
 			"quotes" : [{
@@ -188,9 +190,10 @@ export const Site2 = {
 		"name" : "consulting-design",
 		"position" : [5.25, 3.5, -6],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/consultant-design.jpg",
 			"title" : "Consulting Rooms – Design",
 			"position": "left bottom",
+			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "these rooms are really small and these rooms are really big. So if you’re one of these rooms you’re kind of hunched in there...if you’re unlucky as a patient you get into a small room, and then you’ve got three or four people, your family have come with you. There’s barely room to swing a cat in some of those rooms.",
 				"cite" : "Anthony, Consultant",
@@ -207,9 +210,10 @@ export const Site2 = {
 		"name" : "windows",
 		"position" : [0, 3.5, 6.5],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/windows.jpg",
 			"title" : "Windows",
 			"position": "left top",
+			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "Sometimes the windows are open, sometimes they’re not.  I think even if it’s cold they open them in between like patients. Because I know obviously like the cleanliness levels are maintained so highly it doesn’t bother me, I prefer to be warm! I get cold really easily.",
 				"cite" : "Abbi, Patient",
@@ -288,7 +292,7 @@ export const Site2 = {
 		"name" : "xray",
 		"position" : [-7, 3.5, 10],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/xray.jpg",
 			"title" : "X-Ray",
 			"position": "left bottom",
 			"quotes" : [{
