@@ -37,9 +37,10 @@ export const Site2 = {
 		"name" : "entrance",
 		"position" : [-22, 3.5, -2.5],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/entrance.jpg",
 			"title" : "Entrance",
 			"position": "left bottom",
+			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "those two sets of double doors, it’s an enclosed area, so that always makes me a little bit more nervous. And it’s just like if you both like breathe out at the same time...it’s a really small chance if you’re just passing, and there’s no actual contact, but there’s a reason they keep us segregated",
 				"cite" : "Abbi, Patient",
@@ -70,7 +71,7 @@ export const Site2 = {
 		"name" : "corridors-1",
 		"position" : [-5, 3.5, -2.5],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/corridor-1.jpg",
 			"title" : "Corridors",
 			"position": "left top",
 			"quotes" : [{
@@ -89,7 +90,7 @@ export const Site2 = {
 		"name" : "corridors-2",
 		"position" : [-7, 5, 5],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/corridor-2.jpg",
 			"title" : "Corridors",
 			"position": "left bottom",
 			"quotes" : [{
@@ -230,14 +231,14 @@ export const Site2 = {
 		"name" : "ventilation",
 		"position" : [10, 3.5, -9.5],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/ventilation.jpg",
 			"title" : "Ventilation",
-			"position": "right bottom",
+			"position": "center bottom",
 			"quotes" : [{
 				"quote" : "there is an air conditioning unit. It’s rubbish! In the summer it’s too hot and in the winter it’s too cold...there’s a kind of a vent, I don’t think it does much.",
 				"cite" : "Anthony, Consultant",
 				"colour" : "green",
-				"position" : "right middle",
+				"position" : "left top",
 			},{
 				"quote" : "I think in outpatient clinic...if somebody has been in the room and I go in to wipe the room down before someone else is put in it, I would always open a window as well. In an ideal world we’d be leaving maybe half an hour between patients, but in reality we can’t do that, so we do the best we can. We need more rooms or more clinics",
 				"cite" : "Irene, Physiotherapist",
@@ -249,7 +250,7 @@ export const Site2 = {
 		"name" : "source",
 		"position" : [5.75, 3.5, 4],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/source.jpg",
 			"title" : "Source Rooms",
 			"position": "right middle",
 			"quotes" : [{
@@ -268,7 +269,7 @@ export const Site2 = {
 		"name" : "toilets",
 		"position" : [-10.75, 5, -6],
 		"data" : {
-			"url" : "images/site2/",
+			"url" : "images/site2/toilets.jpg",
 			"title" : "Toilets",
 			"position": "left bottom",
 			"quotes" : [{
