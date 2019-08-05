@@ -15,7 +15,7 @@ export const Site1 = {
 		"name" : "entrance",
 		"position" : [-17.5, 4, 14],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/entrance.jpg",
 			"title" : "Main Entrance",
 			"position": "left bottom",
 			"quotes" : [{
@@ -29,26 +29,28 @@ export const Site1 = {
 		"name" : "lifts",
 		"position" : [-21.5, 4, 8],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/lifts.jpg",
 			"title" : "Lifts",
-			"position": "left middle",
+			"position": "center top",
 			"quotes" : [{
-				"quote" : "...the lifts would be  a risky area as well, if you get in a lift, obviously if you’re in with quite a few people, people are coughing...I have used the lift a few times, but I try to like avoid them as much as I can...the times normally I’d use the lift are if I’m a bit poorly. But most of the time I will use the stairs.",
+				"quote" : "the lifts would be a risky area as well, if you get in a lift, obviously if you’re in with quite a few people, people are coughing...I have used the lift a few times, but I try to like avoid them as much as I can...the times normally I’d use the lift are if I’m a bit poorly. But most of the time I will use the stairs.",
 				"cite" : "Ella, Patient",
 				"colour" : "orange",
 				"position" : "left bottom",
-			},{
-				"quote" : "So patients come up usually in the lifts…because it’s enclosed space, that’s always a little bit of a worry",
-				"cite" : "Rachel, Physiotherapist",
-				"colour" : "red",
-				"position" : "center bottom",
-			}]
+			}
+			// {
+			// 	"quote" : "So patients come up usually in the lifts…because it’s enclosed space, that’s always a little bit of a worry",
+			// 	"cite" : "Rachel, Physiotherapist",
+			// 	"colour" : "red",
+			// 	"position" : "center bottom",
+			// }
+			]
 		}
 	},{
 		"name" : "toilets",
 		"position" : [-21, 4, -2],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/toilets.jpg",
 			"title" : "Toilets",
 			"position": "left middle",
 			"quotes" : [{
@@ -67,9 +69,10 @@ export const Site1 = {
 		"name" : "waiting",
 		"position" : [-0.5, 4, 6],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/waiting.jpg",
 			"title" : "Waiting",
 			"position": "left middle",
+			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "So there is seating areas along some of the walls, there’s one there on the end of the corridor, which I would see as a hot spot. So I tend to stay away from it.  But the good thing is with the CF team, as soon as you’re there you are put it your own room and they shut the door, so I’m not overly concerned about it...",
 				"cite" : "Neil, Patient",
@@ -86,7 +89,7 @@ export const Site1 = {
 		"name" : "rupert",
 		"position" : [17.5, 4, 0],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/rupert.jpg",
 			"title" : "Rupert (Patient)",
 			"position": "left bottom",
 			"quotes" : [{
@@ -100,9 +103,10 @@ export const Site1 = {
 		"name" : "corridor-c",
 		"position" : [-8, 4, -8],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/corridor-c.jpg",
 			"title" : "Corridor C",
 			"position": "left middle",
+			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "...now we just go straight in a room, so whoever’s in the room next door, if they have CF, you don’t know what they look like, so if we were in the corridor together, I’m not exactly going to know if that person has CF or not.",
 				"cite" : "Ella, Patient",
@@ -119,9 +123,10 @@ export const Site1 = {
 		"name" : "friday-patients",
 		"position" : [-1, 4, -10.5],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/friday-patients.jpg",
 			"title" : "Friday Clinic Room (Patients)",
 			"position": "left bottom",
+			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "So I sit down, everyone comes and sees me; Dietitian, Emma and Una (CF nurses), Rachel, physiotherapist does my blows, and then Ellie (consultant) to conclude everything. And then sometimes the psychologist every now and again says hello and sees how I’m doing. Six people.",
 				"cite" : "Rupert, Patient",
@@ -138,7 +143,7 @@ export const Site1 = {
 		"name" : "friday-staff",
 		"position" : [-3, 4, -11.5],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/friday-staff.jpg",
 			"title" : "Friday Clinic Room (Staff)",
 			"position": "left middle",
 			"quotes" : [{
@@ -157,7 +162,7 @@ export const Site1 = {
 		"name" : "mdt",
 		"position" : [-4.75, 4, -5.5],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/mdt.jpg",
 			"title" : "Multidisciplinary Team Room",
 			"position": "left top",
 			"quotes" : [{
@@ -176,9 +181,10 @@ export const Site1 = {
 		"name" : "windows",
 		"position" : [10.5, 4, -3],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/windows.jpg",
 			"title" : "Windows",
 			"position": "left middle",
+			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "I don’t like hospitals; I’m big on fresh air, so any room I will always go nearest the window...they’re [CF team] always so nice about opening it, because they know what I’m like...they know I like the air.",
 				"cite" : "Rupert, Patient",
@@ -195,7 +201,7 @@ export const Site1 = {
 		"name" : "ad-hoc",
 		"position" : [21, 4, -1.5],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/adhoc.jpg",
 			"title" : "Ad-Hoc Rooms",
 			"position": "left middle",
 			"quotes" : [{
@@ -214,7 +220,7 @@ export const Site1 = {
 		"name" : "exit",
 		"position" : [-17.5, 4, 12],
 		"data" : {
-			"url" : "images/site1/",
+			"url" : "images/site1/entrance.jpg",
 			"title" : "Exit",
 			"position": "left middle",
 			"quotes" : [{
