@@ -124,7 +124,11 @@ export const Site3 = {
 					"cite" : "Elaine, Nurse",
 					"colour" : "pink",
 					"position" : "center bottom",
-				}]
+				}],
+				"credit" : {
+					"text" : "Image courtesy of National Heart Lung and Blood Insitute [Public domain]",
+					"link" : "https://commons.wikimedia.org/wiki/File:Spirometry_NIH.jpg"
+				},
 			}
 		},
 		{
