@@ -24,14 +24,7 @@ export const Site2 = {
 				"cite" : "Abbi, Patient",
 				"colour" : "orange",
 				"position" : "right middle",
-			},
-			// {
-			// 	"quote" : "When you get here it’s not particularly stressful in terms of finding somewhere to park, and it’s just really accessible...You don’t have all this worry and anxiety before you actually get into the building and get to do what you’re here for.",
-			// 	"cite" : "Amy, Patient",
-			// 	"colour" : "orange",
-			// 	"position" : "center middle",
-			// }
-			],
+			}]
 		}
 	},{
 		"name" : "entrance",
@@ -75,12 +68,12 @@ export const Site2 = {
 			"title" : "Corridors",
 			"position": "left top",
 			"quotes" : [{
-				"quote" : "So it’s all in and out that way...where the patient’s walking down, there’s a risk that they might walk in and out together. I think that’s a low level risk, but it’s that bit until they’re in the kind of safety cocoon of the clinic...we stagger the appointments…But the problem is you’ve got patients turning up at different times to their appointments.",
+				"quote" : "So it’s all in and out that way...where the patient’s walking down, there’s a risk that they might walk in and out together. I think that’s a low level risk, but it’s that bit until they’re in the kind of safety cocoon of the clinic...we stagger the appointments...But the problem is you’ve got patients turning up at different times to their appointments.",
 				"cite" : "Anthony, Consultant",
 				"colour" : "green",
 				"position" : "left bottom",
 			},{
-				"quote" : "I think because you get quite a bit of space in the main corridor…if I see someone coming from this clinic we can both walk at like opposite sides of the corridor. So I’ve never seen that as particularly a risky area.",
+				"quote" : "I think because you get quite a bit of space in the main corridor...if I see someone coming from this clinic we can both walk at like opposite sides of the corridor. So I’ve never seen that as particularly a risky area.",
 				"cite" : "Abbi, Patient",
 				"colour" : "orange",
 				"position" : "center bottom",
@@ -94,7 +87,7 @@ export const Site2 = {
 			"title" : "Corridors",
 			"position": "left bottom",
 			"quotes" : [{
-				"quote" : "I would like mirrors so you can see who’s coming around corners.  I feel like that might be a good thing when you are going to and from X-ray in the narrower corridors, if you can see who’s coming",
+				"quote" : "I would like mirrors so you can see who’s coming around corners. I feel like that might be a good thing when you are going to and from X-ray in the narrower corridors, if you can see who’s coming",
 				"cite" : "Abbi, Patient",
 				"colour" : "orange",
 				"position" : "left bottom",
@@ -128,6 +121,11 @@ export const Site2 = {
 			"title" : "Whiteboard",
 			"position": "left middle",
 			"quotes" : [{
+				"quote" : "If patients have arrived and they’re not in a room and I need to check where they are, the board on here tells us where everybody is. So I’ll often come back here to refer to it. Because they’re all numbered in order of who arrived when, so I don’t get that confused.",
+				"cite" : "Irene, Physiotherapist",
+				"colour" : "red",
+				"position" : "right bottom",
+			},{
 				"quote" : "We have a white board with which patients are where. Because sometimes you lose track, if someone’s waiting in the car you forget about them.",
 				"cite" : "Anthony, Consultant",
 				"colour" : "green",
@@ -137,11 +135,6 @@ export const Site2 = {
 				"cite" : "Elizabeth, Healthcare Assistant",
 				"colour" : "pink",
 				"position" : "center bottom",
-			},{
-				"quote" : "If patients have arrived and they’re not in a room and I need to check where they are, the board on here tells us where everybody is. So I’ll often come back here to refer to it. Because they’re all numbered in order of who arrived when, so I don’t get that confused.",
-				"cite" : "Irene, Physiotherapist",
-				"colour" : "red",
-				"position" : "right bottom",
 			}],
 		}
 	},{
@@ -171,15 +164,15 @@ export const Site2 = {
 			"title" : "Consulting Rooms – Organisation",
 			"position": "right bottom",
 			"quotes" : [{
+				"quote" : "So my role in outpatients is patients arrive, I allocate a room for them, they go into that room. I will go in and do the observations, input it all on the computer, then the physios will go in and do their bit, and the dietician and then the doctor...after a patient has gone, we will clean the room down. Ready for the next patient who comes in.",
+				"cite" : "Mary, Healthcare Assistant",
+				"colour" : "pink",
+				"position" : "center middle",
+			},{
 				"quote" : "So the patient will come in and go into a room and they’ll stay in that room and all the multi-disciplinary team (MDT) will go in and out of the room.",
 				"cite" : "Anthony, Consultant",
 				"colour" : "green",
 				"position" : "left top",
-			},{
-				"quote" : "So my role in outpatients is patients arrive, I allocate a room for them, they go into that room.  I will go in and do the observations, input it all on the computer, then the physios will go in and do their bit, and the dietician and then the doctor...after a patient has gone, we will clean the room down. Ready for the next patient who comes in.",
-				"cite" : "Mary, Healthcare Assistant",
-				"colour" : "pink",
-				"position" : "center middle",
 			},{
 				"quote" : "So the physio trolley, that’s our workstation if you like.  And it will literally just be then backwards and forwards from each room for the rest of the clinic.",
 				"cite" : "Irene, Physiotherapist",
@@ -216,7 +209,7 @@ export const Site2 = {
 			"position": "left top",
 			"theme" : "dark",
 			"quotes" : [{
-				"quote" : "Sometimes the windows are open, sometimes they’re not.  I think even if it’s cold they open them in between like patients. Because I know obviously like the cleanliness levels are maintained so highly it doesn’t bother me, I prefer to be warm! I get cold really easily.",
+				"quote" : "Sometimes the windows are open, sometimes they’re not. I think even if it’s cold they open them in between like patients. Because I know obviously like the cleanliness levels are maintained so highly it doesn’t bother me, I prefer to be warm! I get cold really easily.",
 				"cite" : "Abbi, Patient",
 				"colour" : "orange",
 				"position" : "left middle",
@@ -235,15 +228,15 @@ export const Site2 = {
 			"title" : "Ventilation",
 			"position": "center bottom",
 			"quotes" : [{
-				"quote" : "there is an air conditioning unit. It’s rubbish! In the summer it’s too hot and in the winter it’s too cold...there’s a kind of a vent, I don’t think it does much.",
-				"cite" : "Anthony, Consultant",
-				"colour" : "green",
-				"position" : "left top",
-			},{
 				"quote" : "I think in outpatient clinic...if somebody has been in the room and I go in to wipe the room down before someone else is put in it, I would always open a window as well. In an ideal world we’d be leaving maybe half an hour between patients, but in reality we can’t do that, so we do the best we can. We need more rooms or more clinics",
 				"cite" : "Irene, Physiotherapist",
 				"colour" : "red",
 				"position" : "left bottom",
+			},{
+				"quote" : "there is an air conditioning unit. It’s rubbish! In the summer it’s too hot and in the winter it’s too cold...there’s a kind of a vent, I don’t think it does much.",
+				"cite" : "Anthony, Consultant",
+				"colour" : "green",
+				"position" : "left top",
 			}],
 		}
 	},{
@@ -254,15 +247,15 @@ export const Site2 = {
 			"title" : "Source Rooms",
 			"position": "right middle",
 			"quotes" : [{
-				"quote" : "I’m more segregated than most because of the MRSA, but that’s fine, like I’m OK with it, because it’s keeping other people safe, not just me. I have to be one of the last ones in",
-				"cite" : "Abbi, Patient",
-				"colour" : "orange",
-				"position" : "left bottom",
-			},{
 				"quote" : "patients are cohort segregated but then within the clinic if patients have got other microorganisms (MRSA, pandoraea, mycobacterium abscessus) we have some rooms allocated for source isolation, they’re put in those and they’re not used again until the next day. These two are our source isolation rooms, because they are geographically separate.",
 				"cite" : "Irene, Physiotherapist",
 				"colour" : "red",
 				"position" : "center top",
+			},{
+				"quote" : "I’m more segregated than most because of the MRSA, but that’s fine, like I’m OK with it, because it’s keeping other people safe, not just me. I have to be one of the last ones in",
+				"cite" : "Abbi, Patient",
+				"colour" : "orange",
+				"position" : "left bottom",
 			}],
 		}
 	},{
@@ -273,15 +266,15 @@ export const Site2 = {
 			"title" : "Toilets",
 			"position": "left bottom",
 			"quotes" : [{
-				"quote" : "...we’ve only got two toilets, which is a disaster, because you have segregation, you have four people go to the toilet then that breaks it. You could have toilets in each room but you have nobody cleaning the toilets it would be twice as bad",
-				"cite" : "Nathan, Consultant",
-				"colour" : "green",
-				"position" : "left top",
-			},{
 				"quote" : "the toilets are an issue because we’ve had plumbing problems, so a lot of the toilets have been out of order. In our clinic area we’ve got two toilets.  And of course you never know when somebody’s going to need to use the facilities. So equally we can’t control who uses it and when.  And within each clinic, which is cohort segregated, there will be patients who are further segregated…there’s every chance that somebody that we’d wanted to keep separate has gone and used the toilet, and then somebody might go in after them.",
 				"cite" : "Irene, Physiotherapist",
 				"colour" : "red",
 				"position" : "center middle",
+			},{
+				"quote" : "...we’ve only got two toilets, which is a disaster, because you have segregation, you have four people go to the toilet then that breaks it. You could have toilets in each room but you have nobody cleaning the toilets it would be twice as bad",
+				"cite" : "Nathan, Consultant",
+				"colour" : "green",
+				"position" : "left top",
 			},{
 				"quote" : "We only have two toilets and monitoring who goes in and out, that’s really hard.  If we do see someone go in it that ‘grows’ something (e.g. NTM, MRSA) then I would put a sign on the door saying ‘do not use’, and then direct a patient to go to another toilet.",
 				"cite" : "Mary, Healthcare Assistant",
@@ -302,12 +295,12 @@ export const Site2 = {
 				"colour" : "green",
 				"position" : "left top",
 			},{
-				"quote" : "everybody knows the CF patients here because we’ve been here for years.  The people in different departments seem to know who we are…the radiologists seem to remember you, even if they haven’t seen you for a year, it’s just feels like an integrated service.  And it does come back to that idea of understanding as well.",
+				"quote" : "everybody knows the CF patients here because we’ve been here for years. The people in different departments seem to know who we are...the radiologists seem to remember you, even if they haven’t seen you for a year, it’s just feels like an integrated service. And it does come back to that idea of understanding as well.",
 				"cite" : "Amy, Patient",
 				"colour" : "orange",
 				"position" : "center middle",
 			},{
-				"quote" : "X-ray is a fairly small waiting area...we get to skip the waiting lines a bit, to ensure that we’re not hanging around...there’s the changing rooms and things like that that are small spaces…there is always that thing, has someone coughed and touched the door handle.  Again, my own hand sanitiser usually comes out!",
+				"quote" : "X-ray is a fairly small waiting area...we get to skip the waiting lines a bit, to ensure that we’re not hanging around...there’s the changing rooms and things like that that are small spaces...there is always that thing, has someone coughed and touched the door handle.  Again, my own hand sanitiser usually comes out!",
 				"cite" : "Abbi, Patient",
 				"colour" : "orange",
 				"position" : "right bottom",
