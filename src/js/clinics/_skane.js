@@ -52,8 +52,7 @@ export const Skane = {
 				"position" : "center bottom",
 			}],
 		}
-	},
-	{
+	},{
 		"name" : "outer-perimeter",
 		"position" : [11, 3, 16],
 		"data" : {
@@ -69,8 +68,7 @@ export const Skane = {
 				"colour" : "grad-pink-blue",
 			}],
 		}
-	},
-	{
+	},{
 		"name" : "circulation",
 		"position" : [-12, 3, 0],
 		"data" : {
@@ -85,8 +83,7 @@ export const Skane = {
 				"colour" : "grad-pink-blue",
 			}],
 		}
-	},
-	{
+	},{
 		"name" : "inner-perimeter",
 		"position" : [-4.3, 3, -8.5],
 		"data" : {
@@ -106,8 +103,7 @@ export const Skane = {
 				"position" : "center bottom",
 			}],
 		}
-	},
-	{
+	},{
 		"name" : "microbiome",
 		"position" : [15.2, 3, 4.6],
 		"data" : {
@@ -124,6 +120,30 @@ export const Skane = {
 				"colour" : "pink",
 				"position" : "center bottom",
 			}],
+		}
+	},{
+		"name" : "anterooms",
+		"position" : [11.68, 3, 6],
+		"data" : {
+			"url" : "images/skane/bg-1.jpg",
+			"title" : "Anterooms",
+			"description": "Situated between the outer and inner ring of the hospital - containing sanitory equipment, changing facilities and hand wash basins, etc.",
+			"position": "center middle",
+		}
+	},{
+		"name" : "balconies",
+		"position" : [7, 3, -17.5],
+		"data" : {
+			"url" : "images/skane/bg-2.jpg",
+			"title" : "Balconies",
+			"mobile": "Design of the exterior balconies led to discussions regarding exposure to wind, rain, and snow, exposure which was unavoidable to some degree. On the other hand, too much enclosure or shelter on the exterior paths could violate the principle that fresh outdoor air reduces infection transmission risk - (Holmdahl and Lanbeck 2013)",
+			"position": "left bottom",
+			"quotes" : [{
+				"quote" : "Design of the exterior balconies led to discussions regarding exposure to wind, rain, and snow, exposure which was unavoidable to some degree. On the other hand, too much enclosure or shelter on the exterior paths could violate the principle that fresh outdoor air reduces infection transmission risk",
+				"cite" : "(Holmdahl and Lanbeck 2013)",
+				"colour" : "grad-pink-blue",
+				"position" : "center bottom",
+			}]
 		}
 	}]
 };
