@@ -41,17 +41,17 @@ export const Site3 = {
 				"position": "right bottom",
 				"theme" : "dark",
 				"quotes" : [{
+					"quote" : "But before the patients come into these waiting areas, where do they go? They go to the cafe there. And they all sit together. If our coffee shop was closed the day we do clinics it would be great, because no one would congregate there.",
+					"cite" : "Isaac, Consultant",
+					"colour" : "green",
+					"position" : "center middle",
+				},{
 					"quote" : "I normally sit here … you have got the distance, you know somebody’s not really going to join us …. if you’re over there you’re very close to other people",
 					"cite" : "Isobel, Patient",
 					"colour" : "orange",
 					"position" : "top left",
 				},{
-					"quote" : "But before the patients come into these waiting areas, where do they go?  They go to the cafe there. And they all sit together. If our coffee shop was closed the day we do clinics it would be great, because no one would congregate there.",
-					"cite" : "Isaac, Consultant",
-					"colour" : "green",
-					"position" : "center middle",
-				},{
-					"quote" : "…when they first opened the café you weren’t supposed to sit here unless you were buying something…but then they put a sign up that says we’re allowed to use the seating here because the CF patients complained...",
+					"quote" : "...when they first opened the café you weren’t supposed to sit here unless you were buying something…but then they put a sign up that says we’re allowed to use the seating here because the CF patients complained...",
 					"cite" : "Isobel, Patient",
 					"colour" : "orange",
 					"position" : "bottom left",
@@ -66,12 +66,12 @@ export const Site3 = {
 				"title" : "Wating (Benches)",
 				"position": "left top",
 				"quotes" : [{
-					"quote" : "We had bench seating so the [non CF patients] didn’t feel as if they had to stand up and wait…Just making it more inclusive of all the patient groups we have coming through.",
+					"quote" : "We had bench seating so the [non CF patients] didn’t feel as if they had to stand up and wait...Just making it more inclusive of all the patient groups we have coming through.",
 					"cite" : "Vernon, Estates",
 					"colour" : "grey",
 					"position" : "left middle",
 				},{
-					"quote" : "They have got benches there, no arms, nothing in between.  The CF patients are told to stay away from each other, [but] there’s no physical barrier…",
+					"quote" : "They have got benches there, no arms, nothing in between. The CF patients are told to stay away from each other, [but] there’s no physical barrier...",
 					"cite" : "Isobel, Patient",
 					"colour" : "orange",
 					"position" : "center bottom",
@@ -85,9 +85,8 @@ export const Site3 = {
 				"url" : "images/site3/benches-corner.jpg",
 				"title": "Waiting (Corner)",
 				"position": "right bottom",
-				"mobile" : "I would generally avoid other people…I tend to sit just in the far corner. - Alex, Patient",
 				"quotes" : [{
-					"quote" : "I would generally avoid other people…I tend to sit just in the far corner.",
+					"quote" : "I would generally avoid other people...I tend to sit just in the far corner.",
 					"cite" : "Alex, Patient",
 					"colour" : "orange",
 					"position" : "right bottom",
@@ -139,9 +138,8 @@ export const Site3 = {
 				"theme" : "dark",
 				"title" : "Toilets",
 				"position": "left bottom",
-				"mobile" : "I use that disabled toilet there to do a sputum sample. I can imagine some people don’t bother.  But I do struggle sometimes to fetch stuff up, and a lot of people can just do it very easily. - Larry, Patient",
 				"quotes" : [{
-					"quote" : "I use that disabled toilet there to do a sputum sample. I can imagine some people don’t bother.  But I do struggle sometimes to fetch stuff up, and a lot of people can just do it very easily.",
+					"quote" : "I use that disabled toilet there to do a sputum sample. I can imagine some people don’t bother. But I do struggle sometimes to fetch stuff up, and a lot of people can just do it very easily.",
 					"cite" : "Larry, Patient",
 					"colour" : "orange",
 					"position" : "left middle",
@@ -155,16 +153,15 @@ export const Site3 = {
 				"title" : "Nurse",
 				"url" : "images/site3/nurse.jpg",
 				"position": "right bottom",
-				"mobile" : "In an ideal world, for cystic fibrosis, you would have a patient in a room and they wouldn’t move from that room; everyone would go in to them and then they would leave. We don’t have the facilities to have a patient in a room and we all move around. - Elaine, Nurse",
 				"quotes" : [{
-					"quote" : "In an ideal world, for cystic fibrosis, you would have a patient in a room and they wouldn’t move from that room; everyone would go in to them and then they would leave. We don’t have the facilities to have a patient in a room and we all move around.",
-					"colour" : "pink",
-					"position" : "center middle",
-				},{
-					"quote" : "I go into the waiting area, look for the patient, then walk all the way back and make sure they see who they need to see…there’s a lot of backwards and forwards.",
+					"quote" : "I go into the waiting area, look for the patient, then walk all the way back and make sure they see who they need to see...there’s a lot of backwards and forwards.",
 					"cite" : "Elaine, Nurse",
 					"colour" : "pink",
 					"position" : "center bottom",
+				},{
+					"quote" : "In an ideal world, for cystic fibrosis, you would have a patient in a room and they wouldn’t move from that room; everyone would go in to them and then they would leave. We don’t have the facilities to have a patient in a room and we all move around.",
+					"colour" : "pink",
+					"position" : "center middle",
 				}]
 			}
 		},
@@ -175,17 +172,16 @@ export const Site3 = {
 				"title" : "Consultant",
 				"url" : "images/site3/consultant.jpg",
 				"position": "right bottom",
-				"mobile" : "I haven’t got any windows in my room...sometimes I do worry that affects the airflow, if someone coughs in the room, is that sticking around longer? - Rob, Consultant",
 				"quotes" : [{
-					"quote" : "...I prefer consulting room 20, if I get to choose, because I can move my chair to see who’s waiting outside. Again the consultants come out to call patients…",
-					"cite" : "Issac, Consultant",
-					"colour" : "green",
-					"position" : "left middle",
-				},{
 					"quote" : "I haven’t got any windows in my room….sometimes I do worry that affects the airflow, if someone coughs in the room, is that sticking around longer?",
 					"cite" : "Rob, Consultant",
 					"colour" : "green",
 					"position" : "center bottom",
+				},{
+					"quote" : "...I prefer consulting room 20, if I get to choose, because I can move my chair to see who’s waiting outside. Again the consultants come out to call patients…",
+					"cite" : "Issac, Consultant",
+					"colour" : "green",
+					"position" : "left middle",
 				}]
 			}
 		},
@@ -196,16 +192,15 @@ export const Site3 = {
 				"title" : "Physiotherapist",
 				"url" : "images/site3/physio.jpg",
 				"position": "left top",
-				"mobile" : "I’ll open the windows if I’ve been getting people coughing and clearing stuff or have done a nebuliser trial, to try and get the air flow through. But we’ve got that many patients, you don’t have a lot of time before you get someone else in. - Mandy, Physiotherapist",
 				"quotes" : [{
-					"quote" : "I’ll open the windows if I’ve been getting people coughing and clearing stuff or have done a nebuliser trial, to try and get the air flow through. But we’ve got that many patients, you don’t have a lot of time before you get someone else in.",
-					"colour" : "red",
-					"position" : "center middle",
-				},{
-					"quote" : "The Friday physio room doesn’t have a window…when there’s not a patient in my room I have the door open. But I don’t know whether that’s a good thing because you’re potentially spreading bugs back out!",
+					"quote" : "The Friday physio room doesn’t have a window...when there’s not a patient in my room I have the door open. But I don’t know whether that’s a good thing because you’re potentially spreading bugs back out!",
 					"cite" : "Mandy, Physiotherapist",
 					"colour" : "red",
 					"position" : "right bottom",
+				},{
+					"quote" : "I’ll open the windows if I’ve been getting people coughing and clearing stuff or have done a nebuliser trial, to try and get the air flow through. But we’ve got that many patients, you don’t have a lot of time before you get someone else in.",
+					"colour" : "red",
+					"position" : "center middle",
 				}]
 			}
 		},
@@ -216,7 +211,6 @@ export const Site3 = {
 				"title" : "Physiotherapist",
 				"url" : "images/site3/physio.jpg",
 				"position": "left top",
-				"mobile" : "I’m collecting sputum samples, and quite often I've got to go looking for a clinical waste bin, they’re not in each room. <br/><br/> So on a Monday I’d have to walk up here to get rid of any infectious stuff before seeing the next person. - Mandy, Physiotherapist",
 				"quotes" : [{
 					"quote" : "I’m collecting sputum samples, and quite often I've got to go looking for a clinical waste bin, they’re not in each room. <br/><br/> So on a Monday I’d have to walk up here to get rid of any infectious stuff before seeing the next person.",
 					"cite" : "Mandy, Physiotherapist",
@@ -232,7 +226,6 @@ export const Site3 = {
 				"title" : "Corridors",
 				"url" : "images/site3/corridors.jpg",
 				"position": "right bottom",
-				"mobile" : "I’d say this is a risky area, because it’s quite narrow, and you’ve got people coming from the waiting area…So I feel like this is like a crossover point, a pinch point that feels quite tight and can be congested sometimes. - Rob, Consultant",
 				"quotes" : [{
 					"quote" : "I’d say this is a risky area, because it’s quite narrow, and you’ve got people coming from the waiting area…So I feel like this is like a crossover point, a pinch point that feels quite tight and can be congested sometimes.",
 					"cite" : "Rob, Consultant",

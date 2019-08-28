@@ -23,6 +23,8 @@ export const media = function(mesh){
 
 			}
 
+			return "";
+
 		}
 
 		const descpos = data.position || "top left";
