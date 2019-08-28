@@ -83,7 +83,7 @@ export const Site1 = {
 		"position" : [17.5, 4, 0],
 		"data" : {
 			"url" : "images/site1/rupert.jpg",
-			"title" : "Rupert (Patient)",
+			"title" : "Wayfinding",
 			"position": "left bottom",
 			"quotes" : [{
 				"quote" : "So either way I’m coming down off the main street like this...I always forget what corridor it is, Corridor B or Corridor C, so I always ring and text [the CF team] here and go <em>‘what corridor is it, B or C etc...’</em> and then go down here, and there is a waiting area to the side...you get put in there...not by the CF nurse, but one of the people who work on Corridor C or B...then once the CF team find out you are here they come and then put you in a room.",
@@ -97,7 +97,7 @@ export const Site1 = {
 		"position" : [-8, 4, -8],
 		"data" : {
 			"url" : "images/site1/corridor-c.jpg",
-			"title" : "Corridor C",
+			"title" : "Corridors",
 			"position": "left middle",
 			"theme" : "dark",
 			"quotes" : [{
@@ -117,7 +117,7 @@ export const Site1 = {
 		"position" : [-1, 4, -10.5],
 		"data" : {
 			"url" : "images/site1/friday-patients.jpg",
-			"title" : "Friday Clinic Room (Patients)",
+			"title" : "Regular Clinic Rooms",
 			"position": "left bottom",
 			"theme" : "dark",
 			"quotes" : [{
@@ -137,7 +137,7 @@ export const Site1 = {
 		"position" : [-3, 4, -11.5],
 		"data" : {
 			"url" : "images/site1/friday-staff.jpg",
-			"title" : "Friday Clinic Room (Staff)",
+			"title" : "Carousel",
 			"position": "left middle",
 			"quotes" : [{
 				"quote" : "...we go into that patient...so one of the nursing team would go in, the physio would go in, the dietician would go in, doctor would go in, the psychology team would go in...the patient would stay in the room...with the door shut.",
