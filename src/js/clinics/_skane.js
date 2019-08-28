@@ -22,7 +22,7 @@ export const Skane = {
 			"position": "left bottom",
 			"theme" : "dark",
 			"credit" : {
-				"text" : "Image courtesy of C.F. Møller Architects",
+				"text" : "Image courtesy of C.F. Møller Architects and Joergen True",
 				"link" : "https://www.cfmoller.com/p/Emergency-and-Infectious-Diseases-Unit-SUS-Malmo-i2150.html"
 			},
 			"quotes" : [{
@@ -38,17 +38,18 @@ export const Skane = {
 		"data" : {
 			"url" : "images/skane/entrance.jpg",
 			"title" : "Entrance",
+			"description": "Individual entrances to individual rooms from wrap-around fresh air balconies.",
 			"position": "left bottom",
 			"theme" : "dark",
 			"credit" : {
-				"text" : "Image courtesy of C.F. Møller Architects",
+				"text" : "Image courtesy of C.F. Møller Architects and Joergen True",
 				"link" : "https://www.cfmoller.com/p/Emergency-and-Infectious-Diseases-Unit-SUS-Malmo-i2150.html"
 			},
 			"quotes" : [{
 				"quote" : "Entrance from the outside makes it possible for patients and relatives to enter rooms under isolation measures without entering the interior areas of the ward.",
 				"cite" : "Holmdahl et al (2013)",
 				"colour" : "grad-pink-blue",
-				"position" : "left middle",
+				"position" : "center bottom",
 			}],
 		}
 	},
@@ -58,10 +59,13 @@ export const Skane = {
 		"data" : {
 			"url" : "images/skane/bg-3.jpg",
 			"title" : "Outer Perimeter",
-			"position": "center bottom",
+			"description": "Patients, relatives and visitors occupy the outer ring of the building - seperated by 'anterooms' from the inner ring occupied by clinical staff.",
+			"position": "left top",
+			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "By proposing a round building, a high degree of standardisation could be achieved because the patient room units were distributed along the outer perimeter...",
 				"cite" : "Holmdahl et al (2013)",
+				"position": "left bottom",
 				"colour" : "grad-pink-blue",
 			}],
 		}
@@ -72,10 +76,12 @@ export const Skane = {
 		"data" : {
 			"url" : "images/skane/bg-1.jpg",
 			"title" : "Circulation",
-			"position": "center bottom",
+			"description": "A goal of the hospital is 'outdoor circulation' removing 'indoor' corridors and passageways.",
+			"position": "center middle",
 			"quotes" : [{
 				"quote" : "...it should be possible to separate the flow or circulation of patients with contagious diseases from other patient circulation...",
 				"cite" : "Holmdahl et al (2013)",
+				"position": "center bottom",
 				"colour" : "grad-pink-blue",
 			}],
 		}
@@ -86,17 +92,18 @@ export const Skane = {
 		"data" : {
 			"url" : "images/skane/corridor.jpg",
 			"title" : "Inner Perimeter",
+			"description": "Clinical staff occupy the inner ring of the building - seperated from the outer ring (occupied by patients) by 'anterooms'.",
 			"position": "left bottom",
 			"theme" : "dark",
 			"credit" : {
-				"text" : "Image courtesy of C.F. Møller Architects",
+				"text" : "Image courtesy of C.F. Møller Architects and Joergen True",
 				"link" : "https://www.cfmoller.com/p/Emergency-and-Infectious-Diseases-Unit-SUS-Malmo-i2150.html"
 			},
 			"quotes" : [{
 				"quote" : "Nursing offices and stations, staff rooms, supply rooms were located in the inner perimeter",
 				"cite" : "Holmdahl et al (2013)",
 				"colour" : "grad-pink-blue",
-				"position" : "left middle",
+				"position" : "center bottom",
 			}],
 		}
 	},

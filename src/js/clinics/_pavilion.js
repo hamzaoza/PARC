@@ -48,7 +48,7 @@ export const Pavilion = {
 				"bgPosition" : "top center",
 				"bgColour" : "#2b2227",
 				"theme" : "dark",
-				"description": "The job of the central chimney was to keep air moving and circulating. The central stove drew air from surrounding windows, to evacuate air up and out through high vaulted ceilings.",
+				"description": "The central chimney keeps air moving and circulating. The stove draws air from surrounding windows, to be expelled up and out through high vaulted ceilings.",
 				"credit" : {
 					"text" : "Image courtesy of University Archives, University of Pennsylvania.",
 					"link" : "http://hdl.library.upenn.edu/1017/d/archives/20020501003"
@@ -63,7 +63,7 @@ export const Pavilion = {
 				"title" : "Windows",
 				"position": "left bottom",
 				"theme" : "dark",
-				"description": "Windows were situated either side of each bed with direct access to create an <em>“island of fresh air”</em>. They tended to be floor to ceiling height to maximise ventilation and natural daylight.",
+				"description": "Windows were situated either side of each bed with direct access to create an “island of fresh air”. They tended to be floor to ceiling height to maximise ventilation and natural daylight.",
 				"credit" : {
 					"text" : "Image courtesy of University Archives, University of Pennsylvania.",
 					"link" : "http://hdl.library.upenn.edu/1017/d/archives/20040414002"
