@@ -7,11 +7,29 @@ export const media = function(mesh){
 	
 	if (data.type != "video") {
 
+		function getMobile() {
+
+			if (data.mobile)
+				return data.mobile;
+
+			if (data.description)
+				return data.description;
+
+			if (data.quotes) {
+
+				const quote = data.quotes[0];
+
+				return `<strong>${quote.cite} says:</strong> "<em>${quote.quote}</em>"`;
+
+			}
+
+		}
+
 		const descpos = data.position || "top left";
 		const content = data.description ? `<p>${data.description}</p>` : "";
 		const credit = data.credit ? `<small><a href="${data.credit.link}" target="_blank">${data.credit.text}</a></small>` : "";
 		const bgImage = data.url ? `background-image: url(${data.url});` : "";
-		const mobiledes = data.mobile ? data.mobile : data.description ? data.description : "";
+		const mobiledes = getMobile();
 
 		let bg = `<div class="bg" style="${bgImage}"></div>`;
 		let summary = `<div class="slide-desc ${descpos}"><h2>${data.title}</h2> ${content} ${credit}</div>`;
