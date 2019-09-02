@@ -97,6 +97,6 @@ export const hotspots = function(clinic, hotspots){
 	events.on(clinic.name + "_newItem", _newItem);
 	events.on(clinic.name + "_noItem", _noItem);
 
-	// window.THREE = THREE;
+	window.THREE = THREE;
 
 }

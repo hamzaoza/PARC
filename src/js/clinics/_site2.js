@@ -66,7 +66,8 @@ export const Site2 = {
 		"data" : {
 			"url" : "images/site2/corridor-1.jpg",
 			"title" : "Corridor to Clinic",
-			"position": "left top",
+			"theme" : "dark",
+			"position": "top center",
 			"quotes" : [{
 				"quote" : "It’s one way in and out, there’s a risk that patients might walk in and out together, although it’s a low risk. We stagger the appointments, but you’ve got patients turning up at different times to their appointments. ",
 				"cite" : "Anthony, Consultant",
@@ -148,7 +149,7 @@ export const Site2 = {
 		}
 	},{
 		"name" : "consulting-organisation",
-		"position" : [6.5, 3.5, -3],
+		"position" : [10, 3.5, -2.5],
 		"data" : {
 			"url" : "images/site2/organisation.jpg",
 			"title" : "Carousel",
@@ -162,7 +163,7 @@ export const Site2 = {
 		}
 	},{
 		"name" : "consulting-design",
-		"position" : [5.25, 3.5, -6],
+		"position" : [5.5, 3.5, -5.35],
 		"data" : {
 			"url" : "images/site2/consultant-design.jpg",
 			"title" : "Consulting Rooms – Design",
@@ -275,6 +276,45 @@ export const Site2 = {
 				"cite" : "Abbi, Patient",
 				"colour" : "orange",
 				"position" : "left bottom",
+			}],
+		}
+	},{
+		"name" : "alcogel",
+		"position" : [5.5, 3.5, -3],
+		"data" : {
+			"url" : "images/site2/gel.jpg",
+			"title" : "Alcogel",
+			"theme" : "dark",
+			"position": "left bottom",
+			"quotes" : [{
+				"quote" : "...in the old days you’d see a clinician do a whole ward round not washing their hands once. Now we use alcohol [gel] and washing for every patient.  We never go into a room without doing that, it’s become a normality.",
+				"cite" : "Nathan, Consultant",
+				"colour" : "green",
+				"position" : "center top",
+			},{
+				"quote" : "...on the wall there’s the sanitising gel. So you’d use that pre and post patient...there’s one outside each room, so you squirt and then you’re opening the door and rubbing your hands as you’re walking in.",
+				"cite" : "Anthony, Consultant",
+				"colour" : "green",
+				"position" : "center bottom",
+			}],
+		}
+	},{
+		"name" : "sinks",
+		"position" : [4.5, 3.5, -7],
+		"data" : {
+			"url" : "images/site2/sinks.jpg",
+			"title" : "Sinks",
+			"position": "left middle",
+			"quotes" : [{
+				"quote" : "I wash my hands in front of patients - I would rather them see me do it so they know I’ve done it. Obviously, hand washing every time I take bloods. And patients tend to gel or wash their hands in the room.",
+				"cite" : "Emma, Healthcare Assistant",
+				"colour" : "pink",
+				"position" : "left bottom",
+			},{
+				"quote" : "There’s sinks in every room, I would gel outside the room before I go in, and you would gel or wash your hands on the way out.  I tend to wash my hands because they get really sore after gelling.",
+				"cite" : "Irene, Physiotherapist",
+				"colour" : "red",
+				"position" : "center bottom",
 			}],
 		}
 	}]
