@@ -41,6 +41,7 @@ export const hotspots = function(clinic, hotspots){
 	function _newItem(mesh){
 		media(mesh);
 		gtag.event("Hotspot", "click", mesh.name);
+		mesh.scale.set(2, 2, 2);
 		mesh.material.emissiveIntensity = 0;
 	}
 
@@ -50,6 +51,9 @@ export const hotspots = function(clinic, hotspots){
 
 	function _noItem(mesh) {
 		checkCounter(mesh.userData);
+		mesh.scale.set(0.6, 0.6, 0.6);
+		mesh.material.emissive.setHex(0xe74c3c);
+		mesh.material.color.setHex(0xe74c3c);
 	}
 
 	hotspots.forEach(function(hotspot){
@@ -60,7 +64,7 @@ export const hotspots = function(clinic, hotspots){
 		const material = new THREE.MeshLambertMaterial({ 
 			color: color,
 			emissive: color,
-			emissiveIntensity: 0.6
+			emissiveIntensity: 0.7
 		});
 
 		const shape = new THREE.Mesh(geometry, material);
