@@ -97,8 +97,7 @@ export const Site3 = {
 			"name" : "toilets",
 			"position" : [22.38, 6, 3.18],
 			"data" : {
-				"url" : "",
-				"theme" : "dark",
+				"url" : "images/site3/toilet.jpg",
 				"title" : "Toilets",
 				"position": "left bottom",
 				"description": "Toilets have implications for transfer and cross-infection, because you have patients going into a confined space with the door shut and no air transfer. This becomes a high risk area. <br /><br />If patients are going to use a toilet then it would be preferable if there was a window that could be opened to increase airflow.",
@@ -106,7 +105,7 @@ export const Site3 = {
 					"quote" : "If patients have deliberately gone into the bathroom to cough and get a sputum sample, that’s where the risk comes from...quite often they don’t like to cough or spit in front of people.",
 					"cite" : "Mandy, Physiotherapist",
 					"colour" : "red",
-					"position" : "center middle",
+					"position" : "right middle",
 				}]
 			}
 		},
