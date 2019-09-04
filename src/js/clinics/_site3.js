@@ -124,7 +124,7 @@ export const Site3 = {
 			}
 		},{
 			"name" : "toilets-disabled",
-			"position" : [-9.38, 4, 10.28],
+			"position" : [-8.5, 4, -22.5],
 			"data" : {
 				"url" : "",
 				"theme" : "dark",
@@ -158,7 +158,7 @@ export const Site3 = {
 			}
 		},{
 			"name" : "windows",
-			"position" : [-13.16, 2, 1.26],
+			"position" : [-14.5, 2, 0.5],
 			"data" : {
 				"title" : "Windows",
 				"url" : "images/site3/consultant.jpg",
@@ -191,7 +191,7 @@ export const Site3 = {
 			}
 		},{
 			"name" : "waste",
-			"position" : [-5.68, 3, 6.84],
+			"position" : [-5.5, 3, -25.5],
 			"data" : {
 				"title" : "Waste Disposal",
 				"url" : "images/site3/.jpg",
@@ -232,7 +232,7 @@ export const Site3 = {
 			}
 		},{
 			"name" : "monday",
-			"position" : [-13.58, 3, 4.42],
+			"position" : [-13.5, 3, 8.5],
 			"data" : {
 				"title" : "Monday Clinic Area",
 				"url" : "images/site3/.jpg",
@@ -241,7 +241,7 @@ export const Site3 = {
 			}
 		},{
 			"name" : "tuesday",
-			"position" : [-13.58, 3, 4.42],
+			"position" : [-5.5, 3, -21.5],
 			"data" : {
 				"title" : "Tuesday Clinic Area",
 				"url" : "images/site3/.jpg",
@@ -262,7 +262,7 @@ export const Site3 = {
 			}
 		},{
 			"name" : "equipment",
-			"position" : [-13.58, 3, 4.42],
+			"position" : [-8.5, 3, -25.5],
 			"data" : {
 				"title" : "Equipment Store",
 				"url" : "images/site3/.jpg",
@@ -276,7 +276,7 @@ export const Site3 = {
 			}
 		},{
 			"name" : "friday",
-			"position" : [-13.58, 3, 4.42],
+			"position" : [-2.75, 3, -7],
 			"data" : {
 				"title" : "Friday Clinic Area",
 				"url" : "images/site3/.jpg",
@@ -290,7 +290,7 @@ export const Site3 = {
 			}
 		},{
 			"name" : "sinks",
-			"position" : [-13.58, 3, 4.42],
+			"position" : [-14.5, 3, 12],
 			"data" : {
 				"title" : "Sinks",
 				"url" : "images/site3/.jpg",
@@ -309,7 +309,7 @@ export const Site3 = {
 			}
 		},{
 			"name" : "alcogel",
-			"position" : [-13.58, 3, 4.42],
+			"position" : [-12.5, 3, 10.5],
 			"data" : {
 				"title" : "Alcogel",
 				"url" : "images/site3/.jpg",
