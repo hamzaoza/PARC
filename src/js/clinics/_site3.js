@@ -4,8 +4,7 @@ export const Site3 = {
 			"name": "floor",
 			"path": "assets/models/site3/site3-floor.json",
 			"castShadow" : false
-		},
-		{
+		},{
 			"name": "layout",
 			"path": "assets/models/site3/site3-layout.json"
 		}
@@ -31,8 +30,7 @@ export const Site3 = {
 					"position" : "left bottom",
 				}],
 			}
-		},
-		{
+		},{
 			"name" : "waiting-cafe",
 			"position" : [13.92, 3, 13.74],
 			"data" : {
@@ -57,8 +55,7 @@ export const Site3 = {
 					"position" : "bottom left",
 				}],
 			}
-		},
-		{
+		},{
 			"name" : "waiting-bench",
 			"position" : [11.48, 3, 2.66],
 			"data" : {
@@ -77,8 +74,7 @@ export const Site3 = {
 					"position" : "center bottom",
 				}]
 			}
-		},
-		{
+		},{
 			"name" : "waiting-corner",
 			"position" : [9.78, 3, 1.24],
 			"data" : {
@@ -92,8 +88,7 @@ export const Site3 = {
 					"position" : "right bottom",
 				}]
 			}
-		},
-		{
+		},{
 			"name" : "toilets",
 			"position" : [22.38, 6, 3.18],
 			"data" : {
@@ -108,8 +103,7 @@ export const Site3 = {
 					"position" : "right middle",
 				}]
 			}
-		},
-		{
+		},{
 			"name" : "pulmonary",
 			"position" : [-0.32, 3, 23.06],
 			"data" : {
@@ -128,8 +122,7 @@ export const Site3 = {
 					"link" : "https://commons.wikimedia.org/wiki/File:Spirometry_NIH.jpg"
 				},
 			}
-		},
-		{
+		},{
 			"name" : "toilets-disabled",
 			"position" : [-9.38, 4, 10.28],
 			"data" : {
@@ -144,14 +137,14 @@ export const Site3 = {
 					"position" : "left middle",
 				}]
 			}
-		},
-		{
-			"name" : "nurse",
+		},{
+			"name" : "movement",
 			"position" : [-13.58, 3, 4.42],
 			"data" : {
-				"title" : "Nurse",
+				"title" : "Movement of Patients and Staff ",
 				"url" : "images/site3/nurse.jpg",
 				"position": "right bottom",
+				"description": "Different members of the multi-disciplinary team are based in different clinic rooms, the patient moves in and out of their rooms.",
 				"quotes" : [{
 					"quote" : "I go into the waiting area, look for the patient, then walk all the way back and make sure they see who they need to see...there’s a lot of backwards and forwards.",
 					"cite" : "Elaine, Nurse",
@@ -163,29 +156,27 @@ export const Site3 = {
 					"position" : "center middle",
 				}]
 			}
-		},
-		{
-			"name" : "consultant",
+		},{
+			"name" : "windows",
 			"position" : [-13.16, 2, 1.26],
 			"data" : {
-				"title" : "Consultant",
+				"title" : "Windows",
 				"url" : "images/site3/consultant.jpg",
-				"position": "right bottom",
+				"position": "right middle",
 				"quotes" : [{
 					"quote" : "I haven’t got any windows in my room….sometimes I do worry that affects the airflow, if someone coughs in the room, is that sticking around longer?",
 					"cite" : "Rob, Consultant",
 					"colour" : "green",
-					"position" : "center bottom",
-				},{
-					"quote" : "...I prefer consulting room 20, if I get to choose, because I can move my chair to see who’s waiting outside. Again the consultants come out to call patients…",
-					"cite" : "Issac, Consultant",
-					"colour" : "green",
 					"position" : "left middle",
+				},{
+					"quote" : "I’ll open the windows if I’ve been getting people coughing and clearing stuff or have done a nebuliser trial, to try and get the air flow through. But we’ve got that many patients, you don’t have a lot of time before you get someone else in.",
+					"cite" : "Mandy, Physiotherapist",
+					"colour" : "red",
+					"position" : "center bottom",
 				}]
 			}
-		},
-		{
-			"name" : "physio-1",
+		},{
+			"name" : "physio",
 			"position" : [-8.98, 2, 14.9],
 			"data" : {
 				"title" : "Physiotherapist",
@@ -196,20 +187,15 @@ export const Site3 = {
 					"cite" : "Mandy, Physiotherapist",
 					"colour" : "red",
 					"position" : "right bottom",
-				},{
-					"quote" : "I’ll open the windows if I’ve been getting people coughing and clearing stuff or have done a nebuliser trial, to try and get the air flow through. But we’ve got that many patients, you don’t have a lot of time before you get someone else in.",
-					"colour" : "red",
-					"position" : "center middle",
 				}]
 			}
-		},
-		{
-			"name" : "physio-2",
+		},{
+			"name" : "waste",
 			"position" : [-5.68, 3, 6.84],
 			"data" : {
-				"title" : "Physiotherapist",
-				"url" : "images/site3/physio.jpg",
-				"position": "left top",
+				"title" : "Waste Disposal",
+				"url" : "images/site3/.jpg",
+				"position": "left bottom",
 				"quotes" : [{
 					"quote" : "I’m collecting sputum samples, and quite often I've got to go looking for a clinical waste bin, they’re not in each room. <br/><br/> So on a Monday I’d have to walk up here to get rid of any infectious stuff before seeing the next person.",
 					"cite" : "Mandy, Physiotherapist",
@@ -217,8 +203,7 @@ export const Site3 = {
 					"position" : "center middle",
 				}]
 			}
-		},
-		{
+		},{
 			"name" : "corridors",
 			"position" : [-2.78, 3, 7.44],
 			"data" : {
@@ -237,8 +222,7 @@ export const Site3 = {
 					"position" : "center middle",
 				}]
 			}
-		},
-		{
+		},{
 			"name" : "entrance",
 			"position" : [8.42, 5, 32.92],
 			"data" : {
@@ -246,6 +230,102 @@ export const Site3 = {
 				"url" : "images/site3/entrance.jpg",
 				"position": "right bottom"
 			}
-		},
+		},{
+			"name" : "monday",
+			"position" : [-13.58, 3, 4.42],
+			"data" : {
+				"title" : "Monday Clinic Area",
+				"url" : "images/site3/.jpg",
+				"position": "left bottom",
+				"description": "On different days of the week there are different spaces for different bacterial ‘cohorts’. <br><br> On Monday mornings – patients without epidemic strain of pseudomonas aeruginosa (P.aeruginosa) are seen.",
+			}
+		},{
+			"name" : "tuesday",
+			"position" : [-13.58, 3, 4.42],
+			"data" : {
+				"title" : "Tuesday Clinic Area",
+				"url" : "images/site3/.jpg",
+				"position": "left bottom",
+				"description": "<strong>Morning:</strong> P.aeruginosa (epidemic strain) <br><br> <em>Three hour gap </em> <br><br> <strong>Afternoon:</strong> Burkholderia cepacia complex <br> (different types of B. cepacia on alternating Tuesdays)",
+				"mobile" : "The following patients are seen on the Tuesday clinic: <br><br> <strong>Morning:</strong> P.aeruginosa (epidemic strain) <br><br> <em>Three hour gap </em> <br><br> <strong>Afternoon:</strong> Burkholderia cepacia complex <br> (different types of B. cepacia on alternating Tuesdays)",
+				"quotes" : [{
+					"quote" : "...chairs in the clinic waiting area are separated two metres apart, so patients are not encouraged to mix or talk to any other patients.",
+					"cite" : "Andrew, Consultant",
+					"colour" : "green",
+					"position" : "center bottom",
+				},{
+					"quote" : "...you’re in closer proximity to CF patients, it’s quite a small area. But it did have that sort of ownership of the CF team.",
+					"cite" : "Terry, Patient",
+					"colour" : "orange",
+					"position" : "right middle",
+				}]
+			}
+		},{
+			"name" : "equipment",
+			"position" : [-13.58, 3, 4.42],
+			"data" : {
+				"title" : "Equipment Store",
+				"url" : "images/site3/.jpg",
+				"position": "left bottom",
+				"quotes" : [{
+					"quote" : "First thing I would do is go to the treatment room down there to get the equipment...we make sure those trolleys are stocked up, and then we would come back. But you often do run backwards and forwards because someone might need something that you find isn’t on your trolley.",
+					"cite" : "Ellen, Nurse",
+					"colour" : "pink",
+					"position" : "center bottom",
+				}]
+			}
+		},{
+			"name" : "friday",
+			"position" : [-13.58, 3, 4.42],
+			"data" : {
+				"title" : "Friday Clinic Area",
+				"url" : "images/site3/.jpg",
+				"position": "left bottom",
+				"quotes" : [{
+					"quote" : "On a Friday we have four rooms, we just have this part of the corridor. So we have a doctor in one room, physio, a dietician, and then there’s a diabetic nurse and a general nurse fighting it out for the room space! We hot room.",
+					"cite" : "Ellen, Nurse",
+					"colour" : "pink",
+					"position" : "center bottom",
+				}]
+			}
+		},{
+			"name" : "sinks",
+			"position" : [-13.58, 3, 4.42],
+			"data" : {
+				"title" : "Sinks",
+				"url" : "images/site3/.jpg",
+				"position": "left bottom",
+				"quotes" : [{
+					"quote" : "There are sinks in every room, if you’re going to do anything clinically, and if you’re going to listen to somebody’s chest, you should wash your hands, if you’re going to touch them at all.",
+					"cite" : "Elaine, Nurse",
+					"colour" : "pink",
+					"position" : "center bottom",
+				},{
+					"quote" : "Sometimes I feel a bit bad if someone comes in, they touch your hand, and immediately I wash my hands afterwards. I don’t want them to feel they’re dirty, so I try and wash my hands after I’ve seen the patient, before I see the next one...",
+					"cite" : "Rob, Consultant",
+					"colour" : "green",
+					"position" : "center bottom",
+				}]
+			}
+		},{
+			"name" : "alcogel",
+			"position" : [-13.58, 3, 4.42],
+			"data" : {
+				"title" : "Alcogel",
+				"url" : "images/site3/.jpg",
+				"position": "left bottom",
+				"quotes" : [{
+					"quote" : "...there’s alcogel right the way up the corridor, you’re alcogelling your hands as you’re walking up, you’re doing it constantly.",
+					"cite" : "Elaine, Nurse",
+					"colour" : "pink",
+					"position" : "center bottom",
+				},{
+					"quote" : "We use hand sanitiser in between every patient, every room has one and they’re positioned along the corridor...as I go into my room I sanitise and I say to the patient ‘would you like to?’ It’s something I do in front of them to give an element of reassurance.",
+					"cite" : "Andrew, Consultant",
+					"colour" : "green",
+					"position" : "center bottom",
+				}]
+			}
+		}
 	]
 };
