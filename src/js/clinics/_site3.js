@@ -126,7 +126,7 @@ export const Site3 = {
 			"name" : "toilets-disabled",
 			"position" : [-8.5, 4, -22.5],
 			"data" : {
-				"url" : "",
+				"url" : "images/site3/disabled.jpg",
 				"theme" : "dark",
 				"title" : "Toilets",
 				"position": "left bottom",
@@ -177,7 +177,7 @@ export const Site3 = {
 			}
 		},{
 			"name" : "physio",
-			"position" : [-8.98, 2, 14.9],
+			"position" : [-5.5, 2, -11.5],
 			"data" : {
 				"title" : "Physiotherapist",
 				"url" : "images/site3/physio.jpg",
@@ -194,7 +194,7 @@ export const Site3 = {
 			"position" : [-5.5, 3, -25.5],
 			"data" : {
 				"title" : "Waste Disposal",
-				"url" : "images/site3/.jpg",
+				"url" : "images/site3/waste.jpg",
 				"position": "left bottom",
 				"quotes" : [{
 					"quote" : "I’m collecting sputum samples, and quite often I've got to go looking for a clinical waste bin, they’re not in each room. <br/><br/> So on a Monday I’d have to walk up here to get rid of any infectious stuff before seeing the next person.",
@@ -235,7 +235,7 @@ export const Site3 = {
 			"position" : [-13.5, 3, 8.5],
 			"data" : {
 				"title" : "Monday Clinic Area",
-				"url" : "images/site3/.jpg",
+				"url" : "images/site3/monday.jpg",
 				"position": "left bottom",
 				"description": "On different days of the week there are different spaces for different bacterial ‘cohorts’. <br><br> On Monday mornings – patients without epidemic strain of pseudomonas aeruginosa (P.aeruginosa) are seen.",
 			}
@@ -244,8 +244,8 @@ export const Site3 = {
 			"position" : [-5.5, 3, -21.5],
 			"data" : {
 				"title" : "Tuesday Clinic Area",
-				"url" : "images/site3/.jpg",
-				"position": "left bottom",
+				"url" : "images/site3/tuesday.jpg",
+				"position": "left top",
 				"description": "<strong>Morning:</strong> P.aeruginosa (epidemic strain) <br><br> <em>Three hour gap </em> <br><br> <strong>Afternoon:</strong> Burkholderia cepacia complex <br> (different types of B. cepacia on alternating Tuesdays)",
 				"mobile" : "The following patients are seen on the Tuesday clinic: <br><br> <strong>Morning:</strong> P.aeruginosa (epidemic strain) <br><br> <em>Three hour gap </em> <br><br> <strong>Afternoon:</strong> Burkholderia cepacia complex <br> (different types of B. cepacia on alternating Tuesdays)",
 				"quotes" : [{
@@ -265,8 +265,8 @@ export const Site3 = {
 			"position" : [-8.5, 3, -25.5],
 			"data" : {
 				"title" : "Equipment Store",
-				"url" : "images/site3/.jpg",
-				"position": "left bottom",
+				"url" : "images/site3/equipment.jpg",
+				"position": "top center",
 				"quotes" : [{
 					"quote" : "First thing I would do is go to the treatment room down there to get the equipment...we make sure those trolleys are stocked up, and then we would come back. But you often do run backwards and forwards because someone might need something that you find isn’t on your trolley.",
 					"cite" : "Ellen, Nurse",
@@ -279,8 +279,9 @@ export const Site3 = {
 			"position" : [-2.75, 3, -7],
 			"data" : {
 				"title" : "Friday Clinic Area",
-				"url" : "images/site3/.jpg",
-				"position": "left bottom",
+				"url" : "images/site3/friday.jpg",
+				"theme" : "dark",
+				"position": "center bottom",
 				"quotes" : [{
 					"quote" : "On a Friday we have four rooms, we just have this part of the corridor. So we have a doctor in one room, physio, a dietician, and then there’s a diabetic nurse and a general nurse fighting it out for the room space! We hot room.",
 					"cite" : "Ellen, Nurse",
@@ -293,18 +294,18 @@ export const Site3 = {
 			"position" : [-14.5, 3, 12],
 			"data" : {
 				"title" : "Sinks",
-				"url" : "images/site3/.jpg",
-				"position": "left bottom",
+				"url" : "images/site3/sinks.jpg",
+				"position": "right middle",
 				"quotes" : [{
 					"quote" : "There are sinks in every room, if you’re going to do anything clinically, and if you’re going to listen to somebody’s chest, you should wash your hands, if you’re going to touch them at all.",
 					"cite" : "Elaine, Nurse",
 					"colour" : "pink",
-					"position" : "center bottom",
+					"position" : "left bottom",
 				},{
 					"quote" : "Sometimes I feel a bit bad if someone comes in, they touch your hand, and immediately I wash my hands afterwards. I don’t want them to feel they’re dirty, so I try and wash my hands after I’ve seen the patient, before I see the next one...",
 					"cite" : "Rob, Consultant",
 					"colour" : "green",
-					"position" : "center bottom",
+					"position" : "left top",
 				}]
 			}
 		},{
@@ -312,14 +313,9 @@ export const Site3 = {
 			"position" : [-12.5, 3, 10.5],
 			"data" : {
 				"title" : "Alcogel",
-				"url" : "images/site3/.jpg",
-				"position": "left bottom",
+				"url" : "images/site3/alcogel.jpg",
+				"position": "left middle",
 				"quotes" : [{
-					"quote" : "...there’s alcogel right the way up the corridor, you’re alcogelling your hands as you’re walking up, you’re doing it constantly.",
-					"cite" : "Elaine, Nurse",
-					"colour" : "pink",
-					"position" : "center bottom",
-				},{
 					"quote" : "We use hand sanitiser in between every patient, every room has one and they’re positioned along the corridor...as I go into my room I sanitise and I say to the patient ‘would you like to?’ It’s something I do in front of them to give an element of reassurance.",
 					"cite" : "Andrew, Consultant",
 					"colour" : "green",
