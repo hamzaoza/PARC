@@ -58,12 +58,11 @@ export const Skane = {
 			"url" : "images/skane/bg-3.jpg",
 			"title" : "Outer Perimeter",
 			"description": "Patients, relatives and visitors occupy the outer ring of the building - seperated by 'anterooms' from the inner ring occupied by clinical staff.",
-			"position": "left top",
-			"theme" : "dark",
+			"position": "left bottom",
 			"quotes" : [{
 				"quote" : "By proposing a round building, a high degree of standardisation could be achieved because the patient room units were distributed along the outer perimeter...",
 				"cite" : "Holmdahl et al (2013)",
-				"position": "left bottom",
+				"position": "middle center",
 				"colour" : "grad-pink-blue",
 			}],
 		}

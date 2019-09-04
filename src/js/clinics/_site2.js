@@ -207,6 +207,7 @@ export const Site2 = {
 		"data" : {
 			"url" : "images/site2/ventilation.jpg",
 			"title" : "Ventilation",
+			"theme" : "dark",
 			"position": "left middle",
 			"quotes" : [{
 				"quote" : "...if a patient has been in the room and I go in to wipe the room down, I would always open a window. In an ideal world we’d leave maybe half an hour between patients, but in reality we can’t do that. We need more rooms or more clinics.",
