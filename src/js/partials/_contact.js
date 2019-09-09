@@ -9,9 +9,9 @@ function postAjax(url, data, success) {
 	httpRequest.setRequestHeader('Accept', 'application/json');
 	httpRequest.send(data);
 	httpRequest.onreadystatechange = function(){
-
-	if (this.readyState == 4)
-		success(JSON.parse(this.response));
+		
+		if (this.readyState == 4)
+			success(JSON.parse(this.response));
 
 	}
 
@@ -25,7 +25,7 @@ form.addEventListener("submit", function(event){
 	const data = new FormData(this);
 
 	postAjax(href, data, function(response){
-		message.innerHTML = `<p class="margin-bottom rounded-small fadeIn ${response.status}">${response.message}</p>`;
+		message.innerHTML = `<p class="margin-bottom rounded-small fadeIn ${response.status}">${response.message}.</p>`;
 	});
 
 });
