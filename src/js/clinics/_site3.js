@@ -95,8 +95,12 @@ export const Site3 = {
 				"url" : "images/site3/toilet.jpg",
 				"title" : "Toilets",
 				"position": "left bottom",
-				"description": "Toilets have implications for transfer and cross-infection, because you have patients going into a confined space with the door shut and no air transfer. This becomes a high risk area. <br /><br />If patients are going to use a toilet then it would be preferable if there was a window that could be opened to increase airflow.",
 				"quotes" : [{
+					"quote" : "...toilets have implications for transfer and cross-infection, because if you’ve got patients going into a confined space with the door shut and no air transfer, then that would for me seem to be a risk...if there is going to be a toilet the patients can use, then I’d prefer it if there was a window that could be opened, and increased airflow...",
+					"cite" : "Rob, Consultant",
+					"colour" : "green",
+					"position" : "center bottom",
+				},{
 					"quote" : "If patients have deliberately gone into the bathroom to cough and get a sputum sample, that’s where the risk comes from...quite often they don’t like to cough or spit in front of people.",
 					"cite" : "Mandy, Physiotherapist",
 					"colour" : "red",
@@ -181,7 +185,7 @@ export const Site3 = {
 			"data" : {
 				"title" : "Physiotherapist",
 				"url" : "images/site3/physio.jpg",
-				"position": "left top",
+				"position": "center middle",
 				"quotes" : [{
 					"quote" : "The Friday physio room doesn’t have a window...when there’s not a patient in my room I have the door open. But I don’t know whether that’s a good thing because you’re potentially spreading bugs back out!",
 					"cite" : "Mandy, Physiotherapist",
@@ -208,8 +212,8 @@ export const Site3 = {
 			"position" : [-2.78, 3, 7.44],
 			"data" : {
 				"title" : "Corridors",
-				"url" : "images/site3/corridors.jpg",
-				"position": "right bottom",
+				"url" : "images/site3/corridors-2.jpg",
+				"position": "right middle",
 				"quotes" : [{
 					"quote" : "I’d say this is a risky area, because it’s quite narrow, and you’ve got people coming from the waiting area…So I feel like this is like a crossover point, a pinch point that feels quite tight and can be congested sometimes.",
 					"cite" : "Rob, Consultant",
@@ -219,7 +223,7 @@ export const Site3 = {
 					"quote" : "I sometimes feel like we’re all on top of each other. And you know, squeezing past, if you’ve got to go up and down, and there’s a nurse here with a trolley, it’s a pain...there just needs to be more room.",
 					"cite" : "Elaine, Nurse",
 					"colour" : "pink",
-					"position" : "center middle",
+					"position" : "left bottom",
 				}]
 			}
 		},{

@@ -143,12 +143,12 @@ export const Site1 = {
 				"quote" : "...one of the nursing team would go in, the physio would go in, the dietician would go in, doctor would go in, the psychology team would go in...the patient would stay in the room...with the door shut.",
 				"cite" : "Una, CF Nurse",
 				"colour" : "pink",
-				"position" : "left middle",
+				"position" : "left top",
 			},{
 				"quote" : "I feel very safe in the room, yeah. Because the doors are shut, so yes, I do feel absolutely safe in the room.",
 				"cite" : "Neil, Patient",
 				"colour" : "orange",
-				"position" : "left top",
+				"position" : "center middle",
 			}]
 		}
 	},{

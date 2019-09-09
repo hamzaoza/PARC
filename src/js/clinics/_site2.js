@@ -196,9 +196,9 @@ export const Site2 = {
 				"position" : "left middle",
 			},{
 				"quote" : "If there’s any air circulation bugs will rapidly disperse, so I think windows and doors are really important. The first thing we do when a patient leaves is open the window and the door.",
-				"cite" : "Luke, consultant",
+				"cite" : "Luke, Consultant",
 				"colour" : "green",
-				"position" : "left bottom",
+				"position" : "center bottom",
 			}],
 		}
 	},{
