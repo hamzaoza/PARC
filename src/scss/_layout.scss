@@ -159,8 +159,7 @@ canvas {
 	left: $margin;
 	color: $white;
 	width: 25%;
-	background: rgba($black, 0.5);
-	font-size: 90%;
+	background: rgba($black, 0.7);
 
 	@include respond-to(tablets) { left: $margin-small; bottom: $margin-small; }
 	@include respond-to(phones) { display: none; }
