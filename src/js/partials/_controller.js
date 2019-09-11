@@ -20,15 +20,13 @@ const main = document.getElementsByTagName("main")[0];
 const mobileBTN = document.getElementById("mobile-nav");
 const cta = document.getElementById("cta");
 const header = document.getElementsByTagName("header")[0];
-const counter = document.getElementsByClassName("hotspots")[0];
-const title = document.getElementsByClassName("clinic-title")[0];
+// const counter = document.getElementsByClassName("hotspots")[0];
+const summary = document.getElementsByClassName("clinic-desc")[0];
 const slide = document.getElementsByClassName("slide")[0];
-const tag = document.getElementsByClassName("site-desc")[0];
 const close = document.getElementById("close");
 const scene = canvas.scene;
 const anchors = document.getElementsByTagName("a");
 const transitionEvent = whichTransitionEvent();
-const frame = document.querySelector("#participate iframe");
 
 let isMobile = window.isMobile = window.innerWidth < 480 ? true : false;
 let active;
@@ -110,10 +108,10 @@ clinics.forEach(function(clinic) {
 	clinic.addEventListener("click", routeClinic);
 	clinic.addEventListener("touchend", routeClinic);
 	
-	clinic.addEventListener("mouseover", function(event){
-		event.preventDefault();
-		tag.innerHTML = this.dataset.description;
-	});
+	// clinic.addEventListener("mouseover", function(event){
+	// 	event.preventDefault();
+	// 	tag.innerHTML = this.dataset.description;
+	// });
 
 });
 
@@ -139,7 +137,7 @@ function switchModel(clinic) {
 		
 		timeline.classList.add("active");
 		sites.classList.remove("active");
-		title.innerHTML = "Model: " + clinic.replace("-", " ");
+		summary.innerHTML = `<h4>${clinic.replace("-", " ")}</h4><p>${site.userData.summary}</p>`;
 
 		setTimeout(function() {
 			if (site.userData.floor)
@@ -177,8 +175,8 @@ function showSwitcher() {
 	clearPages();
 
 	switcher.classList.add("active");
-	counter.classList.add("hidden");
-	title.classList.add("hidden");
+	// counter.classList.add("hidden");
+	summary.classList.add("hidden");
 	switchChange.classList.add("hidden");
 	switchClose.classList.remove("hidden");
 
@@ -187,8 +185,8 @@ function showSwitcher() {
 
 function hideSwitcher() {
 	switcher.classList.remove("active");
-	counter.classList.remove("hidden");
-	title.classList.remove("hidden");
+	// counter.classList.remove("hidden");
+	summary.classList.remove("hidden");
 	switchChange.classList.remove("hidden");
 	switchClose.classList.add("hidden");
 }
@@ -196,8 +194,8 @@ function hideSwitcher() {
 function pipEnter(small) {
 	
 	main.classList.add("pip");
-	counter.classList.add("hidden");
-	title.classList.add("hidden");
+	// counter.classList.add("hidden");
+	summary.classList.add("hidden");
 	
 	if (small == true)
 		stage.classList.add("small");
@@ -230,8 +228,8 @@ function pipExit() {
 
 	main.classList.remove("pip");
 	stage.classList.remove("small");
-	counter.classList.remove("hidden");
-	title.classList.remove("hidden");
+	// counter.classList.remove("hidden");
+	summary.classList.remove("hidden");
 	slide.classList.remove("dark");
 	stage.removeEventListener("click", onPip);
 	stage.removeEventListener("touchstart", onPip);
@@ -241,8 +239,8 @@ function pipExit() {
 function showPage(page) {
 	clearPages();
 	document.getElementById(page).classList.add("active");
-	counter.classList.add("hidden");
-	title.classList.add("hidden");
+	// counter.classList.add("hidden");
+	summary.classList.add("hidden");
 	pipEnter(true);
 	gtag.page();
 }

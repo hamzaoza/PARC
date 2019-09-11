@@ -11,6 +11,7 @@ export const Site1 = {
 		}
 	],
 	"floor" : "assets/textures/site1.mp4",
+	"summary" : "A small clinic with under 40 patients, clinics are held in a busy outpatients department in a 1970's built hospital.",
 	"hotspots" : [{
 		"name" : "entrance",
 		"position" : [-17.5, 4, 14],

@@ -30,6 +30,9 @@ export const Clinics = (function(){
 		if (data.floor)
 			clinic.userData.floor = data.floor;
 
+		if (data.summary)
+			clinic.userData.summary = data.summary;
+
 		clinics[name] = clinic;
 
 	}

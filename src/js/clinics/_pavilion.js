@@ -16,7 +16,8 @@ export const Pavilion = {
 			"scale" : [0.65, 0.65, 0.65]
 		}
 	],
-	"floor" : "assets/textures/pavilion.mp4",
+	// "floor" : "assets/textures/pavilion.mp4",
+	"summary" : "The fresh air wards are examples of pre-antibiotic architecture.",
 	"hotspots" : [
 		{
 			"name" : "ward",

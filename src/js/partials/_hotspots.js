@@ -14,25 +14,25 @@ export const hotspots = function(clinic, hotspots){
 	const points = new THREE.Group();
 	let counter = 0;
 
-	function updateCounter(amount) {
-		const counterDiv = document.querySelector(".hotspots span");
-		counterDiv.innerHTML = parseInt(counterDiv.innerHTML) + amount;
-	}
+	// function updateCounter(amount) {
+	// 	const counterDiv = document.querySelector(".hotspots span");
+	// 	counterDiv.innerHTML = parseInt(counterDiv.innerHTML) + amount;
+	// }
 
-	function incCounter(amount) {
-		updateCounter(amount);
-	}
+	// function incCounter(amount) {
+	// 	updateCounter(amount);
+	// }
 
-	function decCounter(amount) {
-		updateCounter(-amount);
-	}
+	// function decCounter(amount) {
+	// 	updateCounter(-amount);
+	// }
 
-	function checkCounter(data){
-		if (data.clicked == false) {
-			decCounter(1);
-			data.clicked = true;
-		}
-	}
+	// function checkCounter(data){
+	// 	if (data.clicked == false) {
+	// 		decCounter(1);
+	// 		data.clicked = true;
+	// 	}
+	// }
 
 	function rotate(){
 		clinic.rotation.y += helpers.degRad(0.02);
@@ -46,11 +46,11 @@ export const hotspots = function(clinic, hotspots){
 	}
 
 	function _prevItem(mesh){
-		checkCounter(mesh.userData);
+		// checkCounter(mesh.userData);
 	}
 
 	function _noItem(mesh) {
-		checkCounter(mesh.userData);
+		// checkCounter(mesh.userData);
 		mesh.scale.set(0.6, 0.6, 0.6);
 		mesh.material.emissive.setHex(0xe74c3c);
 		mesh.material.color.setHex(0xe74c3c);
@@ -73,12 +73,12 @@ export const hotspots = function(clinic, hotspots){
 		shape.position.set(hotspot.position[0], hotspot.position[1], hotspot.position[2]);
 		shape.name = "hotspot-" + hotspot.name;
 		shape.userData = hotspot.data;
-		shape.userData.clicked = false;
+		// shape.userData.clicked = false;
 
-		if (hotspot.comments) {
-			shape.userData.comments = true;
-			shape.userData.commentID = (clinic.name + "-" + hotspot.name).toLowerCase();
-		}
+		// if (hotspot.comments) {
+		// 	shape.userData.comments = true;
+		// 	shape.userData.commentID = (clinic.name + "-" + hotspot.name).toLowerCase();
+		// }
 
 		events.on("sceneUpdate", function(){
 			t += increment;
@@ -91,7 +91,7 @@ export const hotspots = function(clinic, hotspots){
 	});
 
 	points.name = "hotspots";
-	incCounter(counter);
+	// incCounter(counter);
 	clinic.add(points);
 
 	raycaster(points, clinic.name);

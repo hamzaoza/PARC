@@ -11,6 +11,7 @@ export const Site2 = {
 		}
 	],
 	"floor" : "assets/textures/site2.mp4",
+	"summary" : "A large clinic with over 400 patients, they have their own CF space within a small outpatients hospital outside the city centre.",
 	"hotspots" : [{
 		"name" : "parking",
 		"position" : [-28, 3.5, -2.5],

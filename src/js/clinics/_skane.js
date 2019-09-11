@@ -12,7 +12,8 @@ export const Skane = {
 			"scale" : [0.65, 0.65, 0.65]
 		}
 	],
-	"floor" : "assets/textures/skane.mp4",
+	// "floor" : "assets/textures/skane.mp4",
+	"summary" : "An architectural design for the 'post-antibiotic future' - a hospital for infecious disease in Malmo, Sweden.",
 	"hotspots" : [{
 		"name" : "skane",
 		"position" : [0, 3, 0],

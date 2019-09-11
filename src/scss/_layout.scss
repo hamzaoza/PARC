@@ -94,6 +94,7 @@ canvas {
 
 	button { 
 		color: $white;
+		margin-bottom: 0;
 		@include respond-to(phones) { width: 100%; }
 	}
 
@@ -138,15 +139,28 @@ canvas {
 
 }
 
-.clinic-title {
+// .clinic-title {
+// 	position: absolute;
+// 	top: $margin * 1.25;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	color: $white;
+// 	text-shadow: 0 0 1rem rgba($black, 1);
+// 	font-size: 1.6875rem;
+// 	text-align: center;
+
+// 	@include respond-to(phones) { top: $margin * 2.25; width: 100%;}
+
+// }
+
+.clinic-desc {
 	position: absolute;
-	top: $margin * 1.25;
-	left: 50%;
-	transform: translateX(-50%);
+	bottom: $margin;
+	left: $margin;
 	color: $white;
-	text-shadow: 0 0 1rem rgba($black, 1);
-	font-size: 1.6875rem;
-	text-align: center;
+	width: 25%;
+	background: rgba($black, 0.5);
+	font-size: 90%;
 
 	@include respond-to(phones) { top: $margin * 2.25; width: 100%;}
 
