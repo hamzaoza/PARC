@@ -244,7 +244,7 @@ export const Site2 = {
 		}
 	},{
 		"name" : "toilets",
-		"position" : [-10.75, 5, -6],
+		"position" : [2, 3.5, 0.75],
 		"data" : {
 			"url" : "images/site2/toilets.jpg",
 			"title" : "Toilets",

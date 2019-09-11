@@ -162,7 +162,8 @@ canvas {
 	background: rgba($black, 0.5);
 	font-size: 90%;
 
-	@include respond-to(phones) { top: $margin * 2.25; width: 100%;}
+	@include respond-to(tablets) { left: $margin-small; bottom: $margin-small; }
+	@include respond-to(phones) { display: none; }
 
 }
 
@@ -173,7 +174,8 @@ canvas {
 	left: 50%;
 	transform: translateX(-50%);
 	margin: 0;
-
+	
+	@include respond-to(tablets) { bottom: $margin-small}
 	@include respond-to(phones) { bottom: $margin-small}
 
 	&:active { transform: translateX(-50%) scale(0.8); }
