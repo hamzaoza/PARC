@@ -97,7 +97,7 @@ export const Site2 = {
 		}
 	},{
 		"name" : "mdt",
-		"position" : [2, 3.5, 0.75],
+		"position" : [11.75, 3.5, 4.25],
 		"data" : {
 			"url" : "images/site2/mdt.jpg",
 			"title" : "Multidisciplinary Team Room",
@@ -117,7 +117,7 @@ export const Site2 = {
 		}
 	},{
 		"name" : "whiteboard",
-		"position" : [2.75, 3.5, -1.25],
+		"position" : [10.75, 3.5, 3.25],
 		"data" : {
 			"url" : "images/site2/whiteboard.jpg",
 			"title" : "Whiteboard",
