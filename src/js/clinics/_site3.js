@@ -233,7 +233,13 @@ export const Site3 = {
 			"data" : {
 				"title" : "Entrance & Exit",
 				"url" : "images/site3/entrance.jpg",
-				"position": "right bottom"
+				"position": "right middle",
+				"quotes" : [{
+					"quote" : "...my husband will drop me off, I’ll come in this door and I sit there and wait for him. He has to come with me, because it’s a long way to walk when I’m not feeling well.",
+					"cite" : "Isobel, Patient",
+					"colour" : "orange",
+					"position" : "left middle",
+				}]
 			}
 		},{
 			"name" : "monday",
