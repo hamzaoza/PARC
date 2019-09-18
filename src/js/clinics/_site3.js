@@ -248,7 +248,7 @@ export const Site3 = {
 				"title" : "Monday Clinic Area",
 				"url" : "images/site3/monday.jpg",
 				"position": "left bottom",
-				"description": "On different days of the week there are different spaces for different bacterial ‘cohorts’. <br><br> On Monday mornings – patients without epidemic strain of pseudomonas aeruginosa (P.aeruginosa) are seen.",
+				"description": "On different days of the week there are different spaces for different bacterial ‘cohorts’. <br><br> Monday morning – patients without transmissible strain of <em>Pseudomonas aeruginosa</em> (P.aeruginosa)",
 			}
 		},{
 			"name" : "tuesday",
@@ -257,8 +257,8 @@ export const Site3 = {
 				"title" : "Tuesday Clinic Area",
 				"url" : "images/site3/tuesday.jpg",
 				"position": "left top",
-				"description": "<strong>Morning:</strong> P.aeruginosa (epidemic strain) <br><br> <em>Three hour gap </em> <br><br> <strong>Afternoon:</strong> Burkholderia cepacia complex <br> (different types of B. cepacia on alternating Tuesdays)",
-				"mobile" : "The following patients are seen on the Tuesday clinic: <br><br> <strong>Morning:</strong> P.aeruginosa (epidemic strain) <br><br> <em>Three hour gap </em> <br><br> <strong>Afternoon:</strong> Burkholderia cepacia complex <br> (different types of B. cepacia on alternating Tuesdays)",
+				"description": "<strong>Morning:</strong> P.aeruginosa (epidemic strain) <br><br> <em>Three hour gap </em> <br><br> <strong>Afternoon:</strong> <em>Burkholderia cepacia complex</em> (BCC) <br> (different variations of BCC on alternating Tuesdays)",
+				"mobile" : "The following patients are seen on the Tuesday clinic: <br><br> <strong>Morning:</strong> P.aeruginosa (epidemic strain) <br><br> <em>Three hour gap </em> <br><br> <strong>Afternoon:</strong> <em>Burkholderia cepacia complex</em> (BCC) <br> (different variations of BCC on alternating Tuesdays)",
 				"quotes" : [{
 					"quote" : "...chairs in the clinic waiting area are separated two metres apart, so patients are not encouraged to mix or talk to any other patients.",
 					"cite" : "Andrew, Consultant",
