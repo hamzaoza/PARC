@@ -10,7 +10,7 @@ export const Site3 = {
 		}
 	],
 	"floor" : "assets/textures/site3.mp4",
-	"summary" : "A large clinic with over 300 patients, clinics are held in a busy outpatient department, built during the 1990s.",
+	"summary" : "A large Cystic Fibrosis clinic with over 300 patients, clinics are held in a busy outpatient department, built during the 1990s. Patients are cohorted according to whether they are infected with a transmissible strain of Pseudomonas aeruginosa, or variations of the Burkholderia cepacia complex (Bcc).",
 	"hotspots" : [
 		{
 			"name" : "checkin",

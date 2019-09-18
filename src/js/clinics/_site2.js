@@ -11,7 +11,7 @@ export const Site2 = {
 		}
 	],
 	"floor" : "assets/textures/site2.mp4",
-	"summary" : "A large clinic with over 400 patients, they have their own CF space within a small outpatients hospital outside the city centre.",
+	"summary" : "A large CF clinic with over 400 patients, they have their own CF space within a small outpatients hospital outside the city centre. Patients are cohorted according to persistence of infection with Pseudomonas aeruginosa (chronic/intermittent/pseudomonas free) and Burkholderia cepacia complex (Bcc). Patients with Mycobacterium abscessus and other bugs are treated in source isolation.",
 	"hotspots" : [{
 		"name" : "parking",
 		"position" : [-28, 3.5, -2.5],
