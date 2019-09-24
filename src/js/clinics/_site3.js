@@ -61,7 +61,7 @@ export const Site3 = {
 			"position" : [11.48, 3, 2.66],
 			"data" : {
 				"url" : "images/site3/benches-2.jpg",
-				"title" : "Wating (Benches)",
+				"title" : "Waiting (Benches)",
 				"position": "left top",
 				"quotes" : [{
 					"quote" : "We had bench seating so the [non CF patients] didn’t feel as if they had to stand up and wait...Just making it more inclusive of all the patient groups we have coming through.",
