@@ -153,7 +153,7 @@ export const Site2 = {
 		"position" : [10, 3.5, -2.5],
 		"data" : {
 			"url" : "images/site2/organisation.jpg",
-			"title" : "Carousel",
+			"title" : "Carousel System",
 			"position": "center bottom",
 			"quotes" : [{
 				"quote" : "So the patient will come in and go into a room and they’ll stay in that room and all the multi-disciplinary team (MDT) will go in and out of the room.",
@@ -309,7 +309,7 @@ export const Site2 = {
 			"position": "left middle",
 			"quotes" : [{
 				"quote" : "I wash my hands in front of patients - I would rather them see me do it so they know I’ve done it. Obviously, hand washing every time I take bloods. And patients tend to gel or wash their hands in the room.",
-				"cite" : "Emma, Healthcare Assistant",
+				"cite" : "Mary, Healthcare Assistant",
 				"colour" : "pink",
 				"position" : "left bottom",
 			},{
