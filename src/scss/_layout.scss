@@ -53,6 +53,10 @@ main {
 	padding: 0;
 }
 
+.stage.hover {
+	cursor: pointer;
+}
+
 canvas {
 	@extend .shadow;
 	@extend .rounded;

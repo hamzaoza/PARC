@@ -6,10 +6,12 @@ export const raycaster = function(group, emitter){
 
 	let CLICK_INTERSECTED;
 	const stage = canvas.stage;
+	let count = 1;
 
 	events.on("sceneRender", function(){
 		stage.addEventListener("click", onClick);
 		stage.addEventListener("touchstart", onClick);
+		// stage.addEventListener("mousemove", onHover);
 	});
 
 	function onClick(event) {
@@ -46,6 +48,37 @@ export const raycaster = function(group, emitter){
 		}
 
 	}
+
+	// function onHover(event) {
+
+	// 	event.preventDefault();
+
+	// 	const intersects = rays(event);
+		
+
+	// 	// console.log(intersects)
+
+	// 	if (intersects.length > 0) {
+
+	// 		stage.classList.add("hover");
+	// 		// console.log("add");
+
+	// 	} else {
+
+	// 		// console.log("leave");
+
+	// 		// stage.classList.remove("hover");
+
+	// 	}
+
+	// 	count++;
+
+	// 	if (count > 5)
+	// 		count = 1;
+
+	// 	console.log(count);
+
+	// }
 
 	function rays(event) {
 

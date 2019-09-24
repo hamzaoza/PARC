@@ -10,7 +10,7 @@ export const Site3 = {
 		}
 	],
 	"floor" : "assets/textures/site3.mp4",
-	"summary" : "A large Cystic Fibrosis clinic with over 300 patients, clinics are held in a busy outpatient department, built during the 1990s. Patients are cohorted according to whether they are infected with a transmissible strain of Pseudomonas aeruginosa, or variations of the Burkholderia cepacia complex (Bcc).",
+	"summary" : "A large Cystic Fibrosis clinic with over 300 patients, clinics are held in a busy outpatient department, built during the 1990s. Patients are cohorted according to whether they are infected with a transmissible strain of <em>Pseudomonas aeruginosa</em>, or variations of the <em>Burkholderia cepacia complex</em> (Bcc).",
 	"hotspots" : [
 		{
 			"name" : "checkin",
@@ -20,7 +20,7 @@ export const Site3 = {
 				"title" : "Self Checkin",
 				"position": "right bottom",
 				"quotes" : [{
-					"quote" : "I sign in here. At first they didn’t have a hand wash here so I wouldn’t use it… I tried to use the self check in and it’s not working.",
+					"quote" : "I sign in here. At first they didn’t have a hand wash here so I wouldn’t use it...I tried to use the self check in and it’s not working.",
 					"cite" : "Isobel, Patient",
 					"colour" : "orange",
 					"position" : "left middle",
@@ -45,12 +45,12 @@ export const Site3 = {
 					"colour" : "green",
 					"position" : "center middle",
 				},{
-					"quote" : "I normally sit here … you have got the distance, you know somebody’s not really going to join us …. if you’re over there you’re very close to other people",
+					"quote" : "I normally sit here...you have got the distance, you know somebody’s not really going to join us...if you’re over there you’re very close to other people",
 					"cite" : "Isobel, Patient",
 					"colour" : "orange",
 					"position" : "top left",
 				},{
-					"quote" : "...when they first opened the café you weren’t supposed to sit here unless you were buying something…but then they put a sign up that says we’re allowed to use the seating here because the CF patients complained...",
+					"quote" : "...when they first opened the café you weren’t supposed to sit here unless you were buying something...but then they put a sign up that says we’re allowed to use the seating here because the CF patients complained...",
 					"cite" : "Isobel, Patient",
 					"colour" : "orange",
 					"position" : "bottom left",
@@ -169,7 +169,7 @@ export const Site3 = {
 				"url" : "images/site3/consultant.jpg",
 				"position": "right middle",
 				"quotes" : [{
-					"quote" : "I haven’t got any windows in my room….sometimes I do worry that affects the airflow, if someone coughs in the room, is that sticking around longer?",
+					"quote" : "I haven’t got any windows in my room...sometimes I do worry that affects the airflow, if someone coughs in the room, is that sticking around longer?",
 					"cite" : "Rob, Consultant",
 					"colour" : "green",
 					"position" : "left middle",
@@ -216,7 +216,7 @@ export const Site3 = {
 				"url" : "images/site3/corridors-2.jpg",
 				"position": "right middle",
 				"quotes" : [{
-					"quote" : "I’d say this is a risky area, because it’s quite narrow, and you’ve got people coming from the waiting area…So I feel like this is like a crossover point, a pinch point that feels quite tight and can be congested sometimes.",
+					"quote" : "I’d say this is a risky area, because it’s quite narrow, and you’ve got people coming from the waiting area...So I feel like this is like a crossover point, a pinch point that feels quite tight and can be congested sometimes.",
 					"cite" : "Rob, Consultant",
 					"colour" : "green",
 					"position" : "left top",
