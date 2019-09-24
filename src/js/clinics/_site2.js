@@ -231,7 +231,7 @@ export const Site2 = {
 			"theme" : "dark",
 			"position": "top left",
 			"quotes" : [{
-				"quote" : "...patients are cohort segregated but if they have got other microorganisms <em>(MRSA, pandoraea, mycobacterium abscessus)</em> we have some rooms allocated for source isolation, they are not used again until the next day. The two source isolation rooms are geographically separate.",
+				"quote" : "...patients are cohort segregated but if they have got other microorganisms <em>(MRSA, mycobacterium abscessus)</em> we have some rooms allocated for source isolation, they are not used again until the next day. The two source isolation rooms are geographically separate.",
 				"cite" : "Irene, Physiotherapist",
 				"colour" : "red",
 				"position" : "center bottom",
