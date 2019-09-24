@@ -11,7 +11,7 @@ export const Site1 = {
 		}
 	],
 	"floor" : "assets/textures/site1.mp4",
-	"summary" : "A small CF clinic with under 40 patients, clinics are held in a busy outpatients department in a 1970's built hospital. Patients are cohorted according to whether they are infected with <em>Pseudomonas aeruginosa</em>. Patients with <em>Mycobacterium abscessus</em> and <em>Burkholderia cepacia complex</em> (Bcc) are treated in isolation.",
+	"summary" : "A small CF clinic with under 40 patients, clinics are held in a busy outpatients department in a 1970's built hospital. Patients are cohorted according to whether they are infected with Pseudomonas aeruginosa. Patients with <em>non-tuberculous mycobacteria</em> (NTM) such as <em>Mycobacterium abscessus</em> and <em>Burkholderia cepacia complex</em> (Bcc) are treated in isolation.",
 	"hotspots" : [{
 		"name" : "entrance",
 		"position" : [-17.5, 4, 14],
@@ -138,7 +138,7 @@ export const Site1 = {
 		"position" : [-3, 4, -11.5],
 		"data" : {
 			"url" : "images/site1/friday-staff.jpg",
-			"title" : "Carousel",
+			"title" : "Carousel System",
 			"position": "left bottom",
 			"quotes" : [{
 				"quote" : "...one of the nursing team would go in, the physio would go in, the dietician would go in, doctor would go in, the psychology team would go in...the patient would stay in the room...with the door shut.",
