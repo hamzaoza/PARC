@@ -216,7 +216,7 @@ export const Site3 = {
 				"url" : "images/site3/corridors-2.jpg",
 				"position": "right middle",
 				"quotes" : [{
-					"quote" : "I’d say this is a risky area, because it’s quite narrow, and you’ve got people coming from the waiting area...So I feel like this is like a crossover point, a pinch point that feels quite tight and can be congested sometimes.",
+					"quote" : "I’d say this is a risky area, because it’s quite narrow, and you’ve got people coming from the waiting area…So I feel like this is like a crossover point, a pinch point that feels quite tight and can be congested sometimes.",
 					"cite" : "Rob, Consultant",
 					"colour" : "green",
 					"position" : "left top",

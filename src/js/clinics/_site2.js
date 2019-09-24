@@ -16,7 +16,7 @@ export const Site2 = {
 		"name" : "parking",
 		"position" : [-28, 3.5, -2.5],
 		"data" : {
-			"url" : "images/site2/parking.jpg",
+			"url" : "images/site2/parking-2.jpg",
 			"title" : "Parking and Access",
 			"position": "left bottom",
 			"theme" : "dark",
