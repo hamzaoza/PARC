@@ -11,7 +11,7 @@ export const Site1 = {
 		}
 	],
 	"floor" : "assets/textures/site1.mp4",
-	"summary" : "A small CF clinic with under 40 patients, clinics are held in a busy outpatients department in a 1970's built hospital. Patients are cohorted according to whether they are infected with Pseudomonas aeruginosa. Patients with <em>non-tuberculous mycobacteria</em> (NTM) such as <em>Mycobacterium abscessus</em> and <em>Burkholderia cepacia complex</em> (Bcc) are treated in isolation.",
+	"summary" : "A small CF clinic with under 40 patients, clinics are held in a busy outpatients department in a 1970's built hospital. Patients are cohorted according to whether they are infected with Pseudomonas aeruginosa. Patients with <em>non-tuberculous mycobacteria</em> (NTM) such as <em>Mycobacterium abscessus</em> and <em>Burkholderia cepacia complex</em> (Bcc) are treated in isolation. <br><br><strong>Pathway Key:</strong><br>Orange &rarr; Patient<br>Pink &rarr; Nurse",
 	"hotspots" : [{
 		"name" : "entrance",
 		"position" : [-17.5, 4, 14],
