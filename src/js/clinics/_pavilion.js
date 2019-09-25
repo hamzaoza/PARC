@@ -88,11 +88,11 @@ export const Pavilion = {
 			}
 		},
 		{
-			"name" : "piazza",
+			"name" : "veranda",
 			"position" : [13.5, 4, 4],
 			"data" : {
 				"url" : "images/pavilion/piazza.jpg",
-				"title" : "Piazza",
+				"title" : "Veranda",
 				"position": "left middle",
 				"quotes" : [{
 					"quote" : "Beds were wheeled outside onto surrounding balconies / porch / galleries during the daytime as part of the <em>“fresh air cure”</em> with easy access to outside spaces and gardens.",
@@ -157,7 +157,7 @@ export const Pavilion = {
 			"position" : [0, 7, 17],
 			"data" : {
 				"url" : "images/pavilion/antibiotic-1.jpg",
-				"title" : "Antibiotic Era",
+				"title" : "From Pre-Antibiotic to Antibiotic Era",
 				"position": "left bottom",
 				"theme" : "dark",
 				"quotes" : [{
