@@ -85,7 +85,8 @@ export const Site1 = {
 		"data" : {
 			"url" : "images/site1/rupert.jpg",
 			"title" : "Wayfinding",
-			"position": "left bottom",
+			"position": "left middle",
+			"description": "Hospital buildings can be difficult to navigate, and patients sometimes get lost on their way to clinic.",
 			"quotes" : [{
 				"quote" : "I always get lost, I always forget what corridor it is, so I always ring and text the CF team...",
 				"cite" : "Rupert, Patient",
@@ -139,17 +140,19 @@ export const Site1 = {
 		"data" : {
 			"url" : "images/site1/friday-staff.jpg",
 			"title" : "Carousel System",
-			"position": "left bottom",
+			"position": "left top",
+			"theme" : "dark",
+			"description": "The patient is directed into a clinic room and stays there, members of the multidisciplinary team (MDT) go in to them in turn.",
 			"quotes" : [{
 				"quote" : "...one of the nursing team would go in, the physio would go in, the dietician would go in, doctor would go in, the psychology team would go in...the patient would stay in the room...with the door shut.",
 				"cite" : "Una, CF Nurse",
 				"colour" : "pink",
-				"position" : "left top",
+				"position" : "left bottom",
 			},{
 				"quote" : "I feel very safe in the room, yeah. Because the doors are shut, so yes, I do feel absolutely safe in the room.",
 				"cite" : "Neil, Patient",
 				"colour" : "orange",
-				"position" : "center middle",
+				"position" : "right middle",
 			}]
 		}
 	},{
@@ -159,12 +162,13 @@ export const Site1 = {
 			"url" : "images/site1/mdt.jpg",
 			"title" : "Multidisciplinary Team Room",
 			"theme" : "dark",
-			"position": "center middle",
+			"position": "top left",
+			"description": "Staff wait in the MDT room to take their turn to visit a patient, it is a space where they can write up notes or discuss patients. This room is only available to the CF team on clinic days.",
 			"quotes" : [{
 				"quote" : "...we use this room as our MDT office, so all of the trolleys and equipment go in there, and the staff sit in there so that we can do all the prep work, we can do a discussion about patients, and we wait for our turn.",
 				"cite" : "Rachel, Physiotherapist",
 				"colour" : "red",
-				"position" : "center bottom",
+				"position" : "right middle",
 			}]
 		}
 	},{
@@ -227,6 +231,7 @@ export const Site1 = {
 			"url" : "images/site1/whiteboard.jpg",
 			"title" : "Whiteboard",
 			"position": "right middle",
+			"description": "The whiteboard is used to share information about patient flows - when they arrived, what room they are in, who has seen them.",
 			"quotes" : [{
 				"quote" : "...we have a whiteboard in our room, so as patients come in on that board we would write ‘Joe Blogs’, and then ‘Room 22’ so everyone knows they’re there.",
 				"cite" : "Rachel, Physiotherapist",
