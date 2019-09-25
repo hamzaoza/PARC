@@ -103,11 +103,12 @@ export const Site2 = {
 			"title" : "Multidisciplinary Team Room",
 			"position": "left top",
 			"theme" : "dark",
+			"description": "Staff wait in the MDT room to take their turn to visit a patient, it is a space where they can write up notes or discuss patients. This is a permanent space where equipment can be stored.",
 			"quotes" : [{
 				"quote" : "...first the patients are getting their obs done, then their lung function done and seeing the dietician, the consultants are usually the last people to go in, so we usually sit in there, do some emails.",
 				"cite" : "Anthony, Consultant",
 				"colour" : "green",
-				"position" : "left middle",
+				"position" : "right middle",
 			},{
 				"quote" : "We will go and sit in that office, but we will keep bobbing out…just to make sure there are no patients loitering around, for cross-infection reasons.",
 				"cite" : "Elizabeth, Healthcare Assistant",
@@ -121,12 +122,13 @@ export const Site2 = {
 		"data" : {
 			"url" : "images/site2/whiteboard.jpg",
 			"title" : "Whiteboard",
-			"position": "right bottom",
+			"position": "right middle",
+			"description": "The whiteboard is used to share information about patient flows - when they arrived, what room they are in, if they are waiting.",
 			"quotes" : [{
 				"quote" : "...if patients have arrived the whiteboard tells us where everybody is. So I’ll often come back here to refer to it, because patients are all numbered in order of who arrived when, so I don’t get that confused.",
 				"cite" : "Irene, Physiotherapist",
 				"colour" : "red",
-				"position" : "right bottom",
+				"position" : "left bottom",
 			}],
 		}
 	},{
@@ -154,12 +156,14 @@ export const Site2 = {
 		"data" : {
 			"url" : "images/site2/organisation.jpg",
 			"title" : "Carousel System",
-			"position": "center bottom",
+			"position": "right middle",
+			"theme" : "dark",
+			"description": "The patient is directed into a clinic room and stays there, members of the multidisciplinary team (MDT) go in to them in turn.",
 			"quotes" : [{
 				"quote" : "So the patient will come in and go into a room and they’ll stay in that room and all the multi-disciplinary team (MDT) will go in and out of the room.",
 				"cite" : "Anthony, Consultant",
 				"colour" : "green",
-				"position" : "left top",
+				"position" : "left bottom",
 			}],
 		}
 	},{
@@ -230,6 +234,7 @@ export const Site2 = {
 			"title" : "Source Isolation Rooms",
 			"theme" : "dark",
 			"position": "top left",
+			"description": "Although clinics are cohorted, source isolation rooms are used to further segregate patients who grow other types of bacteria (MRSA, pandoraea, mycobacterium abscessus).",
 			"quotes" : [{
 				"quote" : "...patients are cohort segregated but if they have got other microorganisms <em>(MRSA, mycobacterium abscessus)</em> we have some rooms allocated for source isolation, they are not used again until the next day. The two source isolation rooms are geographically separate.",
 				"cite" : "Irene, Physiotherapist",
@@ -239,7 +244,7 @@ export const Site2 = {
 				"quote" : "I’m more segregated than most because of the MRSA, but that’s fine, because it’s keeping other people safe. I have to be one of the last ones in.",
 				"cite" : "Abbi, Patient",
 				"colour" : "orange",
-				"position" : "left middle",
+				"position" : "right middle",
 			}],
 		}
 	},{
