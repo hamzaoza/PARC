@@ -468,3 +468,16 @@ footer {
 	}
 
 }
+
+dl {
+	margin: 0;
+}
+
+dt {
+	font-weight: bold;
+	font-size: 110%;
+}
+
+dd {
+	margin: 0 0 $margin-small $margin-small;
+}
