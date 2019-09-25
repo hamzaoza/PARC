@@ -31,10 +31,9 @@ export const Site2 = {
 		"name" : "entrance",
 		"position" : [-22, 3.5, -2.5],
 		"data" : {
-			"url" : "images/site2/entrance.jpg",
+			"url" : "images/site2/entrance-2.jpg",
 			"title" : "Entrance",
 			"position": "left bottom",
-			"theme" : "dark",
 			"quotes" : [{
 				"quote" : "Those two sets of double doors, it’s an enclosed area, so that always makes me a bit nervous...",
 				"cite" : "Abbi, Patient",
@@ -233,13 +232,13 @@ export const Site2 = {
 			"url" : "images/site2/source.jpg",
 			"title" : "Source Isolation Rooms",
 			"theme" : "dark",
-			"position": "top left",
+			"position": "left bottom",
 			"description": "Although clinics are cohorted, source isolation rooms are used to further segregate patients who grow other types of bacteria (MRSA, pandoraea, mycobacterium abscessus).",
 			"quotes" : [{
 				"quote" : "...patients are cohort segregated but if they have got other microorganisms <em>(MRSA, mycobacterium abscessus)</em> we have some rooms allocated for source isolation, they are not used again until the next day. The two source isolation rooms are geographically separate.",
 				"cite" : "Irene, Physiotherapist",
 				"colour" : "red",
-				"position" : "center bottom",
+				"position" : "center top",
 			},{
 				"quote" : "I’m more segregated than most because of the MRSA, but that’s fine, because it’s keeping other people safe. I have to be one of the last ones in.",
 				"cite" : "Abbi, Patient",
