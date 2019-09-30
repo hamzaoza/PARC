@@ -1,0 +1,15 @@
+Written by Hamza Oza on 30 Sep 2019.
+
+The virtual exhibtion should be publicly available to view at https://app.parcproject.org.uk/ provided the PARC team maintain the parcproject.org.uk domain name.
+
+If the url (https://app.parcproject.org.uk/) is not resolving then it should still be viewable at: https://hamzaoza.github.io/parc/
+
+If this is also unavailable, please upload the contents of the 'dist' folder to a webserver and launch it through that. Some free providers (at the time of writing) include:
+
+- https://www.hostinger.co.uk/
+- https://www.000webhost.com/
+- https://www.freehosting.com/
+
+For more experienced developers, you can use GitHub pages, https://pages.github.com/ where this exhibtion was hosted in the first instance or https://www.heroku.com/ both of which have free tiers that would be more than adequte for this exhibtion.
+
+If there are any issues please contant me through https://hamzaoza.com
