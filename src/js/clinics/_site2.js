@@ -11,7 +11,7 @@ export const Site2 = {
 		}
 	],
 	"floor" : "assets/textures/site2.mp4",
-	"summary" : "A large CF clinic with over 400 patients, they have their own CF space within a small outpatients hospital outside the city centre. Patients are cohorted according to persistence of infection with <em>Pseudomonas aeruginosa</em> (chronic/intermittent/pseudomonas free) and <em>Burkholderia cepacia complex</em> (Bcc). Patients with <em>Mycobacterium abscessus</em> and other bugs are treated in source isolation. <br><br><strong>Pathway Key:</strong><br>Orange &rarr; Patient<br>Pink &rarr; Nurse",
+	"summary" : "A large CF clinic with over 400 patients, they have their own CF space within a small outpatients hospital outside the city centre. Patients are cohorted according to persistence of infection with <em>Pseudomonas aeruginosa</em> (chronic/intermittent/pseudomonas free) and <em>Burkholderia cepacia complex</em> (Bcc). Patients with <em>Mycobacterium abscessus</em> and other bugs are treated in source isolation. <br><br><strong>Pathway Key:</strong><br>Orange &rarr; Patient<br>Pink &rarr; Healthcare Assistant",
 	"hotspots" : [{
 		"name" : "parking",
 		"position" : [-28, 3.5, -2.5],
@@ -233,9 +233,9 @@ export const Site2 = {
 			"title" : "Source Isolation Rooms",
 			"theme" : "dark",
 			"position": "left bottom",
-			"description": "Although clinics are cohorted, source isolation rooms are used to further segregate patients who grow other types of bacteria (MRSA, pandoraea, mycobacterium abscessus).",
+			"description": "Although clinics are cohorted, source isolation rooms are used to further segregate patients who grow other types of bacteria (MRSA, Mycobacterium abscessus).",
 			"quotes" : [{
-				"quote" : "...patients are cohort segregated but if they have got other microorganisms <em>(MRSA, mycobacterium abscessus)</em> we have some rooms allocated for source isolation, they are not used again until the next day. The two source isolation rooms are geographically separate.",
+				"quote" : "...patients are cohort segregated but if they have got other microorganisms <em>(MRSA, Mycobacterium abscessus)</em> we have some rooms allocated for source isolation, they are not used again until the next day. The two source isolation rooms are geographically separate.",
 				"cite" : "Irene, Physiotherapist",
 				"colour" : "red",
 				"position" : "center top",
