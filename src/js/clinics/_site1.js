@@ -11,7 +11,7 @@ export const Site1 = {
 		}
 	],
 	"floor" : "assets/textures/site1.mp4",
-	"summary" : "A small CF clinic with under 40 patients, clinics are held in a busy outpatients department in a 1970's built hospital. Patients are cohorted according to whether they are infected with Pseudomonas aeruginosa. Patients with <em>non-tuberculous mycobacteria</em> (NTM) such as <em>Mycobacterium abscessus</em> and <em>Burkholderia cepacia complex</em> (Bcc) are treated in isolation. <br><br><strong>Pathway Key:</strong><br>Orange &rarr; Patient<br>Pink &rarr; Nurse",
+	"summary" : "A small CF clinic with under 40 patients, clinics are held in a busy outpatients department in a 1970's built hospital. Patients are cohorted according to whether they are infected with Pseudomonas aeruginosa. Patients with <em>Non-Tuberculous Mycobacteria</em> (NTM) such as <em>Mycobacterium abscessus</em> and <em>Burkholderia cepacia complex</em> (Bcc) are treated in isolation. <br><br><strong>Pathway Key:</strong><br>Orange &rarr; Patient<br>Pink &rarr; Nurse",
 	"hotspots" : [{
 		"name" : "entrance",
 		"position" : [-17.5, 4, 14],
@@ -122,6 +122,7 @@ export const Site1 = {
 			"title" : "Regular Clinic Rooms",
 			"position": "top left",
 			"theme" : "dark",
+			"description": "The CF team have three rooms for their regular Friday afternoon clinics, but the rooms are used by other outpatient services throughout the week, so they have limited control over the space.",
 			"quotes" : [{
 				"quote" : "...when we have patients with NTM we ask [outpatients staff] to put the observation machine and any equipment we’ve used in that clinic room, for when it gets HPV [hydrogen peroxide vapour] cleaned. In reality that doesn’t happen, you can’t track it...",
 				"cite" : "Emma, CF Nurse",
@@ -131,7 +132,7 @@ export const Site1 = {
 				"quote" : "The rooms have clinical waste bins 90% of the time. But sometimes they don’t, so you actually have to go hunting for a bin...",
 				"cite" : "Anne, Physiotherapist",
 				"colour" : "red",
-				"position" : "left middle",
+				"position" : "left bottom",
 			}]
 		}
 	},{
